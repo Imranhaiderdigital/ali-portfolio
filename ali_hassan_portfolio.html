@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Hassan | Certified Safety Officer | HSE Professional Pakistan</title>
+<meta name="description" content="Ali Hassan - Certified Safety Officer and HSE Professional based in Bhalwal, Sargodha, Punjab, Pakistan. Expert in workplace safety, risk assessment, and occupational health management.">
+<meta name="keywords" content="Safety Officer Pakistan, HSE Professional, Occupational Health and Safety, Workplace Safety Officer, Safety Management, HSE Specialist, Industrial Safety Officer, Risk Assessment Professional, Safety Compliance Officer">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --navy:#0A2540;
+    --gold:#D4AF37;
+    --white:#FFFFFF;
+    --light:#F8F9FA;
+    --navy2:#0d2f50;
+    --gold2:#c9a227;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--white);color:var(--navy);overflow-x:hidden}
+
+  /* NAV */
+  nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(10,37,64,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,175,55,0.2);padding:0 5%}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:65px}
+  .logo{font-size:1.2rem;font-weight:700;color:var(--gold);letter-spacing:1px}
+  .logo span{color:var(--white)}
+  .nav-links{display:flex;gap:28px;list-style:none}
+  .nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:.88rem;font-weight:500;letter-spacing:.5px;transition:.3s;text-transform:uppercase}
+  .nav-links a:hover{color:var(--gold)}
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+  .hamburger span{width:24px;height:2px;background:var(--white);border-radius:2px;transition:.3s}
+
+  /* HERO */
+  #home{min-height:100vh;background:linear-gradient(135deg,var(--navy) 0%,#0d2f50 50%,#162d45 100%);position:relative;display:flex;align-items:center;overflow:hidden}
+  #home::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+  .hero-container{width:90%;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding-top:65px}
+  .hero-text{z-index:1}
+  .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.4);color:var(--gold);padding:6px 16px;border-radius:50px;font-size:.8rem;font-weight:600;letter-spacing:1px;margin-bottom:20px;text-transform:uppercase}
+  .hero-badge::before{content:'🛡️';font-size:.9rem}
+  h1.name{font-size:clamp(2.5rem,5vw,4rem);font-weight:800;color:var(--white);line-height:1.1;letter-spacing:2px}
+  h1.name span{color:var(--gold)}
+  .hero-title{font-size:clamp(.9rem,2vw,1.1rem);color:rgba(212,175,55,0.9);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin:12px 0 20px}
+  .hero-desc{color:rgba(255,255,255,0.75);line-height:1.8;font-size:.95rem;max-width:480px;margin-bottom:36px}
+  .hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
+  .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:13px 28px;border-radius:6px;font-weight:700;text-decoration:none;font-size:.9rem;transition:.3s;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(212,175,55,0.4)}
+  .btn-secondary{background:transparent;color:var(--white);padding:12px 28px;border-radius:6px;font-weight:600;text-decoration:none;font-size:.9rem;border:2px solid rgba(255,255,255,0.3);transition:.3s;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+  .btn-secondary:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+  .btn-outline{background:transparent;color:var(--gold);padding:12px 28px;border-radius:6px;font-weight:600;text-decoration:none;font-size:.9rem;border:2px solid var(--gold);transition:.3s;cursor:pointer}
+  .btn-outline:hover{background:var(--gold);color:var(--navy);transform:translateY(-2px)}
+  .hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .stat-card{background:rgba(255,255,255,0.06);border:1px solid rgba(212,175,55,0.2);border-radius:10px;padding:16px 12px;text-align:center;backdrop-filter:blur(10px);transition:.3s}
+  .stat-card:hover{background:rgba(212,175,55,0.1);border-color:var(--gold)}
+  .stat-num{font-size:1.8rem;font-weight:800;color:var(--gold);display:block}
+  .stat-label{font-size:.7rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:.5px;margin-top:4px}
+  .hero-img-wrap{display:flex;justify-content:center;align-items:center;z-index:1}
+  .hero-img-ring{width:320px;height:320px;border-radius:50%;background:linear-gradient(135deg,var(--gold),transparent);padding:3px;position:relative}
+  .hero-img-inner{width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,#1a3a5c,#0d2035);display:flex;align-items:center;justify-content:center;font-size:5rem;overflow:hidden;position:relative}
+  .hero-img-inner img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+  .floating-badge{position:absolute;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:8px 16px;border-radius:50px;font-size:.75rem;font-weight:700;white-space:nowrap;box-shadow:0 4px 20px rgba(212,175,55,0.4)}
+  .fb1{bottom:-10px;left:-20px}
+  .fb2{top:10px;right:-30px}
+
+  /* SECTIONS */
+  section{padding:90px 5%}
+  .section-inner{max-width:1200px;margin:0 auto}
+  .section-tag{display:inline-block;background:rgba(212,175,55,0.12);color:var(--gold);padding:5px 16px;border-radius:50px;font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+  .section-title{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;color:var(--navy);margin-bottom:8px}
+  .section-sub{color:#666;font-size:.95rem;line-height:1.7;max-width:600px;margin-bottom:48px}
+  .gold-line{width:60px;height:3px;background:linear-gradient(90deg,var(--gold),transparent);border-radius:3px;margin:12px 0 16px}
+
+  /* ABOUT */
+  #about{background:var(--light)}
+  .about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start}
+  .about-left{background:var(--navy);border-radius:16px;padding:40px 32px;color:var(--white);position:relative;overflow:hidden}
+  .about-left::before{content:'';position:absolute;top:-40px;right:-40px;width:150px;height:150px;background:rgba(212,175,55,0.08);border-radius:50%}
+  .about-avatar{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin:0 auto 20px;border:3px solid rgba(212,175,55,0.3)}
+  .about-name{text-align:center;font-size:1.3rem;font-weight:700;color:var(--gold);margin-bottom:4px}
+  .about-role{text-align:center;color:rgba(255,255,255,0.6);font-size:.85rem;margin-bottom:24px}
+  .info-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+  .info-row:last-child{border:none}
+  .info-icon{width:32px;height:32px;background:rgba(212,175,55,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+  .info-label{font-size:.7rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:.5px}
+  .info-val{font-size:.88rem;color:var(--white);font-weight:500}
+  .about-right p{color:#444;line-height:1.9;margin-bottom:16px;font-size:.95rem}
+  .highlight-box{background:var(--navy);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:20px 24px;margin-top:24px}
+  .highlight-box p{color:rgba(255,255,255,0.85);font-size:.9rem;line-height:1.7;margin:0;font-style:italic}
+
+  /* CERTIFICATIONS */
+  .cert-card{background:var(--navy);border-radius:16px;padding:36px;color:var(--white);position:relative;overflow:hidden;border:1px solid rgba(212,175,55,0.2)}
+  .cert-card::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:linear-gradient(135deg,rgba(212,175,55,0.1),transparent);border-radius:0 16px 0 100%}
+  .cert-header{display:flex;align-items:center;gap:20px;margin-bottom:28px}
+  .cert-icon{width:64px;height:64px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;flex-shrink:0}
+  .cert-org{font-size:.8rem;color:var(--gold);text-transform:uppercase;letter-spacing:1px;font-weight:600}
+  .cert-name{font-size:1.4rem;font-weight:700;color:var(--white)}
+  .cert-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
+  .cert-meta-item{background:rgba(255,255,255,0.05);border-radius:10px;padding:14px;text-align:center}
+  .cert-meta-label{font-size:.7rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+  .cert-meta-val{font-size:.95rem;font-weight:600;color:var(--white)}
+  .status-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);color:#4ade80;padding:5px 14px;border-radius:50px;font-size:.78rem;font-weight:600}
+  .status-badge::before{content:'';width:7px;height:7px;background:#4ade80;border-radius:50%;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+  .cert-desc{color:rgba(255,255,255,0.7);line-height:1.7;font-size:.9rem;margin-top:16px}
+  .cert-number{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:.82rem;color:rgba(255,255,255,0.4)}
+  .cert-number span{color:var(--gold);font-weight:600}
+
+  /* TRANSCRIPT */
+  #transcript{background:var(--light)}
+  .courses-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+  .course-card{background:var(--white);border-radius:12px;padding:24px;border:1px solid #e8e8e8;transition:.3s;position:relative;overflow:hidden}
+  .course-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--gold),var(--gold2))}
+  .course-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(10,37,64,0.12);border-color:var(--gold)}
+  .course-num{font-size:.75rem;color:var(--gold);font-weight:700;letter-spacing:1px;margin-bottom:8px}
+  .course-name{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+  .course-desc{font-size:.83rem;color:#666;line-height:1.6;margin-bottom:16px}
+  .course-footer{display:flex;justify-content:space-between;align-items:center}
+  .credit-badge{background:rgba(10,37,64,0.06);color:var(--navy);padding:4px 12px;border-radius:50px;font-size:.75rem;font-weight:700}
+  .pass-badge{background:rgba(34,197,94,0.1);color:#16a34a;padding:4px 12px;border-radius:50px;font-size:.75rem;font-weight:700}
+  .transcript-summary{background:var(--navy);border-radius:16px;padding:32px;margin-top:32px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+  .ts-item{text-align:center}
+  .ts-num{font-size:2rem;font-weight:800;color:var(--gold)}
+  .ts-label{font-size:.78rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:.5px}
+
+  /* SKILLS */
+  .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+  .skill-item{background:var(--white);border:1px solid #e8e8e8;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:12px;transition:.3s;cursor:default}
+  .skill-item:hover{background:var(--navy);color:var(--white);border-color:var(--navy);transform:translateY(-2px);box-shadow:0 6px 20px rgba(10,37,64,0.15)}
+  .skill-item:hover .skill-dot{background:var(--gold)}
+  .skill-dot{width:8px;height:8px;background:var(--navy);border-radius:50%;flex-shrink:0}
+  .skill-text{font-size:.85rem;font-weight:500}
+
+  /* EDUCATION */
+  #education{background:var(--light)}
+  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .edu-card{background:var(--white);border-radius:14px;padding:32px;border:1px solid #e8e8e8;transition:.3s;position:relative}
+  .edu-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(10,37,64,0.1)}
+  .edu-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:0 0 14px 14px}
+  .edu-year{display:inline-block;background:rgba(10,37,64,0.06);color:var(--navy);padding:4px 14px;border-radius:50px;font-size:.78rem;font-weight:700;margin-bottom:14px}
+  .edu-school{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:4px}
+  .edu-field{font-size:.88rem;color:var(--gold);font-weight:600;margin-bottom:16px}
+  .edu-points{list-style:none}
+  .edu-points li{font-size:.85rem;color:#555;padding:5px 0;padding-left:18px;position:relative}
+  .edu-points li::before{content:'→';position:absolute;left:0;color:var(--gold);font-weight:700}
+
+  /* WHY HIRE ME */
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+  .why-card{background:var(--white);border-radius:14px;padding:28px;border:1px solid #e8e8e8;transition:.3s;text-align:center}
+  .why-card:hover{background:var(--navy);transform:translateY(-4px);box-shadow:0 16px 50px rgba(10,37,64,0.15)}
+  .why-card:hover .why-title,.why-card:hover .why-desc{color:var(--white)}
+  .why-card:hover .why-icon-wrap{background:rgba(212,175,55,0.2)}
+  .why-icon-wrap{width:60px;height:60px;background:rgba(10,37,64,0.06);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 16px}
+  .why-title{font-size:.98rem;font-weight:700;color:var(--navy);margin-bottom:8px;transition:.3s}
+  .why-desc{font-size:.83rem;color:#666;line-height:1.6;transition:.3s}
+
+  /* GALLERY */
+  #gallery{background:var(--light)}
+  .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+  .gallery-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid #e8e8e8;transition:.3s;cursor:pointer}
+  .gallery-card:hover{transform:translateY(-4px);box-shadow:0 16px 50px rgba(10,37,64,0.15)}
+  .gallery-img{width:100%;height:220px;object-fit:cover;background:#f0f0f0;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#ccc;transition:.3s}
+  .gallery-card:hover .gallery-img{opacity:.9}
+  .gallery-info{padding:20px}
+  .gallery-type{font-size:.72rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+  .gallery-name{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+  .gallery-actions{display:flex;gap:10px;margin-top:14px}
+  .ga-btn{flex:1;padding:8px;border:none;border-radius:8px;font-size:.78rem;font-weight:600;cursor:pointer;transition:.3s}
+  .ga-view{background:var(--navy);color:var(--white)}
+  .ga-view:hover{background:var(--gold);color:var(--navy)}
+  .ga-dl{background:rgba(10,37,64,0.06);color:var(--navy)}
+  .ga-dl:hover{background:rgba(10,37,64,0.12)}
+
+  /* LIGHTBOX */
+  .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;padding:20px}
+  .lightbox.active{display:flex}
+  .lb-inner{max-width:800px;width:100%;position:relative}
+  .lb-img{width:100%;border-radius:10px;max-height:80vh;object-fit:contain}
+  .lb-close{position:absolute;top:-40px;right:0;background:var(--gold);color:var(--navy);border:none;border-radius:50%;width:36px;height:36px;font-size:1.1rem;font-weight:700;cursor:pointer}
+
+  /* CONTACT */
+  #contact{background:var(--navy);color:var(--white)}
+  #contact .section-title{color:var(--white)}
+  #contact .section-sub{color:rgba(255,255,255,0.6)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+  .contact-info{display:flex;flex-direction:column;gap:20px}
+  .ci-card{background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.15);border-radius:12px;padding:20px;display:flex;align-items:center;gap:16px;transition:.3s}
+  .ci-card:hover{background:rgba(212,175,55,0.08);border-color:rgba(212,175,55,0.4)}
+  .ci-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+  .ci-label{font-size:.72rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
+  .ci-val{font-size:.9rem;color:var(--white);font-weight:500}
+  .ci-val a{color:var(--gold);text-decoration:none}
+  .quick-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+  .qb{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:8px;font-size:.85rem;font-weight:600;text-decoration:none;transition:.3s;cursor:pointer;border:none}
+  .qb-wa{background:#25D366;color:#fff}
+  .qb-wa:hover{background:#1da851}
+  .qb-email{background:var(--gold);color:var(--navy)}
+  .qb-email:hover{background:var(--gold2)}
+  .qb-call{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2)}
+  .qb-call:hover{background:rgba(255,255,255,0.15)}
+  .contact-form{display:flex;flex-direction:column;gap:16px}
+  .form-group{display:flex;flex-direction:column;gap:6px}
+  .form-group label{font-size:.8rem;color:rgba(255,255,255,0.6);font-weight:500;text-transform:uppercase;letter-spacing:.5px}
+  .form-group input,.form-group textarea,.form-group select{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 16px;color:var(--white);font-size:.9rem;outline:none;transition:.3s;font-family:inherit}
+  .form-group input:focus,.form-group textarea:focus{border-color:var(--gold);background:rgba(212,175,55,0.06)}
+  .form-group textarea{resize:vertical;min-height:120px}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .submit-btn{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:14px;border:none;border-radius:8px;font-size:.95rem;font-weight:700;cursor:pointer;transition:.3s;letter-spacing:.5px}
+  .submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(212,175,55,0.35)}
+  .form-success{display:none;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.3);color:#4ade80;padding:14px;border-radius:8px;text-align:center;font-size:.9rem}
+
+  /* FOOTER */
+  footer{background:#060f1a;padding:48px 5% 24px;text-align:center}
+  .footer-logo{font-size:1.5rem;font-weight:800;color:var(--gold);letter-spacing:2px;margin-bottom:8px}
+  .footer-role{color:rgba(255,255,255,0.5);font-size:.85rem;margin-bottom:24px}
+  .footer-links{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-bottom:24px}
+  .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:.85rem;transition:.3s}
+  .footer-links a:hover{color:var(--gold)}
+  .footer-quote{color:var(--gold);font-style:italic;font-size:.9rem;margin-bottom:16px;border-top:1px solid rgba(255,255,255,0.06);padding-top:24px}
+  .footer-copy{color:rgba(255,255,255,0.3);font-size:.78rem}
+
+  /* ANIMATIONS */
+  .fade-in{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+  .fade-in.visible{opacity:1;transform:translateY(0)}
+
+  /* RESPONSIVE */
+  @media(max-width:900px){
+    .hero-container{grid-template-columns:1fr;text-align:center;gap:40px}
+    .hero-img-wrap{order:-1}
+    .hero-stats{grid-template-columns:repeat(2,1fr)}
+    .hero-btns{justify-content:center}
+    .about-grid{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+    .edu-grid{grid-template-columns:1fr}
+    .cert-meta{grid-template-columns:1fr 1fr}
+    .nav-links{display:none;position:absolute;top:65px;left:0;right:0;background:rgba(10,37,64,.98);flex-direction:column;padding:20px 5%;gap:16px}
+    .nav-links.open{display:flex}
+    .hamburger{display:flex}
+    .form-row{grid-template-columns:1fr}
+    .hero-img-ring{width:240px;height:240px}
+  }
+  @media(max-width:500px){
+    .hero-stats{grid-template-columns:1fr 1fr}
+    section{padding:64px 5%}
+    .cert-meta{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">ALI <span>HASSAN</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#certifications">Certificates</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-container">
+    <div class="hero-text fade-in">
+      <div class="hero-badge">Certified Safety Officer</div>
+      <h1 class="name">ALI <span>HASSAN</span></h1>
+      <div class="hero-title">HSE Professional | Safety Officer</div>
+      <p class="hero-desc">Dedicated to creating safer workplaces through hazard identification, risk assessment, incident prevention, safety compliance, and occupational health management. Committed to protecting workers and maintaining the highest standards.</p>
+      <div class="hero-btns">
+        <a href="mailto:alihassan0786u@gmail.com" class="btn-primary">📄 Download CV</a>
+        <a href="#contact" class="btn-secondary">📞 Contact Me</a>
+        <a href="#gallery" class="btn-outline">🏆 View Certificates</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-card"><span class="stat-num">8+</span><div class="stat-label">Safety Courses</div></div>
+        <div class="stat-card"><span class="stat-num">160</span><div class="stat-label">Credits Earned</div></div>
+        <div class="stat-card"><span class="stat-num">1+</span><div class="stat-label">Certifications</div></div>
+        <div class="stat-card"><span class="stat-num">Multi</span><div class="stat-label">Disciplines</div></div>
+      </div>
+    </div>
+    <div class="hero-img-wrap fade-in">
+      <div style="position:relative">
+        <div class="hero-img-ring">
+          <div class="hero-img-inner">🛡️</div>
+        </div>
+        <div class="floating-badge fb1">✅ Certified Safety Officer</div>
+        <div class="floating-badge fb2">🏅 Qanmos Certified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-tag">About Me</div>
+    <h2 class="section-title">Professional Profile</h2>
+    <div class="gold-line"></div>
+    <div class="about-grid">
+      <div class="about-left fade-in">
+        <div class="about-avatar">👷</div>
+        <div class="about-name">Ali Hassan</div>
+        <div class="about-role">Certified Safety Officer | HSE Professional</div>
+        <div class="info-row"><div class="info-icon">📍</div><div><div class="info-label">Location</div><div class="info-val">Bhalwal, Sargodha, Punjab, Pakistan</div></div></div>
+        <div class="info-row"><div class="info-icon">🎓</div><div><div class="info-label">Certification</div><div class="info-val">Safety Officer – Qanmos</div></div></div>
+        <div class="info-row"><div class="info-icon">📅</div><div><div class="info-label">Issued</div><div class="info-val">11 February 2026</div></div></div>
+        <div class="info-row"><div class="info-icon">⏳</div><div><div class="info-label">Valid Until</div><div class="info-val">February 2028</div></div></div>
+        <div class="info-row"><div class="info-icon">📞</div><div><div class="info-label">Phone</div><div class="info-val">03261238395</div></div></div>
+        <div class="info-row"><div class="info-icon">✉️</div><div><div class="info-label">Email</div><div class="info-val" style="font-size:.8rem">alihassan0786u@gmail.com</div></div></div>
+        <div style="margin-top:20px"><div class="status-badge">🟢 Available for Work</div></div>
+      </div>
+      <div class="about-right fade-in">
+        <p>I am a <strong>Certified Safety Officer</strong> with professional training in workplace safety management, occupational health standards, risk control procedures, and hazard prevention from <strong>Qanmos Center of Excellence</strong>.</p>
+        <p>My training has equipped me with practical knowledge of <strong>Permit to Work Systems, Fire Safety, H2S Safety, Work at Height, Confined Space Entry, First Aid,</strong> and <strong>Emergency Response Procedures</strong> — completing all 8 courses with a total of <strong>160 credits</strong>.</p>
+        <p>I am passionate about building safe work environments where employees can perform their duties efficiently while minimizing risks and maintaining compliance with industry regulations.</p>
+        <p>I continuously strive to improve workplace safety culture, reduce incidents, and contribute to organizational success through effective safety management practices.</p>
+        <div class="highlight-box">
+          <p>"I am actively seeking employment opportunities in construction, oil & gas, manufacturing, industrial, and engineering sectors where I can contribute my HSE expertise and continue growing as a safety professional."</p>
+        </div>
+        <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:12px">
+          <a href="tel:03261238395" class="btn-primary">📞 Call Now</a>
+          <a href="https://wa.me/923261238395" target="_blank" class="btn-secondary" style="background:#25D366;border-color:#25D366;color:#fff">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="section-tag">Credentials</div>
+    <h2 class="section-title">Professional Certification</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">Issued by an internationally recognized training institution with accreditation from AOSH, Exemplar Global, NASP, and OSH Academy.</p>
+    <div class="cert-card fade-in">
+      <div class="cert-header">
+        <div class="cert-icon">🏆</div>
+        <div>
+          <div class="cert-org">Qanmos Center of Excellence</div>
+          <div class="cert-name">Safety Officer – Certificate of Achievement</div>
+          <div style="margin-top:8px"><div class="status-badge">Active & Valid</div></div>
+        </div>
+      </div>
+      <div class="cert-meta">
+        <div class="cert-meta-item"><div class="cert-meta-label">Issue Date</div><div class="cert-meta-val">11 Feb 2026</div></div>
+        <div class="cert-meta-item"><div class="cert-meta-label">Valid Until</div><div class="cert-meta-val">Feb 2028</div></div>
+        <div class="cert-meta-item"><div class="cert-meta-label">Validity</div><div class="cert-meta-val">2 Years</div></div>
+        <div class="cert-meta-item"><div class="cert-meta-label">Training Session</div><div class="cert-meta-val">Jan 12, 2026</div></div>
+        <div class="cert-meta-item"><div class="cert-meta-label">Cert. Number</div><div class="cert-meta-val" style="color:var(--gold)">cb8ad09</div></div>
+        <div class="cert-meta-item"><div class="cert-meta-label">Verify At</div><div class="cert-meta-val" style="font-size:.78rem"><a href="https://www.qanmos.com/certificate-verification" target="_blank" style="color:var(--gold);text-decoration:none">qanmos.com</a></div></div>
+      </div>
+      <div class="cert-desc">Successfully completed professional Safety Officer training covering occupational health, workplace safety management, hazard prevention, emergency response, and industrial safety standards. This program is approved and organized by Qanmos Training and accredited by <strong style="color:var(--gold)">AOSH · Exemplar Global · NASP · OSH Academy</strong>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSCRIPT -->
+<section id="transcript">
+  <div class="section-inner">
+    <div class="section-tag">Academic Transcript</div>
+    <h2 class="section-title">Completed Safety Courses</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">Official transcript issued by Qanmos Trainings – The Career Makers. All 8 courses completed with PASS grade in English.</p>
+    <div class="courses-grid">
+      <div class="course-card fade-in"><div class="course-num">Course 105</div><div class="course-name">🔐 Permit To Work System</div><div class="course-desc">Understanding work authorization procedures and safe work practices in industrial environments.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 109</div><div class="course-name">🔥 Fire Watcher</div><div class="course-desc">Fire prevention, monitoring, and emergency response strategies for workplace environments.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 114</div><div class="course-name">👁️ Standby Man / Hole Watcher</div><div class="course-desc">Confined space monitoring and worker protection during hazardous operations.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 115</div><div class="course-name">🧗 Work At Height</div><div class="course-desc">Fall protection systems and height safety procedures for elevated work environments.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 118</div><div class="course-name">🕳️ Confined Space Entry</div><div class="course-desc">Safe entry procedures, atmospheric testing, and hazard control in confined spaces.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 120</div><div class="course-name">🩺 First Aider</div><div class="course-desc">Emergency first aid response, CPR, and incident management in the workplace.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 124</div><div class="course-name">☠️ H2S Safety</div><div class="course-desc">Hydrogen Sulfide hazard awareness, detection, and worker protection procedures.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 126</div><div class="course-name">🚦 Flagman</div><div class="course-desc">Traffic control, workplace movement safety, and coordination of vehicle/pedestrian flow.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+    </div>
+    <div class="transcript-summary">
+      <div class="ts-item"><div class="ts-num">160</div><div class="ts-label">Total Credits</div></div>
+      <div class="ts-item"><div class="ts-num">8</div><div class="ts-label">Courses Completed</div></div>
+      <div class="ts-item"><div class="ts-num">PASS</div><div class="ts-label">Final Result</div></div>
+      <div class="ts-item"><div class="ts-num">English</div><div class="ts-label">Assessment Language</div></div>
+      <div class="ts-item"><div class="ts-num">11/02/2026</div><div class="ts-label">Issue Date</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-tag">Expertise</div>
+    <h2 class="section-title">Core HSE Competencies</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">Comprehensive knowledge spanning workplace safety management, occupational health, and industrial safety disciplines.</p>
+    <div class="skills-grid">
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Workplace Safety Management</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Occupational Health & Safety</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Hazard Identification</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Risk Assessment</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Permit To Work System</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Fire Prevention & Protection</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Emergency Response Planning</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Incident Prevention</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">H2S Safety Awareness</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Confined Space Safety</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Work At Height Safety</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">First Aid Response</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Safety Documentation</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Toolbox Talks</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Site Safety Inspection</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Accident Investigation</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Corrective Action Planning</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Safety Compliance Monitoring</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Safety Reporting</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Worker Safety Awareness</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-inner">
+    <div class="section-tag">Education</div>
+    <h2 class="section-title">Academic Background</h2>
+    <div class="gold-line"></div>
+    <div class="edu-grid">
+      <div class="edu-card fade-in">
+        <div class="edu-year">2020 – 2022</div>
+        <div class="edu-school">🏫 Government High School</div>
+        <div class="edu-field">Matriculation – Computer Science</div>
+        <ul class="edu-points">
+          <li>Computer Fundamentals & Applications</li>
+          <li>Communication Skills Development</li>
+          <li>Technical Learning & Problem Solving</li>
+        </ul>
+      </div>
+      <div class="edu-card fade-in">
+        <div class="edu-year">2022 – 2024</div>
+        <div class="edu-school">🎓 Government College Bhalwal</div>
+        <div class="edu-field">FA – Faculty of Arts</div>
+        <ul class="edu-points">
+          <li>Professional Communication</li>
+          <li>Documentation & Record Keeping</li>
+          <li>Professional Development Skills</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY HIRE ME -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-tag">Value Proposition</div>
+    <h2 class="section-title">Why Hire Me?</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">I bring a combination of certified expertise, strong work ethic, and genuine commitment to workplace safety.</p>
+    <div class="why-grid">
+      <div class="why-card fade-in"><div class="why-icon-wrap">🏆</div><div class="why-title">Certified Safety Officer</div><div class="why-desc">Professionally trained and certified in workplace safety by an internationally accredited institution.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">📚</div><div class="why-title">Multiple Safety Disciplines</div><div class="why-desc">Knowledge across 8 industrial safety domains covering PTW, fire, confined space, height, H2S, and more.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">🛡️</div><div class="why-title">Safety-First Mindset</div><div class="why-desc">Strong commitment to worker protection and building a positive safety culture in the workplace.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">⚠️</div><div class="why-title">Risk Management Awareness</div><div class="why-desc">Ability to proactively identify, assess, and control workplace hazards before incidents occur.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">📋</div><div class="why-title">Professional Documentation</div><div class="why-desc">Capable of maintaining accurate safety records, incident reports, and compliance documentation.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">⚡</div><div class="why-title">Fast Learner</div><div class="why-desc">Highly adaptable to new environments, regulations, and emerging safety standards and practices.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">🤝</div><div class="why-title">Team Collaboration</div><div class="why-desc">Strong communication and teamwork abilities for effective coordination on industrial sites.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">📈</div><div class="why-title">Continuous Improvement</div><div class="why-desc">Committed to ongoing professional development and staying current with HSE best practices.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-inner">
+    <div class="section-tag">Credentials Gallery</div>
+    <h2 class="section-title">Certificates & Documents</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">Official certificates and academic records from Qanmos Center of Excellence. Click to view full size.</p>
+    <div class="gallery-grid">
+      <div class="gallery-card fade-in" onclick="openLightbox('cert')">
+        <div class="gallery-img" style="background:linear-gradient(135deg,#0A2540,#1a3a5c);color:var(--gold);font-size:1rem;flex-direction:column;gap:10px;display:flex">
+          <div style="font-size:3rem">🏆</div>
+          <div style="font-weight:700;letter-spacing:1px">CERTIFICATE OF ACHIEVEMENT</div>
+          <div style="font-size:.8rem;opacity:.7">Qanmos Center of Excellence</div>
+        </div>
+        <div class="gallery-info">
+          <div class="gallery-type">Safety Certification</div>
+          <div class="gallery-name">Safety Officer Certificate</div>
+          <div style="font-size:.8rem;color:#666">Issued: 11 Feb 2026 · Valid 2 Years · Cert# cb8ad09</div>
+          <div class="gallery-actions">
+            <button class="ga-btn ga-view" onclick="event.stopPropagation();openLightbox('cert')">👁 View</button>
+            <button class="ga-btn ga-dl">⬇ Download</button>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-card fade-in" onclick="openLightbox('transcript')">
+        <div class="gallery-img" style="background:linear-gradient(135deg,#f8f9fa,#e8e8e8);color:#0A2540;font-size:1rem;flex-direction:column;gap:8px;display:flex;padding:20px">
+          <div style="font-size:2rem">📋</div>
+          <div style="font-weight:800;font-size:.95rem;letter-spacing:.5px">TRANSCRIPT OF ACADEMIC RECORD</div>
+          <div style="font-size:.75rem;color:#666">Qanmos Trainings – The Career Makers</div>
+          <div style="font-size:.75rem;margin-top:6px;color:#0A2540;line-height:1.6">8 Courses · 160 Credits · All PASS</div>
+        </div>
+        <div class="gallery-info">
+          <div class="gallery-type">Academic Transcript</div>
+          <div class="gallery-name">Training Completion Transcript</div>
+          <div style="font-size:.8rem;color:#666">Issued: 11 Feb 2026 · 8 Courses · 160 Total Credits</div>
+          <div class="gallery-actions">
+            <button class="ga-btn ga-view" onclick="event.stopPropagation();openLightbox('transcript')">👁 View</button>
+            <button class="ga-btn ga-dl">⬇ Download</button>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-card fade-in">
+        <div class="gallery-img" style="background:linear-gradient(135deg,#1a3a5c,#0d2035);color:rgba(255,255,255,.8);font-size:.85rem;flex-direction:column;gap:8px;display:flex;padding:20px">
+          <div style="font-size:2.5rem">🎯</div>
+          <div style="font-weight:700;color:var(--gold)">8 PROFESSIONAL COURSES</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:.72rem;text-align:left;margin-top:6px">
+            <span>✅ PTW System</span><span>✅ Fire Watcher</span>
+            <span>✅ Hole Watcher</span><span>✅ Work at Height</span>
+            <span>✅ Confined Space</span><span>✅ First Aider</span>
+            <span>✅ H2S Safety</span><span>✅ Flagman</span>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <div class="gallery-type">Training Record</div>
+          <div class="gallery-name">Professional Safety Training Courses</div>
+          <div style="font-size:.8rem;color:#666">All 8 Courses · 20 Credits Each · Result: PASS</div>
+          <div class="gallery-actions">
+            <button class="ga-btn ga-view">👁 View</button>
+            <button class="ga-btn ga-dl">⬇ Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:28px;background:rgba(10,37,64,0.05);border:1px solid rgba(10,37,64,0.1);border-radius:12px;padding:20px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+      <div style="font-size:1.5rem">🔍</div>
+      <div>
+        <div style="font-weight:700;color:var(--navy);margin-bottom:4px">Certificate Verification</div>
+        <div style="font-size:.85rem;color:#666">Verify authenticity of Ali Hassan's Safety Officer certificate at: <a href="https://www.qanmos.com/certificate-verification" target="_blank" style="color:var(--gold);font-weight:600">www.qanmos.com/certificate-verification</a> — Certificate Number: <strong>cb8ad09</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-tag" style="background:rgba(212,175,55,0.15);color:var(--gold)">Get In Touch</div>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">Available for employment opportunities in construction, oil & gas, manufacturing, industrial, and engineering sectors.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info">
+          <div class="ci-card"><div class="ci-icon">📞</div><div><div class="ci-label">Phone / WhatsApp</div><div class="ci-val"><a href="tel:03261238395">0326-1238395</a></div></div></div>
+          <div class="ci-card"><div class="ci-icon">✉️</div><div><div class="ci-label">Email Address</div><div class="ci-val"><a href="mailto:alihassan0786u@gmail.com">alihassan0786u@gmail.com</a></div></div></div>
+          <div class="ci-card"><div class="ci-icon">📍</div><div><div class="ci-label">Location</div><div class="ci-val">Bhalwal, Sargodha, Punjab, Pakistan</div></div></div>
+          <div class="ci-card"><div class="ci-icon">💼</div><div><div class="ci-label">Open To</div><div class="ci-val">Full-time · Contract · Site Roles</div></div></div>
+        </div>
+        <div class="quick-btns" style="margin-top:24px">
+          <a href="https://wa.me/923261238395?text=Hello%20Ali%20Hassan%2C%20I%20came%20across%20your%20HSE%20portfolio%20and%20would%20like%20to%20discuss%20a%20safety%20officer%20opportunity." target="_blank" class="qb qb-wa">💬 WhatsApp</a>
+          <a href="mailto:alihassan0786u@gmail.com" class="qb qb-email">✉️ Email Me</a>
+          <a href="tel:03261238395" class="qb qb-call">📞 Call Now</a>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full Name" id="fname"></div>
+            <div class="form-group"><label>Your Email</label><input type="email" placeholder="email@example.com" id="femail"></div>
+          </div>
+          <div class="form-group"><label>Company / Organization</label><input type="text" placeholder="Company Name" id="fcompany"></div>
+          <div class="form-group"><label>Subject</label>
+            <select id="fsubject" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 16px;color:var(--white);font-size:.9rem;outline:none">
+              <option value="" style="background:#0A2540">Select Subject</option>
+              <option value="job" style="background:#0A2540">Job / Employment Opportunity</option>
+              <option value="contract" style="background:#0A2540">Contract / Project Work</option>
+              <option value="verify" style="background:#0A2540">Certificate Verification</option>
+              <option value="other" style="background:#0A2540">Other Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Your message here..." id="fmessage"></textarea></div>
+          <button class="submit-btn" onclick="submitForm()">🚀 Send Message</button>
+          <div class="form-success" id="formSuccess">✅ Message sent! Ali Hassan will respond within 24 hours.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">ALI HASSAN</div>
+  <div class="footer-role">Certified Safety Officer | HSE Professional | Pakistan</div>
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#certifications">Certificates</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-links">
+    <a href="https://wa.me/923261238395" target="_blank">💬 WhatsApp</a>
+    <a href="mailto:alihassan0786u@gmail.com">✉️ Email</a>
+    <a href="tel:03261238395">📞 Call</a>
+  </div>
+  <div class="footer-quote">"Safety Is Not A Choice, It Is A Responsibility."</div>
+  <div class="footer-copy">© 2026 Ali Hassan. All rights reserved. | Safety Officer Pakistan | HSE Professional</div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <div class="lb-inner" onclick="event.stopPropagation()">
+    <button class="lb-close" onclick="closeLightbox()">✕</button>
+    <div id="lbContent"></div>
+  </div>
+</div>
+
+<script>
+  // NAV TOGGLE
+  function toggleNav(){
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  // SMOOTH NAV CLOSE
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open'));
+  });
+
+  // FADE IN OBSERVER
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible')}});
+  },{threshold:.12});
+  document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+
+  // LIGHTBOX
+  function openLightbox(type){
+    const lb = document.getElementById('lightbox');
+    const content = document.getElementById('lbContent');
+    if(type==='cert'){
+      content.innerHTML=`<div style="background:linear-gradient(135deg,#0A2540,#1a3a5c);border-radius:12px;padding:48px;text-align:center;color:#fff;border:2px solid #D4AF37">
+        <div style="font-size:1rem;color:#D4AF37;letter-spacing:3px;margin-bottom:8px">QANMOS CENTER OF EXCELLENCE</div>
+        <div style="font-size:2rem;font-weight:800;color:#D4AF37;margin-bottom:4px">CERTIFICATE</div>
+        <div style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:24px">OF ACHIEVEMENT</div>
+        <div style="font-size:.9rem;color:rgba(255,255,255,.7);margin-bottom:8px">In recognition of the successful completion of</div>
+        <div style="font-size:2.2rem;font-weight:800;color:#fff;margin-bottom:4px">ALI HASSAN</div>
+        <div style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:8px">has successfully completed training in</div>
+        <div style="font-size:1.5rem;font-weight:700;color:#D4AF37;margin-bottom:24px">Safety Officer</div>
+        <div style="display:flex;justify-content:center;gap:32px;flex-wrap:wrap;font-size:.82rem;color:rgba(255,255,255,.6)">
+          <span>Date: 11/02/2026</span>
+          <span>Cert# cb8ad09</span>
+          <span>Valid: 2 Years</span>
+        </div>
+        <div style="margin-top:20px;font-size:.75rem;color:rgba(255,255,255,.4)">Accredited by: AOSH · Exemplar Global · NASP · OSH Academy</div>
+      </div>`;
+    } else {
+      content.innerHTML=`<div style="background:#fff;border-radius:12px;padding:36px;color:#0A2540">
+        <div style="text-align:right;margin-bottom:16px;font-weight:800;color:#0A2540;letter-spacing:1px">QANMOS TRAININGS<br><small style="font-weight:400;color:#666">THE CAREER MAKERS</small></div>
+        <div style="font-size:1.3rem;font-weight:800;margin-bottom:20px;text-align:center">TRANSCRIPT OF ACADEMIC RECORD</div>
+        <div style="font-weight:700;margin-bottom:8px">ALI HASSAN</div>
+        <div style="font-size:.83rem;color:#555;margin-bottom:20px;line-height:1.6">Ali Hassan has successfully completed the required professional development certificate programs and courses listed below.</div>
+        <table style="width:100%;border-collapse:collapse;font-size:.85rem">
+          <tr style="background:#0A2540;color:#D4AF37"><th style="padding:8px 12px;text-align:left">TITLE</th><th style="padding:8px 12px">CREDIT</th><th style="padding:8px 12px">GRADE</th></tr>
+          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">105 Permit To Work System</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">109 Fire Watcher</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">114 Stand By Man/Hole Watcher</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">115 Work At Height</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">118 Confined Space Entry</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">120 First Aider</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">124 H2S Safety</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">126 Flagman</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+        </table>
+        <div style="margin-top:16px;font-size:.82rem;color:#555">TOTAL CREDITS: <strong>160</strong> | GRADING: PASS/FAIL | Language: English | Issued: 11 February 2026</div>
+      </div>`;
+    }
+    lb.classList.add('active');
+  }
+  function closeLightbox(){document.getElementById('lightbox').classList.remove('active')}
+
+  // CONTACT FORM
+  function submitForm(){
+    const n=document.getElementById('fname').value;
+    const e=document.getElementById('femail').value;
+    const m=document.getElementById('fmessage').value;
+    if(!n||!e||!m){alert('Please fill in your name, email, and message.');return;}
+    const s=document.getElementById('formSuccess');
+    s.style.display='block';
+    document.getElementById('fname').value='';
+    document.getElementById('femail').value='';
+    document.getElementById('fcompany').value='';
+    document.getElementById('fmessage').value='';
+    setTimeout(()=>s.style.display='none',5000);
+  }
+</script>
+</body>
+</html>
