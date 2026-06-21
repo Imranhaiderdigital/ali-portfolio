@@ -3,701 +3,624 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ali Hassan | Certified Safety Officer | HSE Professional Pakistan</title>
-<meta name="description" content="Ali Hassan - Certified Safety Officer and HSE Professional based in Bhalwal, Sargodha, Punjab, Pakistan. Expert in workplace safety, risk assessment, and occupational health management.">
-<meta name="keywords" content="Safety Officer Pakistan, HSE Professional, Occupational Health and Safety, Workplace Safety Officer, Safety Management, HSE Specialist, Industrial Safety Officer, Risk Assessment Professional, Safety Compliance Officer">
+<title>SehatConnect | Online Doctor Consultation 24/7</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Lora:wght@400;600&display=swap" rel="stylesheet">
 <style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  :root{
-    --navy:#0A2540;
-    --gold:#D4AF37;
-    --white:#FFFFFF;
-    --light:#F8F9FA;
-    --navy2:#0d2f50;
-    --gold2:#c9a227;
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --teal:     #0D7A6E;
+    --teal-lt:  #12A090;
+    --teal-pale:#E6F4F2;
+    --mint:     #A8E6DF;
+    --coral:    #E85D4A;
+    --offwhite: #F7FAFA;
+    --dark:     #0E1F1D;
+    --mid:      #3D5652;
+    --light:    #8AADA8;
+    --white:    #FFFFFF;
+    --radius:   12px;
   }
-  html{scroll-behavior:smooth}
-  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--white);color:var(--navy);overflow-x:hidden}
 
-  /* NAV */
-  nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(10,37,64,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,175,55,0.2);padding:0 5%}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:65px}
-  .logo{font-size:1.2rem;font-weight:700;color:var(--gold);letter-spacing:1px}
-  .logo span{color:var(--white)}
-  .nav-links{display:flex;gap:28px;list-style:none}
-  .nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:.88rem;font-weight:500;letter-spacing:.5px;transition:.3s;text-transform:uppercase}
-  .nav-links a:hover{color:var(--gold)}
-  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}
-  .hamburger span{width:24px;height:2px;background:var(--white);border-radius:2px;transition:.3s}
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--white); color: var(--dark); }
 
-  /* HERO */
-  #home{min-height:100vh;background:linear-gradient(135deg,var(--navy) 0%,#0d2f50 50%,#162d45 100%);position:relative;display:flex;align-items:center;overflow:hidden}
-  #home::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
-  .hero-container{width:90%;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding-top:65px}
-  .hero-text{z-index:1}
-  .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.4);color:var(--gold);padding:6px 16px;border-radius:50px;font-size:.8rem;font-weight:600;letter-spacing:1px;margin-bottom:20px;text-transform:uppercase}
-  .hero-badge::before{content:'🛡️';font-size:.9rem}
-  h1.name{font-size:clamp(2.5rem,5vw,4rem);font-weight:800;color:var(--white);line-height:1.1;letter-spacing:2px}
-  h1.name span{color:var(--gold)}
-  .hero-title{font-size:clamp(.9rem,2vw,1.1rem);color:rgba(212,175,55,0.9);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin:12px 0 20px}
-  .hero-desc{color:rgba(255,255,255,0.75);line-height:1.8;font-size:.95rem;max-width:480px;margin-bottom:36px}
-  .hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
-  .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:13px 28px;border-radius:6px;font-weight:700;text-decoration:none;font-size:.9rem;transition:.3s;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(212,175,55,0.4)}
-  .btn-secondary{background:transparent;color:var(--white);padding:12px 28px;border-radius:6px;font-weight:600;text-decoration:none;font-size:.9rem;border:2px solid rgba(255,255,255,0.3);transition:.3s;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
-  .btn-secondary:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
-  .btn-outline{background:transparent;color:var(--gold);padding:12px 28px;border-radius:6px;font-weight:600;text-decoration:none;font-size:.9rem;border:2px solid var(--gold);transition:.3s;cursor:pointer}
-  .btn-outline:hover{background:var(--gold);color:var(--navy);transform:translateY(-2px)}
-  .hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-  .stat-card{background:rgba(255,255,255,0.06);border:1px solid rgba(212,175,55,0.2);border-radius:10px;padding:16px 12px;text-align:center;backdrop-filter:blur(10px);transition:.3s}
-  .stat-card:hover{background:rgba(212,175,55,0.1);border-color:var(--gold)}
-  .stat-num{font-size:1.8rem;font-weight:800;color:var(--gold);display:block}
-  .stat-label{font-size:.7rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:.5px;margin-top:4px}
-  .hero-img-wrap{display:flex;justify-content:center;align-items:center;z-index:1}
-  .hero-img-ring{width:320px;height:320px;border-radius:50%;background:linear-gradient(135deg,var(--gold),transparent);padding:3px;position:relative}
-  .hero-img-inner{width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,#1a3a5c,#0d2035);display:flex;align-items:center;justify-content:center;font-size:5rem;overflow:hidden;position:relative}
-  .hero-img-inner img{width:100%;height:100%;object-fit:cover;border-radius:50%}
-  .floating-badge{position:absolute;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:8px 16px;border-radius:50px;font-size:.75rem;font-weight:700;white-space:nowrap;box-shadow:0 4px 20px rgba(212,175,55,0.4)}
-  .fb1{bottom:-10px;left:-20px}
-  .fb2{top:10px;right:-30px}
-
-  /* SECTIONS */
-  section{padding:90px 5%}
-  .section-inner{max-width:1200px;margin:0 auto}
-  .section-tag{display:inline-block;background:rgba(212,175,55,0.12);color:var(--gold);padding:5px 16px;border-radius:50px;font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
-  .section-title{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;color:var(--navy);margin-bottom:8px}
-  .section-sub{color:#666;font-size:.95rem;line-height:1.7;max-width:600px;margin-bottom:48px}
-  .gold-line{width:60px;height:3px;background:linear-gradient(90deg,var(--gold),transparent);border-radius:3px;margin:12px 0 16px}
-
-  /* ABOUT */
-  #about{background:var(--light)}
-  .about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start}
-  .about-left{background:var(--navy);border-radius:16px;padding:40px 32px;color:var(--white);position:relative;overflow:hidden}
-  .about-left::before{content:'';position:absolute;top:-40px;right:-40px;width:150px;height:150px;background:rgba(212,175,55,0.08);border-radius:50%}
-  .about-avatar{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin:0 auto 20px;border:3px solid rgba(212,175,55,0.3)}
-  .about-name{text-align:center;font-size:1.3rem;font-weight:700;color:var(--gold);margin-bottom:4px}
-  .about-role{text-align:center;color:rgba(255,255,255,0.6);font-size:.85rem;margin-bottom:24px}
-  .info-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
-  .info-row:last-child{border:none}
-  .info-icon{width:32px;height:32px;background:rgba(212,175,55,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
-  .info-label{font-size:.7rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:.5px}
-  .info-val{font-size:.88rem;color:var(--white);font-weight:500}
-  .about-right p{color:#444;line-height:1.9;margin-bottom:16px;font-size:.95rem}
-  .highlight-box{background:var(--navy);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:20px 24px;margin-top:24px}
-  .highlight-box p{color:rgba(255,255,255,0.85);font-size:.9rem;line-height:1.7;margin:0;font-style:italic}
-
-  /* CERTIFICATIONS */
-  .cert-card{background:var(--navy);border-radius:16px;padding:36px;color:var(--white);position:relative;overflow:hidden;border:1px solid rgba(212,175,55,0.2)}
-  .cert-card::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:linear-gradient(135deg,rgba(212,175,55,0.1),transparent);border-radius:0 16px 0 100%}
-  .cert-header{display:flex;align-items:center;gap:20px;margin-bottom:28px}
-  .cert-icon{width:64px;height:64px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;flex-shrink:0}
-  .cert-org{font-size:.8rem;color:var(--gold);text-transform:uppercase;letter-spacing:1px;font-weight:600}
-  .cert-name{font-size:1.4rem;font-weight:700;color:var(--white)}
-  .cert-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
-  .cert-meta-item{background:rgba(255,255,255,0.05);border-radius:10px;padding:14px;text-align:center}
-  .cert-meta-label{font-size:.7rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
-  .cert-meta-val{font-size:.95rem;font-weight:600;color:var(--white)}
-  .status-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);color:#4ade80;padding:5px 14px;border-radius:50px;font-size:.78rem;font-weight:600}
-  .status-badge::before{content:'';width:7px;height:7px;background:#4ade80;border-radius:50%;animation:pulse 2s infinite}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
-  .cert-desc{color:rgba(255,255,255,0.7);line-height:1.7;font-size:.9rem;margin-top:16px}
-  .cert-number{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:.82rem;color:rgba(255,255,255,0.4)}
-  .cert-number span{color:var(--gold);font-weight:600}
-
-  /* TRANSCRIPT */
-  #transcript{background:var(--light)}
-  .courses-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
-  .course-card{background:var(--white);border-radius:12px;padding:24px;border:1px solid #e8e8e8;transition:.3s;position:relative;overflow:hidden}
-  .course-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--gold),var(--gold2))}
-  .course-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(10,37,64,0.12);border-color:var(--gold)}
-  .course-num{font-size:.75rem;color:var(--gold);font-weight:700;letter-spacing:1px;margin-bottom:8px}
-  .course-name{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px}
-  .course-desc{font-size:.83rem;color:#666;line-height:1.6;margin-bottom:16px}
-  .course-footer{display:flex;justify-content:space-between;align-items:center}
-  .credit-badge{background:rgba(10,37,64,0.06);color:var(--navy);padding:4px 12px;border-radius:50px;font-size:.75rem;font-weight:700}
-  .pass-badge{background:rgba(34,197,94,0.1);color:#16a34a;padding:4px 12px;border-radius:50px;font-size:.75rem;font-weight:700}
-  .transcript-summary{background:var(--navy);border-radius:16px;padding:32px;margin-top:32px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
-  .ts-item{text-align:center}
-  .ts-num{font-size:2rem;font-weight:800;color:var(--gold)}
-  .ts-label{font-size:.78rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:.5px}
-
-  /* SKILLS */
-  .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
-  .skill-item{background:var(--white);border:1px solid #e8e8e8;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:12px;transition:.3s;cursor:default}
-  .skill-item:hover{background:var(--navy);color:var(--white);border-color:var(--navy);transform:translateY(-2px);box-shadow:0 6px 20px rgba(10,37,64,0.15)}
-  .skill-item:hover .skill-dot{background:var(--gold)}
-  .skill-dot{width:8px;height:8px;background:var(--navy);border-radius:50%;flex-shrink:0}
-  .skill-text{font-size:.85rem;font-weight:500}
-
-  /* EDUCATION */
-  #education{background:var(--light)}
-  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-  .edu-card{background:var(--white);border-radius:14px;padding:32px;border:1px solid #e8e8e8;transition:.3s;position:relative}
-  .edu-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(10,37,64,0.1)}
-  .edu-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:0 0 14px 14px}
-  .edu-year{display:inline-block;background:rgba(10,37,64,0.06);color:var(--navy);padding:4px 14px;border-radius:50px;font-size:.78rem;font-weight:700;margin-bottom:14px}
-  .edu-school{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:4px}
-  .edu-field{font-size:.88rem;color:var(--gold);font-weight:600;margin-bottom:16px}
-  .edu-points{list-style:none}
-  .edu-points li{font-size:.85rem;color:#555;padding:5px 0;padding-left:18px;position:relative}
-  .edu-points li::before{content:'→';position:absolute;left:0;color:var(--gold);font-weight:700}
-
-  /* WHY HIRE ME */
-  .why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
-  .why-card{background:var(--white);border-radius:14px;padding:28px;border:1px solid #e8e8e8;transition:.3s;text-align:center}
-  .why-card:hover{background:var(--navy);transform:translateY(-4px);box-shadow:0 16px 50px rgba(10,37,64,0.15)}
-  .why-card:hover .why-title,.why-card:hover .why-desc{color:var(--white)}
-  .why-card:hover .why-icon-wrap{background:rgba(212,175,55,0.2)}
-  .why-icon-wrap{width:60px;height:60px;background:rgba(10,37,64,0.06);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 16px}
-  .why-title{font-size:.98rem;font-weight:700;color:var(--navy);margin-bottom:8px;transition:.3s}
-  .why-desc{font-size:.83rem;color:#666;line-height:1.6;transition:.3s}
-
-  /* GALLERY */
-  #gallery{background:var(--light)}
-  .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
-  .gallery-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid #e8e8e8;transition:.3s;cursor:pointer}
-  .gallery-card:hover{transform:translateY(-4px);box-shadow:0 16px 50px rgba(10,37,64,0.15)}
-  .gallery-img{width:100%;height:220px;object-fit:cover;background:#f0f0f0;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#ccc;transition:.3s}
-  .gallery-card:hover .gallery-img{opacity:.9}
-  .gallery-info{padding:20px}
-  .gallery-type{font-size:.72rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
-  .gallery-name{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:8px}
-  .gallery-actions{display:flex;gap:10px;margin-top:14px}
-  .ga-btn{flex:1;padding:8px;border:none;border-radius:8px;font-size:.78rem;font-weight:600;cursor:pointer;transition:.3s}
-  .ga-view{background:var(--navy);color:var(--white)}
-  .ga-view:hover{background:var(--gold);color:var(--navy)}
-  .ga-dl{background:rgba(10,37,64,0.06);color:var(--navy)}
-  .ga-dl:hover{background:rgba(10,37,64,0.12)}
-
-  /* LIGHTBOX */
-  .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;padding:20px}
-  .lightbox.active{display:flex}
-  .lb-inner{max-width:800px;width:100%;position:relative}
-  .lb-img{width:100%;border-radius:10px;max-height:80vh;object-fit:contain}
-  .lb-close{position:absolute;top:-40px;right:0;background:var(--gold);color:var(--navy);border:none;border-radius:50%;width:36px;height:36px;font-size:1.1rem;font-weight:700;cursor:pointer}
-
-  /* CONTACT */
-  #contact{background:var(--navy);color:var(--white)}
-  #contact .section-title{color:var(--white)}
-  #contact .section-sub{color:rgba(255,255,255,0.6)}
-  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
-  .contact-info{display:flex;flex-direction:column;gap:20px}
-  .ci-card{background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.15);border-radius:12px;padding:20px;display:flex;align-items:center;gap:16px;transition:.3s}
-  .ci-card:hover{background:rgba(212,175,55,0.08);border-color:rgba(212,175,55,0.4)}
-  .ci-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
-  .ci-label{font-size:.72rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
-  .ci-val{font-size:.9rem;color:var(--white);font-weight:500}
-  .ci-val a{color:var(--gold);text-decoration:none}
-  .quick-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
-  .qb{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:8px;font-size:.85rem;font-weight:600;text-decoration:none;transition:.3s;cursor:pointer;border:none}
-  .qb-wa{background:#25D366;color:#fff}
-  .qb-wa:hover{background:#1da851}
-  .qb-email{background:var(--gold);color:var(--navy)}
-  .qb-email:hover{background:var(--gold2)}
-  .qb-call{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2)}
-  .qb-call:hover{background:rgba(255,255,255,0.15)}
-  .contact-form{display:flex;flex-direction:column;gap:16px}
-  .form-group{display:flex;flex-direction:column;gap:6px}
-  .form-group label{font-size:.8rem;color:rgba(255,255,255,0.6);font-weight:500;text-transform:uppercase;letter-spacing:.5px}
-  .form-group input,.form-group textarea,.form-group select{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 16px;color:var(--white);font-size:.9rem;outline:none;transition:.3s;font-family:inherit}
-  .form-group input:focus,.form-group textarea:focus{border-color:var(--gold);background:rgba(212,175,55,0.06)}
-  .form-group textarea{resize:vertical;min-height:120px}
-  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .submit-btn{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:14px;border:none;border-radius:8px;font-size:.95rem;font-weight:700;cursor:pointer;transition:.3s;letter-spacing:.5px}
-  .submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(212,175,55,0.35)}
-  .form-success{display:none;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.3);color:#4ade80;padding:14px;border-radius:8px;text-align:center;font-size:.9rem}
-
-  /* FOOTER */
-  footer{background:#060f1a;padding:48px 5% 24px;text-align:center}
-  .footer-logo{font-size:1.5rem;font-weight:800;color:var(--gold);letter-spacing:2px;margin-bottom:8px}
-  .footer-role{color:rgba(255,255,255,0.5);font-size:.85rem;margin-bottom:24px}
-  .footer-links{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-bottom:24px}
-  .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:.85rem;transition:.3s}
-  .footer-links a:hover{color:var(--gold)}
-  .footer-quote{color:var(--gold);font-style:italic;font-size:.9rem;margin-bottom:16px;border-top:1px solid rgba(255,255,255,0.06);padding-top:24px}
-  .footer-copy{color:rgba(255,255,255,0.3);font-size:.78rem}
-
-  /* ANIMATIONS */
-  .fade-in{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
-  .fade-in.visible{opacity:1;transform:translateY(0)}
-
-  /* RESPONSIVE */
-  @media(max-width:900px){
-    .hero-container{grid-template-columns:1fr;text-align:center;gap:40px}
-    .hero-img-wrap{order:-1}
-    .hero-stats{grid-template-columns:repeat(2,1fr)}
-    .hero-btns{justify-content:center}
-    .about-grid{grid-template-columns:1fr}
-    .contact-grid{grid-template-columns:1fr}
-    .edu-grid{grid-template-columns:1fr}
-    .cert-meta{grid-template-columns:1fr 1fr}
-    .nav-links{display:none;position:absolute;top:65px;left:0;right:0;background:rgba(10,37,64,.98);flex-direction:column;padding:20px 5%;gap:16px}
-    .nav-links.open{display:flex}
-    .hamburger{display:flex}
-    .form-row{grid-template-columns:1fr}
-    .hero-img-ring{width:240px;height:240px}
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 5%; height: 70px;
+    background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(13,122,110,0.1);
   }
-  @media(max-width:500px){
-    .hero-stats{grid-template-columns:1fr 1fr}
-    section{padding:64px 5%}
-    .cert-meta{grid-template-columns:1fr}
+  .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+  .logo-icon {
+    width: 38px; height: 38px; border-radius: 10px;
+    background: var(--teal); display: flex; align-items: center; justify-content: center;
+  }
+  .logo-icon svg { width: 22px; height: 22px; fill: white; }
+  .logo-text { font-family: 'Lora', serif; font-size: 1.25rem; font-weight: 600; color: var(--dark); }
+  .logo-text span { color: var(--teal); }
+
+  nav ul { display: flex; gap: 32px; list-style: none; }
+  nav ul a { text-decoration: none; font-size: 0.9rem; font-weight: 500; color: var(--mid); transition: color .2s; }
+  nav ul a:hover { color: var(--teal); }
+  .nav-cta {
+    background: var(--teal); color: white !important; padding: 9px 22px;
+    border-radius: 8px; transition: background .2s !important;
+  }
+  .nav-cta:hover { background: var(--teal-lt) !important; color: white !important; }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh; padding: 110px 5% 80px;
+    display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;
+    background: linear-gradient(135deg, var(--offwhite) 60%, var(--teal-pale) 100%);
+    position: relative; overflow: hidden;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -80px; right: -80px;
+    width: 500px; height: 500px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(13,122,110,0.08) 0%, transparent 70%);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--teal-pale); border: 1px solid var(--mint);
+    padding: 6px 14px; border-radius: 100px; margin-bottom: 24px;
+    font-size: 0.78rem; font-weight: 600; color: var(--teal); text-transform: uppercase; letter-spacing: 0.05em;
+  }
+  .hero-badge::before { content: '●'; font-size: 0.5rem; color: var(--teal-lt); }
+  .hero h1 {
+    font-family: 'Lora', serif; font-size: clamp(2.2rem, 4vw, 3.4rem);
+    line-height: 1.2; font-weight: 600; color: var(--dark); margin-bottom: 20px;
+  }
+  .hero h1 em { font-style: normal; color: var(--teal); }
+  .hero p { font-size: 1.05rem; color: var(--mid); line-height: 1.75; margin-bottom: 36px; max-width: 500px; }
+
+  .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--teal); color: white; padding: 14px 28px;
+    border-radius: var(--radius); font-weight: 700; font-size: 0.95rem;
+    text-decoration: none; border: none; cursor: pointer;
+    transition: background .2s, transform .15s; display: inline-block;
+  }
+  .btn-primary:hover { background: var(--teal-lt); transform: translateY(-1px); }
+  .btn-outline {
+    background: transparent; color: var(--teal); padding: 14px 28px;
+    border: 2px solid var(--teal); border-radius: var(--radius);
+    font-weight: 700; font-size: 0.95rem; text-decoration: none;
+    transition: all .2s; display: inline-block;
+  }
+  .btn-outline:hover { background: var(--teal-pale); }
+
+  .hero-stats { display: flex; gap: 36px; margin-top: 44px; }
+  .stat-num { font-family: 'Lora', serif; font-size: 2rem; font-weight: 600; color: var(--teal); }
+  .stat-label { font-size: 0.8rem; color: var(--light); margin-top: 2px; }
+
+  /* Hero Right Card */
+  .hero-card {
+    background: white; border-radius: 20px; padding: 28px;
+    box-shadow: 0 20px 60px rgba(13,122,110,0.12);
+    position: relative;
+  }
+  .hero-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 16px; color: var(--dark); }
+  .consult-form label { font-size: 0.78rem; font-weight: 600; color: var(--mid); text-transform: uppercase; letter-spacing: 0.04em; display: block; margin-bottom: 6px; margin-top: 14px; }
+  .consult-form select, .consult-form input {
+    width: 100%; padding: 11px 14px; border: 1.5px solid #D8ECEB;
+    border-radius: 8px; font-family: inherit; font-size: 0.9rem;
+    color: var(--dark); background: var(--offwhite); outline: none;
+    transition: border-color .2s;
+  }
+  .consult-form select:focus, .consult-form input:focus { border-color: var(--teal); }
+  .consult-form .btn-primary { width: 100%; margin-top: 18px; text-align: center; }
+
+  .online-badge {
+    display: flex; align-items: center; gap: 8px; margin-bottom: 18px;
+    font-size: 0.82rem; color: #2E7D32; font-weight: 600;
+  }
+  .online-dot { width: 9px; height: 9px; border-radius: 50%; background: #4CAF50; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{box-shadow:0 0 0 0 rgba(76,175,80,.4)} 50%{box-shadow:0 0 0 6px rgba(76,175,80,0)} }
+
+  /* ── SOLUTIONS ── */
+  .section { padding: 90px 5%; }
+  .section-tag { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--teal); margin-bottom: 10px; }
+  .section-title { font-family: 'Lora', serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 600; color: var(--dark); margin-bottom: 14px; }
+  .section-sub { font-size: 1rem; color: var(--mid); max-width: 560px; line-height: 1.7; }
+
+  .solutions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; margin-top: 50px; }
+  .sol-card {
+    background: var(--offwhite); border: 1.5px solid transparent;
+    border-radius: 16px; padding: 28px 24px;
+    transition: all .25s; cursor: pointer; position: relative; overflow: hidden;
+  }
+  .sol-card::after {
+    content: ''; position: absolute; inset: 0; border-radius: 16px;
+    background: linear-gradient(135deg, var(--teal-pale), transparent);
+    opacity: 0; transition: opacity .25s;
+  }
+  .sol-card:hover { border-color: var(--mint); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(13,122,110,0.1); }
+  .sol-card:hover::after { opacity: 1; }
+  .sol-icon {
+    width: 50px; height: 50px; border-radius: 12px;
+    background: var(--teal-pale); display: flex; align-items: center; justify-content: center;
+    margin-bottom: 18px; position: relative; z-index: 1;
+  }
+  .sol-icon svg { width: 24px; height: 24px; }
+  .sol-card h4 { font-weight: 700; font-size: 1rem; margin-bottom: 8px; color: var(--dark); position: relative; z-index: 1; }
+  .sol-card p { font-size: 0.875rem; color: var(--mid); line-height: 1.6; position: relative; z-index: 1; }
+  .sol-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 14px; font-size: 0.83rem; font-weight: 700; color: var(--teal); text-decoration: none; position: relative; z-index: 1; }
+  .sol-link:hover { gap: 10px; }
+
+  /* ── HOW IT WORKS ── */
+  .how-bg { background: var(--dark); color: white; }
+  .how-bg .section-tag { color: var(--mint); }
+  .how-bg .section-title { color: white; }
+  .how-bg .section-sub { color: var(--light); }
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-top: 56px; position: relative; }
+  .steps::before {
+    content: ''; position: absolute; top: 30px; left: 0; right: 0; height: 1px;
+    background: linear-gradient(to right, transparent, var(--teal), transparent);
+  }
+  .step { position: relative; }
+  .step-num {
+    width: 60px; height: 60px; border-radius: 50%;
+    background: var(--teal); color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 600;
+    margin-bottom: 20px; position: relative; z-index: 1;
+    border: 3px solid rgba(168,230,223,0.3);
+  }
+  .step h4 { font-size: 1rem; font-weight: 700; margin-bottom: 8px; color: white; }
+  .step p { font-size: 0.875rem; color: var(--light); line-height: 1.65; }
+
+  /* ── DOCTORS ── */
+  .doctors-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 20px; margin-top: 50px; }
+  .doc-card {
+    background: white; border: 1.5px solid #E8F2F1; border-radius: 16px;
+    padding: 22px 18px; text-align: center; transition: all .25s;
+  }
+  .doc-card:hover { box-shadow: 0 8px 30px rgba(13,122,110,0.1); transform: translateY(-3px); }
+  .doc-avatar {
+    width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 14px;
+    background: var(--teal-pale); display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; font-weight: 700; color: var(--teal);
+  }
+  .doc-name { font-weight: 700; font-size: 0.9rem; color: var(--dark); margin-bottom: 4px; }
+  .doc-spec { font-size: 0.78rem; color: var(--mid); margin-bottom: 10px; }
+  .doc-exp { font-size: 0.75rem; color: var(--light); margin-bottom: 12px; }
+  .doc-rating { display: flex; justify-content: center; align-items: center; gap: 5px; }
+  .stars { color: #F59E0B; font-size: 0.75rem; }
+  .rating-num { font-size: 0.8rem; font-weight: 600; color: var(--dark); }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-bg { background: var(--teal-pale); }
+  .testi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 22px; margin-top: 50px; }
+  .testi-card {
+    background: white; border-radius: 16px; padding: 28px 24px;
+    box-shadow: 0 4px 20px rgba(13,122,110,0.07);
+  }
+  .testi-quote { font-size: 2.5rem; color: var(--mint); line-height: 1; margin-bottom: 14px; }
+  .testi-text { font-size: 0.9rem; color: var(--mid); line-height: 1.75; margin-bottom: 20px; font-style: italic; }
+  .testi-author { display: flex; align-items: center; gap: 12px; }
+  .testi-avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--teal); color: white; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
+  .testi-name { font-weight: 700; font-size: 0.88rem; color: var(--dark); }
+  .testi-role { font-size: 0.75rem; color: var(--light); }
+
+  /* ── FEATURES ── */
+  .features-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-top: 50px; }
+  .feature-list { display: flex; flex-direction: column; gap: 22px; }
+  .feature-item { display: flex; gap: 16px; align-items: flex-start; }
+  .feature-check { width: 36px; height: 36px; min-width: 36px; border-radius: 10px; background: var(--teal-pale); display: flex; align-items: center; justify-content: center; }
+  .feature-check svg { width: 18px; height: 18px; }
+  .feature-item h4 { font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; color: var(--dark); }
+  .feature-item p { font-size: 0.85rem; color: var(--mid); line-height: 1.6; }
+  .features-visual {
+    background: linear-gradient(135deg, var(--teal), var(--teal-lt));
+    border-radius: 24px; padding: 48px 36px; color: white; text-align: center;
+  }
+  .fv-icon { font-size: 3.5rem; margin-bottom: 16px; }
+  .fv-title { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 600; margin-bottom: 10px; }
+  .fv-text { font-size: 0.9rem; opacity: 0.85; line-height: 1.65; }
+  .fv-stat { margin-top: 32px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.2); }
+  .fv-num { font-family: 'Lora', serif; font-size: 2.5rem; font-weight: 600; }
+  .fv-label { font-size: 0.85rem; opacity: 0.75; margin-top: 4px; }
+
+  /* ── CTA ── */
+  .cta-section {
+    background: var(--dark); text-align: center; padding: 90px 5%;
+    position: relative; overflow: hidden;
+  }
+  .cta-section::before {
+    content: ''; position: absolute;
+    width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(13,122,110,0.3) 0%, transparent 70%);
+    top: 50%; left: 50%; transform: translate(-50%,-50%);
+  }
+  .cta-section h2 { font-family: 'Lora', serif; font-size: clamp(1.8rem, 3vw, 2.8rem); color: white; margin-bottom: 14px; position: relative; }
+  .cta-section p { font-size: 1rem; color: var(--light); max-width: 500px; margin: 0 auto 36px; line-height: 1.7; position: relative; }
+  .cta-btns { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; position: relative; }
+  .btn-white { background: white; color: var(--teal); padding: 14px 28px; border-radius: var(--radius); font-weight: 700; font-size: 0.95rem; text-decoration: none; transition: all .2s; }
+  .btn-white:hover { background: var(--teal-pale); }
+  .btn-ghost { border: 2px solid rgba(255,255,255,0.25); color: white; padding: 14px 28px; border-radius: var(--radius); font-weight: 700; font-size: 0.95rem; text-decoration: none; transition: all .2s; }
+  .btn-ghost:hover { background: rgba(255,255,255,0.08); }
+
+  /* ── FOOTER ── */
+  footer { background: #071210; color: var(--light); padding: 60px 5% 30px; }
+  .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; margin-bottom: 50px; }
+  .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 16px; text-decoration: none; }
+  .footer-logo-text { font-family: 'Lora', serif; font-size: 1.15rem; color: white; font-weight: 600; }
+  .footer-logo-text span { color: var(--mint); }
+  footer p { font-size: 0.875rem; line-height: 1.7; max-width: 280px; }
+  .footer-col h5 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: white; font-weight: 700; margin-bottom: 18px; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-col ul a { font-size: 0.875rem; color: var(--light); text-decoration: none; transition: color .2s; }
+  .footer-col ul a:hover { color: var(--mint); }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-bottom p { font-size: 0.8rem; color: rgba(138,173,168,0.6); max-width: none; }
+
+  @media (max-width: 768px) {
+    .hero { grid-template-columns: 1fr; padding-top: 90px; }
+    nav ul { display: none; }
+    .features-grid { grid-template-columns: 1fr; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+    .steps::before { display: none; }
   }
 </style>
-<link rel="icon" type="image/png" href="logo.png"></head>
+</head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <div class="nav-inner">
-    <div <div class="logo">ALI <span>HASSAN</span></div></div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#certifications">Certificates</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div class="hamburger" onclick="toggleNav()">
-      <span></span><span></span><span></span>
+  <a href="#" class="logo">
+    <div class="logo-icon">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2v-5h2v5zm0-7h-2V7h2v2z"/></svg>
     </div>
-  </div>
+    <span class="logo-text">Sehat<span>Connect</span></span>
+  </a>
+  <ul>
+    <li><a href="#solutions">Solutions</a></li>
+    <li><a href="#doctors">Doctors</a></li>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#" class="nav-cta">Get Started</a></li>
+  </ul>
 </nav>
 
 <!-- HERO -->
-<section id="home">
-  <div class="hero-container">
-    <div class="hero-text fade-in">
-      <div class="hero-badge">Certified Safety Officer</div>
-      <h1 class="name">ALI <span>HASSAN</span></h1>
-      <div class="hero-title">HSE Professional | Safety Officer</div>
-      <p class="hero-desc">Dedicated to creating safer workplaces through hazard identification, risk assessment, incident prevention, safety compliance, and occupational health management. Committed to protecting workers and maintaining the highest standards.</p>
-      <div class="hero-btns">
-        <a href="mailto:alihassan0786u@gmail.com" class="btn-primary">📄 Download CV</a>
-        <a href="#contact" class="btn-secondary">📞 Contact Me</a>
-        <a href="#gallery" class="btn-outline">🏆 View Certificates</a>
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-badge">24/7 Available</div>
+    <h1>Doctor Se <em>60 Seconds</em> Mein Consult Karein</h1>
+    <p>Pakistan ke top doctors se ghar baithe online consultation karein. Chat, audio ya video — jo prefer karein, woh choose karein.</p>
+    <div class="hero-btns">
+      <a href="#" class="btn-primary">Abhi Consult Karein</a>
+      <a href="#how" class="btn-outline">Kaise Kaam Karta Hai?</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">7,500+</div>
+        <div class="stat-label">Verified Doctors</div>
       </div>
-      <div class="hero-stats">
-        <div class="stat-card"><span class="stat-num">8+</span><div class="stat-label">Safety Courses</div></div>
-        <div class="stat-card"><span class="stat-num">160</span><div class="stat-label">Credits Earned</div></div>
-        <div class="stat-card"><span class="stat-num">1+</span><div class="stat-label">Certifications</div></div>
-        <div class="stat-card"><span class="stat-num">Multi</span><div class="stat-label">Disciplines</div></div>
+      <div>
+        <div class="stat-num">2M+</div>
+        <div class="stat-label">Consultations Done</div>
+      </div>
+      <div>
+        <div class="stat-num">4.8★</div>
+        <div class="stat-label">Average Rating</div>
       </div>
     </div>
-    <div class="hero-img-wrap fade-in">
-      <div style="position:relative">
-        <div class="hero-img-ring">
-          <div class="hero-img-inner">
-   <img src="ali.jpg" alt="Ali Hassan"></div>
-        </div>
-        <div class="floating-badge fb1">✅ Certified Safety Officer</div>
-        <div class="floating-badge fb2">🏅 Qanmos Certified</div>
+  </div>
+
+  <div class="hero-right">
+    <div class="hero-card">
+      <div class="online-badge"><span class="online-dot"></span> 342 Doctors Available Right Now</div>
+      <h3>Apni Appointment Book Karein</h3>
+      <div class="consult-form">
+        <label>Symptom / Problem Select Karein</label>
+        <select>
+          <option>-- Select Symptom --</option>
+          <option>Fever / Bukhar</option>
+          <option>Headache / Sar Dard</option>
+          <option>Cough / Khansi</option>
+          <option>Chest Pain</option>
+          <option>Stomach Pain / Pait Dard</option>
+          <option>Mental Health</option>
+          <option>Skin Problem</option>
+        </select>
+        <label>Specialist Choose Karein</label>
+        <select>
+          <option>-- Select Specialist --</option>
+          <option>General Physician</option>
+          <option>Cardiologist</option>
+          <option>Dermatologist</option>
+          <option>Gynecologist</option>
+          <option>Pediatrician</option>
+          <option>Psychiatrist</option>
+          <option>ENT Specialist</option>
+        </select>
+        <label>Apna Naam</label>
+        <input type="text" placeholder="e.g. Ahmed Khan">
+        <a href="#" class="btn-primary">Doctor Dhundein →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-inner">
-    <div class="section-tag">About Me</div>
-    <h2 class="section-title">Professional Profile</h2>
-    <div class="gold-line"></div>
-    <div class="about-grid">
-      <div class="about-left fade-in">
-        <div class="hero-img-inner">
-   <img src="ali.jpg" alt="Ali Hassan"></div>
-        <div class="about-name">Ali Hassan</div>
-        <div class="about-role">Certified Safety Officer | HSE Professional</div>
-        <div class="info-row"><div class="info-icon">📍</div><div><div class="info-label">Location</div><div class="info-val">Bhalwal, Sargodha, Punjab, Pakistan</div></div></div>
-        <div class="info-row"><div class="info-icon">🎓</div><div><div class="info-label">Certification</div><div class="info-val">Safety Officer – Qanmos</div></div></div>
-        <div class="info-row"><div class="info-icon">📅</div><div><div class="info-label">Issued</div><div class="info-val">11 February 2026</div></div></div>
-        <div class="info-row"><div class="info-icon">⏳</div><div><div class="info-label">Valid Until</div><div class="info-val">February 2028</div></div></div>
-        <div class="info-row"><div class="info-icon">📞</div><div><div class="info-label">Phone</div><div class="info-val">03261238395</div></div></div>
-        <div class="info-row"><div class="info-icon">✉️</div><div><div class="info-label">Email</div><div class="info-val" style="font-size:.8rem">alihassan0786u@gmail.com</div></div></div>
-        <div style="margin-top:20px"><div class="status-badge">🟢 Available for Work</div></div>
+<!-- SOLUTIONS -->
+<section class="section" id="solutions">
+  <div class="section-tag">Our Services</div>
+  <div class="section-title">Har Zaroorat Ke Liye Solution</div>
+  <div class="section-sub">Chahe aap individual hon, corporate employee ya rural area mein hon — hamare paas har kisi ke liye healthcare solution maujood hai.</div>
+
+  <div class="solutions-grid">
+    <div class="sol-card">
+      <div class="sol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0D7A6E" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       </div>
-      <div class="about-right fade-in">
-        <p>I am a <strong>Certified Safety Officer</strong> with professional training in workplace safety management, occupational health standards, risk control procedures, and hazard prevention from <strong>Qanmos Center of Excellence</strong>.</p>
-        <p>My training has equipped me with practical knowledge of <strong>Permit to Work Systems, Fire Safety, H2S Safety, Work at Height, Confined Space Entry, First Aid,</strong> and <strong>Emergency Response Procedures</strong> — completing all 8 courses with a total of <strong>160 credits</strong>.</p>
-        <p>I am passionate about building safe work environments where employees can perform their duties efficiently while minimizing risks and maintaining compliance with industry regulations.</p>
-        <p>I continuously strive to improve workplace safety culture, reduce incidents, and contribute to organizational success through effective safety management practices.</p>
-        <div class="highlight-box">
-          <p>"I am actively seeking employment opportunities in construction, oil & gas, manufacturing, industrial, and engineering sectors where I can contribute my HSE expertise and continue growing as a safety professional."</p>
-        </div>
-        <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:12px">
-          <a href="tel:03261238395" class="btn-primary">📞 Call Now</a>
-          <a href="https://wa.me/923261238395" target="_blank" class="btn-secondary" style="background:#25D366;border-color:#25D366;color:#fff">💬 WhatsApp</a>
-        </div>
+      <h4>Consumer Care</h4>
+      <p>Ghar baithe doctor se consult karein. Chat, audio ya video — 60 seconds mein connect hon.</p>
+      <a href="#" class="sol-link">Learn More →</a>
+    </div>
+    <div class="sol-card">
+      <div class="sol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0D7A6E" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
       </div>
+      <h4>Corporate Care</h4>
+      <p>Apne employees ko premium healthcare benefit dein. Productivity badhaye, health costs ghataye.</p>
+      <a href="#" class="sol-link">Learn More →</a>
+    </div>
+    <div class="sol-card">
+      <div class="sol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0D7A6E" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+      </div>
+      <h4>E-Clinics</h4>
+      <p>Rural areas mein e-clinic setup karein — patients ko specialists se virtually connect karein.</p>
+      <a href="#" class="sol-link">Learn More →</a>
+    </div>
+    <div class="sol-card">
+      <div class="sol-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0D7A6E" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+      </div>
+      <h4>Mental Health</h4>
+      <p>Certified psychologists aur psychiatrists se confidential sessions karein. Aap akele nahi hain.</p>
+      <a href="#" class="sol-link">Learn More →</a>
     </div>
   </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <div class="section-inner">
-    <div class="section-tag">Credentials</div>
-    <h2 class="section-title">Professional Certification</h2>
-    <div class="gold-line"></div>
-    <p class="section-sub">Issued by an internationally recognized training institution with accreditation from AOSH, Exemplar Global, NASP, and OSH Academy.</p>
-    <div class="cert-card fade-in">
-      <div class="cert-header">
-        <div class="cert-icon">🏆</div>
+<!-- HOW IT WORKS -->
+<section class="section how-bg" id="how">
+  <div class="section-tag">Process</div>
+  <div class="section-title">Kaise Kaam Karta Hai?</div>
+  <div class="section-sub">Simple 4 steps mein apna consultation complete karein — bilkul asaan.</div>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h4>Account Banayein</h4>
+      <p>Free mein sign up karein. Sirf basic information chahiye — 2 minutes ka kaam.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h4>Problem Select Karein</h4>
+      <p>Apna symptom ya specialist choose karein — hamare paas 35+ specialties hain.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h4>Doctor Se Connect Hon</h4>
+      <p>60 seconds ke andar available doctor se chat, audio ya video call shuru ho jaata hai.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <h4>Prescription Milein</h4>
+      <p>Digital prescription paye aur medicine doorstep pe mangwaye. Sab kuch ek jagah.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section class="section" id="doctors" style="background: var(--offwhite);">
+  <div class="section-tag">Our Network</div>
+  <div class="section-title">Hamare Verified Doctors</div>
+  <div class="section-sub">7,500+ qualified aur experienced doctors jo aapki sehat ka khayal rakhte hain.</div>
+
+  <div class="doctors-grid">
+    <div class="doc-card">
+      <div class="doc-avatar">AK</div>
+      <div class="doc-name">Dr. Ayesha Khan</div>
+      <div class="doc-spec">General Physician</div>
+      <div class="doc-exp">6 years experience</div>
+      <div class="doc-rating"><span class="stars">★★★★★</span><span class="rating-num">4.9</span></div>
+    </div>
+    <div class="doc-card">
+      <div class="doc-avatar">FR</div>
+      <div class="doc-name">Dr. Faisal Raza</div>
+      <div class="doc-spec">Cardiologist</div>
+      <div class="doc-exp">12 years experience</div>
+      <div class="doc-rating"><span class="stars">★★★★★</span><span class="rating-num">4.8</span></div>
+    </div>
+    <div class="doc-card">
+      <div class="doc-avatar">SM</div>
+      <div class="doc-name">Dr. Sara Malik</div>
+      <div class="doc-spec">Dermatologist</div>
+      <div class="doc-exp">8 years experience</div>
+      <div class="doc-rating"><span class="stars">★★★★☆</span><span class="rating-num">4.6</span></div>
+    </div>
+    <div class="doc-card">
+      <div class="doc-avatar">ZA</div>
+      <div class="doc-name">Dr. Zainab Ali</div>
+      <div class="doc-spec">Gynecologist</div>
+      <div class="doc-exp">10 years experience</div>
+      <div class="doc-rating"><span class="stars">★★★★★</span><span class="rating-num">4.9</span></div>
+    </div>
+    <div class="doc-card">
+      <div class="doc-avatar">HI</div>
+      <div class="doc-name">Dr. Hamid Iqbal</div>
+      <div class="doc-spec">Psychiatrist</div>
+      <div class="doc-exp">9 years experience</div>
+      <div class="doc-rating"><span class="stars">★★★★★</span><span class="rating-num">4.7</span></div>
+    </div>
+    <div class="doc-card">
+      <div class="doc-avatar">NB</div>
+      <div class="doc-name">Dr. Nadia Baig</div>
+      <div class="doc-spec">Pediatrician</div>
+      <div class="doc-exp">7 years experience</div>
+      <div class="doc-rating"><span class="stars">★★★★☆</span><span class="rating-num">4.5</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section" id="features">
+  <div class="section-tag">Why Us</div>
+  <div class="section-title">SehatConnect Kyun Choose Karein?</div>
+  <div class="features-grid">
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="feature-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0D7A6E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
         <div>
-          <div class="cert-org">Qanmos Center of Excellence</div>
-          <div class="cert-name">Safety Officer – Certificate of Achievement</div>
-          <div style="margin-top:8px"><div class="status-badge">Active & Valid</div></div>
+          <h4>Instant Access — 60 Seconds Mein</h4>
+          <p>Koi waiting nahi, koi queue nahi. Available doctor se turant connect hon chahe raat ke 2 baj rahe hon.</p>
         </div>
       </div>
-      <div class="cert-meta">
-        <div class="cert-meta-item"><div class="cert-meta-label">Issue Date</div><div class="cert-meta-val">11 Feb 2026</div></div>
-        <div class="cert-meta-item"><div class="cert-meta-label">Valid Until</div><div class="cert-meta-val">Feb 2028</div></div>
-        <div class="cert-meta-item"><div class="cert-meta-label">Validity</div><div class="cert-meta-val">2 Years</div></div>
-        <div class="cert-meta-item"><div class="cert-meta-label">Training Session</div><div class="cert-meta-val">Jan 12, 2026</div></div>
-        <div class="cert-meta-item"><div class="cert-meta-label">Cert. Number</div><div class="cert-meta-val" style="color:var(--gold)">cb8ad09</div></div>
-        <div class="cert-meta-item"><div class="cert-meta-label">Verify At</div><div class="cert-meta-val" style="font-size:.78rem"><a href="https://www.qanmos.com/certificate-verification" target="_blank" style="color:var(--gold);text-decoration:none">qanmos.com</a></div></div>
+      <div class="feature-item">
+        <div class="feature-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0D7A6E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <h4>Complete Medical History Save</h4>
+          <p>Saari prescriptions, consultations aur doctor notes ek jagah saved — kabhi bhi access karein.</p>
+        </div>
       </div>
-      <div class="cert-desc">Successfully completed professional Safety Officer training covering occupational health, workplace safety management, hazard prevention, emergency response, and industrial safety standards. This program is approved and organized by Qanmos Training and accredited by <strong style="color:var(--gold)">AOSH · Exemplar Global · NASP · OSH Academy</strong>.</div>
-    </div>
-  </div>
-</section>
-
-<!-- TRANSCRIPT -->
-<section id="transcript">
-  <div class="section-inner">
-    <div class="section-tag">Academic Transcript</div>
-    <h2 class="section-title">Completed Safety Courses</h2>
-    <div class="gold-line"></div>
-    <p class="section-sub">Official transcript issued by Qanmos Trainings – The Career Makers. All 8 courses completed with PASS grade in English.</p>
-    <div class="courses-grid">
-      <div class="course-card fade-in"><div class="course-num">Course 105</div><div class="course-name">🔐 Permit To Work System</div><div class="course-desc">Understanding work authorization procedures and safe work practices in industrial environments.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
-      <div class="course-card fade-in"><div class="course-num">Course 109</div><div class="course-name">🔥 Fire Watcher</div><div class="course-desc">Fire prevention, monitoring, and emergency response strategies for workplace environments.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
-      <div class="course-card fade-in"><div class="course-num">Course 114</div><div class="course-name">👁️ Standby Man / Hole Watcher</div><div class="course-desc">Confined space monitoring and worker protection during hazardous operations.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
-      <div class="course-card fade-in"><div class="course-num">Course 115</div><div class="course-name">🧗 Work At Height</div><div class="course-desc">Fall protection systems and height safety procedures for elevated work environments.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
-      <div class="course-card fade-in"><div class="course-num">Course 118</div><div class="course-name">🕳️ Confined Space Entry</div><div class="course-desc">Safe entry procedures, atmospheric testing, and hazard control in confined spaces.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
-      <div class="course-card fade-in"><div class="course-num">Course 120</div><div class="course-name">🩺 First Aider</div><div class="course-desc">Emergency first aid response, CPR, and incident management in the workplace.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
-      <div class="course-card fade-in"><div class="course-num">Course 124</div><div class="course-name">☠️ H2S Safety</div><div class="course-desc">Hydrogen Sulfide hazard awareness, detection, and worker protection procedures.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
-      <div class="course-card fade-in"><div class="course-num">Course 126</div><div class="course-name">🚦 Flagman</div><div class="course-desc">Traffic control, workplace movement safety, and coordination of vehicle/pedestrian flow.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
-    </div>
-    <div class="transcript-summary">
-      <div class="ts-item"><div class="ts-num">160</div><div class="ts-label">Total Credits</div></div>
-      <div class="ts-item"><div class="ts-num">8</div><div class="ts-label">Courses Completed</div></div>
-      <div class="ts-item"><div class="ts-num">PASS</div><div class="ts-label">Final Result</div></div>
-      <div class="ts-item"><div class="ts-num">English</div><div class="ts-label">Assessment Language</div></div>
-      <div class="ts-item"><div class="ts-num">11/02/2026</div><div class="ts-label">Issue Date</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-inner">
-    <div class="section-tag">Expertise</div>
-    <h2 class="section-title">Core HSE Competencies</h2>
-    <div class="gold-line"></div>
-    <p class="section-sub">Comprehensive knowledge spanning workplace safety management, occupational health, and industrial safety disciplines.</p>
-    <div class="skills-grid">
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Workplace Safety Management</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Occupational Health & Safety</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Hazard Identification</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Risk Assessment</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Permit To Work System</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Fire Prevention & Protection</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Emergency Response Planning</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Incident Prevention</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">H2S Safety Awareness</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Confined Space Safety</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Work At Height Safety</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">First Aid Response</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Safety Documentation</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Toolbox Talks</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Site Safety Inspection</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Accident Investigation</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Corrective Action Planning</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Safety Compliance Monitoring</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Safety Reporting</span></div>
-      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Worker Safety Awareness</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-  <div class="section-inner">
-    <div class="section-tag">Education</div>
-    <h2 class="section-title">Academic Background</h2>
-    <div class="gold-line"></div>
-    <div class="edu-grid">
-      <div class="edu-card fade-in">
-        <div class="edu-year">2020 – 2022</div>
-        <div class="edu-school">🏫 Government High School</div>
-        <div class="edu-field">Matriculation – Computer Science</div>
-        <ul class="edu-points">
-          <li>Computer Fundamentals & Applications</li>
-          <li>Communication Skills Development</li>
-          <li>Technical Learning & Problem Solving</li>
-        </ul>
+      <div class="feature-item">
+        <div class="feature-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0D7A6E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <h4>Home Delivery — Labs & Medicine</h4>
+          <p>Test karwaye ghar pe, medicine mangwaye ghar pe. Hospital jaane ki zaroorat nahi.</p>
+        </div>
       </div>
-      <div class="edu-card fade-in">
-        <div class="edu-year">2022 – 2024</div>
-        <div class="edu-school">🎓 Government College Bhalwal</div>
-        <div class="edu-field">FA – Faculty of Arts</div>
-        <ul class="edu-points">
-          <li>Professional Communication</li>
-          <li>Documentation & Record Keeping</li>
-          <li>Professional Development Skills</li>
-        </ul>
+      <div class="feature-item">
+        <div class="feature-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0D7A6E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+          <h4>Affordable Plans</h4>
+          <p>Monthly subscription ya Pay-As-You-Go — apni zaroorat aur budget ke hisaab se plan choose karein.</p>
+        </div>
+      </div>
+    </div>
+    <div class="features-visual">
+      <div class="fv-icon">🩺</div>
+      <div class="fv-title">Pakistan's Largest Telehealth Network</div>
+      <div class="fv-text">Karachi se Gilgit tak — SehatConnect Pakistan ke har corner mein quality healthcare pahuncha raha hai.</div>
+      <div class="fv-stat">
+        <div class="fv-num">50+</div>
+        <div class="fv-label">Cities Covered Across Pakistan</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHY HIRE ME -->
-<section id="why">
-  <div class="section-inner">
-    <div class="section-tag">Value Proposition</div>
-    <h2 class="section-title">Why Hire Me?</h2>
-    <div class="gold-line"></div>
-    <p class="section-sub">I bring a combination of certified expertise, strong work ethic, and genuine commitment to workplace safety.</p>
-    <div class="why-grid">
-      <div class="why-card fade-in"><div class="why-icon-wrap">🏆</div><div class="why-title">Certified Safety Officer</div><div class="why-desc">Professionally trained and certified in workplace safety by an internationally accredited institution.</div></div>
-      <div class="why-card fade-in"><div class="why-icon-wrap">📚</div><div class="why-title">Multiple Safety Disciplines</div><div class="why-desc">Knowledge across 8 industrial safety domains covering PTW, fire, confined space, height, H2S, and more.</div></div>
-      <div class="why-card fade-in"><div class="why-icon-wrap">🛡️</div><div class="why-title">Safety-First Mindset</div><div class="why-desc">Strong commitment to worker protection and building a positive safety culture in the workplace.</div></div>
-      <div class="why-card fade-in"><div class="why-icon-wrap">⚠️</div><div class="why-title">Risk Management Awareness</div><div class="why-desc">Ability to proactively identify, assess, and control workplace hazards before incidents occur.</div></div>
-      <div class="why-card fade-in"><div class="why-icon-wrap">📋</div><div class="why-title">Professional Documentation</div><div class="why-desc">Capable of maintaining accurate safety records, incident reports, and compliance documentation.</div></div>
-      <div class="why-card fade-in"><div class="why-icon-wrap">⚡</div><div class="why-title">Fast Learner</div><div class="why-desc">Highly adaptable to new environments, regulations, and emerging safety standards and practices.</div></div>
-      <div class="why-card fade-in"><div class="why-icon-wrap">🤝</div><div class="why-title">Team Collaboration</div><div class="why-desc">Strong communication and teamwork abilities for effective coordination on industrial sites.</div></div>
-      <div class="why-card fade-in"><div class="why-icon-wrap">📈</div><div class="why-title">Continuous Improvement</div><div class="why-desc">Committed to ongoing professional development and staying current with HSE best practices.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-  <div class="section-inner">
-    <div class="section-tag">Credentials Gallery</div>
-    <h2 class="section-title">Certificates & Documents</h2>
-    <div class="gold-line"></div>
-    <p class="section-sub">Official certificates and academic records from Qanmos Center of Excellence. Click to view full size.</p>
-    <div class="gallery-grid">
-      <div class="gallery-card fade-in" onclick="openLightbox('cert')">
-        <div class="gallery-img" style="background:linear-gradient(135deg,#0A2540,#1a3a5c);color:var(--gold);font-size:1rem;flex-direction:column;gap:10px;display:flex">
-          <div style="font-size:3rem">🏆</div>
-          <div style="font-weight:700;letter-spacing:1px">CERTIFICATE OF ACHIEVEMENT</div>
-          <div style="font-size:.8rem;opacity:.7">Qanmos Center of Excellence</div>
-        </div>
-        <div class="gallery-info">
-          <div class="gallery-type">Safety Certification</div>
-          <div class="gallery-name">Safety Officer Certificate</div>
-          <div style="font-size:.8rem;color:#666">Issued: 11 Feb 2026 · Valid 2 Years · Cert# cb8ad09</div>
-          <div class="gallery-actions">
-            <button class="ga-btn ga-view" onclick="event.stopPropagation();openLightbox('cert')">👁 View</button>
-            <button class="ga-btn ga-dl">⬇ Download</button>
-          </div>
-        </div>
-      </div>
-      <div class="gallery-card fade-in" onclick="openLightbox('transcript')">
-        <div class="gallery-img" style="background:linear-gradient(135deg,#f8f9fa,#e8e8e8);color:#0A2540;font-size:1rem;flex-direction:column;gap:8px;display:flex;padding:20px">
-          <div style="font-size:2rem">📋</div>
-          <div style="font-weight:800;font-size:.95rem;letter-spacing:.5px">TRANSCRIPT OF ACADEMIC RECORD</div>
-          <div style="font-size:.75rem;color:#666">Qanmos Trainings – The Career Makers</div>
-          <div style="font-size:.75rem;margin-top:6px;color:#0A2540;line-height:1.6">8 Courses · 160 Credits · All PASS</div>
-        </div>
-        <div class="gallery-info">
-          <div class="gallery-type">Academic Transcript</div>
-          <div class="gallery-name">Training Completion Transcript</div>
-          <div style="font-size:.8rem;color:#666">Issued: 11 Feb 2026 · 8 Courses · 160 Total Credits</div>
-          <div class="gallery-actions">
-            <button class="ga-btn ga-view" onclick="event.stopPropagation();openLightbox('transcript')">👁 View</button>
-            <button class="ga-btn ga-dl">⬇ Download</button>
-          </div>
-        </div>
-      </div>
-      <div class="gallery-card fade-in">
-        <div class="gallery-img" style="background:linear-gradient(135deg,#1a3a5c,#0d2035);color:rgba(255,255,255,.8);font-size:.85rem;flex-direction:column;gap:8px;display:flex;padding:20px">
-          <div style="font-size:2.5rem">🎯</div>
-          <div style="font-weight:700;color:var(--gold)">8 PROFESSIONAL COURSES</div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:.72rem;text-align:left;margin-top:6px">
-            <span>✅ PTW System</span><span>✅ Fire Watcher</span>
-            <span>✅ Hole Watcher</span><span>✅ Work at Height</span>
-            <span>✅ Confined Space</span><span>✅ First Aider</span>
-            <span>✅ H2S Safety</span><span>✅ Flagman</span>
-          </div>
-        </div>
-        <div class="gallery-info">
-          <div class="gallery-type">Training Record</div>
-          <div class="gallery-name">Professional Safety Training Courses</div>
-          <div style="font-size:.8rem;color:#666">All 8 Courses · 20 Credits Each · Result: PASS</div>
-          <div class="gallery-actions">
-            <button class="ga-btn ga-view">👁 View</button>
-            <button class="ga-btn ga-dl">⬇ Download</button>
-          </div>
+<!-- TESTIMONIALS -->
+<section class="section testimonials-bg">
+  <div class="section-tag">Reviews</div>
+  <div class="section-title">Hamare Patients Kehte Hain</div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Raat ke 2 baje mere bachche ko tez bukhar tha. SehatConnect pe doctor se 1 minute mein connect hua — prescription mil gayi. Kamaal ki service hai.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">TK</div>
+        <div>
+          <div class="testi-name">Tariq Khan</div>
+          <div class="testi-role">Parent, Lahore</div>
         </div>
       </div>
     </div>
-    <div style="margin-top:28px;background:rgba(10,37,64,0.05);border:1px solid rgba(10,37,64,0.1);border-radius:12px;padding:20px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
-      <div style="font-size:1.5rem">🔍</div>
-      <div>
-        <div style="font-weight:700;color:var(--navy);margin-bottom:4px">Certificate Verification</div>
-        <div style="font-size:.85rem;color:#666">Verify authenticity of Ali Hassan's Safety Officer certificate at: <a href="https://www.qanmos.com/certificate-verification" target="_blank" style="color:var(--gold);font-weight:600">www.qanmos.com/certificate-verification</a> — Certificate Number: <strong>cb8ad09</strong></div>
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Corporate plan liya apni company ke liye. Employees ka productivity bada, aur sick leaves drastically kam ho gayi. Best investment tha.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SA</div>
+        <div>
+          <div class="testi-name">Sana Arshad</div>
+          <div class="testi-role">HR Manager, Karachi</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <p class="testi-text">Mental health consultation ghar baithe, confidentially karni thi. SehatConnect ne easy aur comfortable bana diya. Doctors bohot professional hain.</p>
+      <div class="testi-author">
+        <div class="testi-avatar">FM</div>
+        <div>
+          <div class="testi-name">Fatima Mirza</div>
+          <div class="testi-role">Software Engineer, Islamabad</div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-inner">
-    <div class="section-tag" style="background:rgba(212,175,55,0.15);color:var(--gold)">Get In Touch</div>
-    <h2 class="section-title">Contact Me</h2>
-    <div class="gold-line"></div>
-    <p class="section-sub">Available for employment opportunities in construction, oil & gas, manufacturing, industrial, and engineering sectors.</p>
-    <div class="contact-grid">
-      <div>
-        <div class="contact-info">
-          <div class="ci-card"><div class="ci-icon">📞</div><div><div class="ci-label">Phone / WhatsApp</div><div class="ci-val"><a href="tel:03261238395">0326-1238395</a></div></div></div>
-          <div class="ci-card"><div class="ci-icon">✉️</div><div><div class="ci-label">Email Address</div><div class="ci-val"><a href="mailto:alihassan0786u@gmail.com">alihassan0786u@gmail.com</a></div></div></div>
-          <div class="ci-card"><div class="ci-icon">📍</div><div><div class="ci-label">Location</div><div class="ci-val">Bhalwal, Sargodha, Punjab, Pakistan</div></div></div>
-          <div class="ci-card"><div class="ci-icon">💼</div><div><div class="ci-label">Open To</div><div class="ci-val">Full-time · Contract · Site Roles</div></div></div>
-        </div>
-        <div class="quick-btns" style="margin-top:24px">
-          <a href="https://wa.me/923261238395?text=Hello%20Ali%20Hassan%2C%20I%20came%20across%20your%20HSE%20portfolio%20and%20would%20like%20to%20discuss%20a%20safety%20officer%20opportunity." target="_blank" class="qb qb-wa">💬 WhatsApp</a>
-          <a href="mailto:alihassan0786u@gmail.com" class="qb qb-email">✉️ Email Me</a>
-          <a href="tel:03261238395" class="qb qb-call">📞 Call Now</a>
-        </div>
-      </div>
-      <div>
-        <div class="contact-form">
-          <div class="form-row">
-            <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full Name" id="fname"></div>
-            <div class="form-group"><label>Your Email</label><input type="email" placeholder="email@example.com" id="femail"></div>
-          </div>
-          <div class="form-group"><label>Company / Organization</label><input type="text" placeholder="Company Name" id="fcompany"></div>
-          <div class="form-group"><label>Subject</label>
-            <select id="fsubject" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 16px;color:var(--white);font-size:.9rem;outline:none">
-              <option value="" style="background:#0A2540">Select Subject</option>
-              <option value="job" style="background:#0A2540">Job / Employment Opportunity</option>
-              <option value="contract" style="background:#0A2540">Contract / Project Work</option>
-              <option value="verify" style="background:#0A2540">Certificate Verification</option>
-              <option value="other" style="background:#0A2540">Other Inquiry</option>
-            </select>
-          </div>
-          <div class="form-group"><label>Message</label><textarea placeholder="Your message here..." id="fmessage"></textarea></div>
-          <button class="submit-btn" onclick="submitForm()">🚀 Send Message</button>
-          <div class="form-success" id="formSuccess">✅ Message sent! Ali Hassan will respond within 24 hours.</div>
-        </div>
-      </div>
-    </div>
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <h2>Aaj Hi Apni Sehat Ka Khayal Karein</h2>
+  <p>Free account banayein aur pehli consultation try karein. Koi commitment nahi, koi hidden charges nahi.</p>
+  <div class="cta-btns">
+    <a href="#" class="btn-white">Free Sign Up Karein</a>
+    <a href="#" class="btn-ghost">App Download Karein</a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">ALI HASSAN</div>
-  <div class="footer-role">Certified Safety Officer | HSE Professional | Pakistan</div>
-  <div class="footer-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#certifications">Certificates</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+  <div class="footer-grid">
+    <div>
+      <a href="#" class="footer-logo">
+        <span class="footer-logo-text">Sehat<span>Connect</span></span>
+      </a>
+      <p>Pakistan ka trusted telemedicine platform — quality healthcare sabke liye accessible banane ki mission pe.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Solutions</h5>
+      <ul>
+        <li><a href="#">Consumer Care</a></li>
+        <li><a href="#">Corporate Care</a></li>
+        <li><a href="#">E-Clinics</a></li>
+        <li><a href="#">Mental Health</a></li>
+        <li><a href="#">Home Healthcare</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Support</h5>
+      <ul>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">HCP Network</a></li>
+      </ul>
+    </div>
   </div>
-  <div class="footer-links">
-    <a href="https://wa.me/923261238395" target="_blank">💬 WhatsApp</a>
-    <a href="mailto:alihassan0786u@gmail.com">✉️ Email</a>
-    <a href="tel:03261238395">📞 Call</a>
+  <div class="footer-bottom">
+    <p>© 2026 SehatConnect. All rights reserved.</p>
+    <p>Karachi, Pakistan | support@sehatconnect.pk</p>
   </div>
-  <div class="footer-quote">"Safety Is Not A Choice, It Is A Responsibility."</div>
-  <div class="footer-copy">© 2026 Ali Hassan. All rights reserved. | Safety Officer Pakistan | HSE Professional</div>
 </footer>
 
-<!-- LIGHTBOX -->
-<div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <div class="lb-inner" onclick="event.stopPropagation()">
-    <button class="lb-close" onclick="closeLightbox()">✕</button>
-    <div id="lbContent"></div>
-  </div>
-</div>
-
-<script>
-  // NAV TOGGLE
-  function toggleNav(){
-    document.getElementById('navLinks').classList.toggle('open');
-  }
-
-  // SMOOTH NAV CLOSE
-  document.querySelectorAll('.nav-links a').forEach(a=>{
-    a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open'));
-  });
-
-  // FADE IN OBSERVER
-  const observer = new IntersectionObserver(entries=>{
-    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible')}});
-  },{threshold:.12});
-  document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
-
-  // LIGHTBOX
-  function openLightbox(type){
-    const lb = document.getElementById('lightbox');
-    const content = document.getElementById('lbContent');
-    if(type==='cert'){
-      content.innerHTML=`<div style="background:linear-gradient(135deg,#0A2540,#1a3a5c);border-radius:12px;padding:48px;text-align:center;color:#fff;border:2px solid #D4AF37">
-        <div style="font-size:1rem;color:#D4AF37;letter-spacing:3px;margin-bottom:8px">QANMOS CENTER OF EXCELLENCE</div>
-        <div style="font-size:2rem;font-weight:800;color:#D4AF37;margin-bottom:4px">CERTIFICATE</div>
-        <div style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:24px">OF ACHIEVEMENT</div>
-        <div style="font-size:.9rem;color:rgba(255,255,255,.7);margin-bottom:8px">In recognition of the successful completion of</div>
-        <div style="font-size:2.2rem;font-weight:800;color:#fff;margin-bottom:4px">ALI HASSAN</div>
-        <div style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:8px">has successfully completed training in</div>
-        <div style="font-size:1.5rem;font-weight:700;color:#D4AF37;margin-bottom:24px">Safety Officer</div>
-        <div style="display:flex;justify-content:center;gap:32px;flex-wrap:wrap;font-size:.82rem;color:rgba(255,255,255,.6)">
-          <span>Date: 11/02/2026</span>
-          <span>Cert# cb8ad09</span>
-          <span>Valid: 2 Years</span>
-        </div>
-        <div style="margin-top:20px;font-size:.75rem;color:rgba(255,255,255,.4)">Accredited by: AOSH · Exemplar Global · NASP · OSH Academy</div>
-      </div>`;
-    } else {
-      content.innerHTML=`<div style="background:#fff;border-radius:12px;padding:36px;color:#0A2540">
-        <div style="text-align:right;margin-bottom:16px;font-weight:800;color:#0A2540;letter-spacing:1px">QANMOS TRAININGS<br><small style="font-weight:400;color:#666">THE CAREER MAKERS</small></div>
-        <div style="font-size:1.3rem;font-weight:800;margin-bottom:20px;text-align:center">TRANSCRIPT OF ACADEMIC RECORD</div>
-        <div style="font-weight:700;margin-bottom:8px">ALI HASSAN</div>
-        <div style="font-size:.83rem;color:#555;margin-bottom:20px;line-height:1.6">Ali Hassan has successfully completed the required professional development certificate programs and courses listed below.</div>
-        <table style="width:100%;border-collapse:collapse;font-size:.85rem">
-          <tr style="background:#0A2540;color:#D4AF37"><th style="padding:8px 12px;text-align:left">TITLE</th><th style="padding:8px 12px">CREDIT</th><th style="padding:8px 12px">GRADE</th></tr>
-          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">105 Permit To Work System</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
-          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">109 Fire Watcher</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
-          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">114 Stand By Man/Hole Watcher</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
-          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">115 Work At Height</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
-          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">118 Confined Space Entry</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
-          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">120 First Aider</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
-          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">124 H2S Safety</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
-          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">126 Flagman</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
-        </table>
-        <div style="margin-top:16px;font-size:.82rem;color:#555">TOTAL CREDITS: <strong>160</strong> | GRADING: PASS/FAIL | Language: English | Issued: 11 February 2026</div>
-      </div>`;
-    }
-    lb.classList.add('active');
-  }
-  function closeLightbox(){document.getElementById('lightbox').classList.remove('active')}
-
-  // CONTACT FORM
-  function submitForm(){
-    const n=document.getElementById('fname').value;
-    const e=document.getElementById('femail').value;
-    const m=document.getElementById('fmessage').value;
-    if(!n||!e||!m){alert('Please fill in your name, email, and message.');return;}
-    const s=document.getElementById('formSuccess');
-    s.style.display='block';
-    document.getElementById('fname').value='';
-    document.getElementById('femail').value='';
-    document.getElementById('fcompany').value='';
-    document.getElementById('fmessage').value='';
-    setTimeout(()=>s.style.display='none',5000);
-  }
-</script>
 </body>
 </html>
