@@ -1,1075 +1,703 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Kashi Beauty Salon | Premium Beauty & Bridal Studio Lahore</title>
-<meta name="description" content="Kashi Beauty Salon – Lahore's most luxurious beauty salon offering bridal makeup, hair styling, skin care & premium beauty services in Johar Town."/>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ali Hassan | Certified Safety Officer | HSE Professional Pakistan</title>
+<meta name="description" content="Ali Hassan - Certified Safety Officer and HSE Professional based in Bhalwal, Sargodha, Punjab, Pakistan. Expert in workplace safety, risk assessment, and occupational health management.">
+<meta name="keywords" content="Safety Officer Pakistan, HSE Professional, Occupational Health and Safety, Workplace Safety Officer, Safety Management, HSE Specialist, Industrial Safety Officer, Risk Assessment Professional, Safety Compliance Officer">
 <style>
-*{margin:0;padding:0;box-sizing:border-box;}
-:root{
-  --rose:#C9956C;
-  --rose2:#E8B89A;
-  --rose3:#F5D5C0;
-  --cream:#FAF6F1;
-  --cream2:#F2EBE3;
-  --dark:#1C1410;
-  --mid:#3D2B1F;
-  --muted:#8B6E5A;
-  --white:#FFFFFF;
-  --serif:'Playfair Display',serif;
-  --sans:'DM Sans',sans-serif;
-}
-html{scroll-behavior:smooth;}
-body{background:var(--cream);color:var(--dark);font-family:var(--sans);overflow-x:hidden;}
-::-webkit-scrollbar{width:3px;}
-::-webkit-scrollbar-track{background:var(--cream);}
-::-webkit-scrollbar-thumb{background:var(--rose);border-radius:2px;}
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --navy:#0A2540;
+    --gold:#D4AF37;
+    --white:#FFFFFF;
+    --light:#F8F9FA;
+    --navy2:#0d2f50;
+    --gold2:#c9a227;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--white);color:var(--navy);overflow-x:hidden}
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:22px 70px;display:flex;align-items:center;justify-content:space-between;transition:all .4s;}
-nav.scrolled{background:rgba(250,246,241,.97);backdrop-filter:blur(20px);padding:16px 70px;box-shadow:0 1px 30px rgba(201,149,108,.12);}
-.logo{font-family:var(--serif);font-size:22px;font-weight:400;letter-spacing:2px;color:var(--dark);}
-.logo span{color:var(--rose);}
-.nav-links{display:flex;gap:38px;list-style:none;}
-.nav-links a{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--mid);text-decoration:none;transition:.3s;font-weight:500;}
-.nav-links a:hover{color:var(--rose);}
-.nav-cta{background:var(--rose);color:var(--white);padding:11px 30px;font-size:10px;letter-spacing:2.5px;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;font-family:var(--sans);text-decoration:none;transition:.3s;}
-.nav-cta:hover{background:var(--mid);}
-.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
-.hamburger span{width:22px;height:1.5px;background:var(--dark);display:block;}
+  /* NAV */
+  nav{position:fixed;top:0;width:100%;z-index:1000;background:rgba(10,37,64,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(212,175,55,0.2);padding:0 5%}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:65px}
+  .logo{font-size:1.2rem;font-weight:700;color:var(--gold);letter-spacing:1px}
+  .logo span{color:var(--white)}
+  .nav-links{display:flex;gap:28px;list-style:none}
+  .nav-links a{color:rgba(255,255,255,0.85);text-decoration:none;font-size:.88rem;font-weight:500;letter-spacing:.5px;transition:.3s;text-transform:uppercase}
+  .nav-links a:hover{color:var(--gold)}
+  .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+  .hamburger span{width:24px;height:2px;background:var(--white);border-radius:2px;transition:.3s}
 
-/* HERO */
-#hero{min-height:100vh;display:flex;align-items:center;background:var(--cream);overflow:hidden;position:relative;}
-.hero-left{flex:1;padding:140px 70px 100px;position:relative;z-index:2;}
-.hero-right{width:45%;height:100vh;position:relative;flex-shrink:0;}
-.hero-right-bg{position:absolute;inset:0;background:linear-gradient(135deg,#E8C5A8,#D4A57A,#C9956C);clip-path:polygon(12% 0,100% 0,100% 100%,0% 100%);}
-.hero-right-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,20,16,.15),transparent);clip-path:polygon(12% 0,100% 0,100% 100%,0% 100%);}
-.hero-pattern{position:absolute;inset:0;opacity:.07;clip-path:polygon(12% 0,100% 0,100% 100%,0% 100%);background-image:repeating-linear-gradient(45deg,var(--white) 0,var(--white) 1px,transparent 0,transparent 50%);background-size:20px 20px;}
-.hero-img-text{position:absolute;bottom:60px;left:30%;transform:translateX(-50%);text-align:center;z-index:2;}
-.hero-img-text span{font-family:var(--serif);font-size:80px;color:rgba(255,255,255,.15);font-style:italic;}
-.hero-eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:28px;}
-.hero-eyebrow span{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--rose);font-weight:500;}
-.hero-eyebrow::before,.hero-eyebrow::after{content:'';flex:0 0 40px;height:1px;background:var(--rose);}
-.hero-title{font-family:var(--serif);font-size:clamp(44px,5.5vw,78px);font-weight:400;line-height:1.1;color:var(--dark);margin-bottom:24px;}
-.hero-title em{font-style:italic;color:var(--rose);}
-.hero-sub{font-size:13px;line-height:2;color:var(--muted);margin-bottom:48px;max-width:420px;font-weight:300;}
-.hero-btns{display:flex;gap:16px;flex-wrap:wrap;}
-.btn-primary{background:var(--rose);color:var(--white);padding:16px 38px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;font-family:var(--sans);text-decoration:none;display:inline-block;transition:.3s;}
-.btn-primary:hover{background:var(--mid);transform:translateY(-2px);}
-.btn-ghost{border:1.5px solid var(--rose);color:var(--rose);padding:15px 38px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;cursor:pointer;font-family:var(--sans);text-decoration:none;display:inline-block;transition:.3s;background:transparent;}
-.btn-ghost:hover{background:var(--rose);color:var(--white);}
-.hero-stats{display:flex;gap:48px;margin-top:60px;padding-top:40px;border-top:1px solid rgba(201,149,108,.2);}
-.hero-stat-num{font-family:var(--serif);font-size:38px;font-weight:400;color:var(--rose);}
-.hero-stat-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:4px;}
-.scroll-hint{position:absolute;bottom:36px;left:70px;display:flex;align-items:center;gap:12px;z-index:2;}
-.scroll-hint span{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--muted);}
-.scroll-dot{width:6px;height:6px;border-radius:50%;background:var(--rose);animation:pulse2 2s ease infinite;}
+  /* HERO */
+  #home{min-height:100vh;background:linear-gradient(135deg,var(--navy) 0%,#0d2f50 50%,#162d45 100%);position:relative;display:flex;align-items:center;overflow:hidden}
+  #home::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
+  .hero-container{width:90%;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding-top:65px}
+  .hero-text{z-index:1}
+  .hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(212,175,55,0.15);border:1px solid rgba(212,175,55,0.4);color:var(--gold);padding:6px 16px;border-radius:50px;font-size:.8rem;font-weight:600;letter-spacing:1px;margin-bottom:20px;text-transform:uppercase}
+  .hero-badge::before{content:'🛡️';font-size:.9rem}
+  h1.name{font-size:clamp(2.5rem,5vw,4rem);font-weight:800;color:var(--white);line-height:1.1;letter-spacing:2px}
+  h1.name span{color:var(--gold)}
+  .hero-title{font-size:clamp(.9rem,2vw,1.1rem);color:rgba(212,175,55,0.9);font-weight:600;letter-spacing:2px;text-transform:uppercase;margin:12px 0 20px}
+  .hero-desc{color:rgba(255,255,255,0.75);line-height:1.8;font-size:.95rem;max-width:480px;margin-bottom:36px}
+  .hero-btns{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
+  .btn-primary{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:13px 28px;border-radius:6px;font-weight:700;text-decoration:none;font-size:.9rem;transition:.3s;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(212,175,55,0.4)}
+  .btn-secondary{background:transparent;color:var(--white);padding:12px 28px;border-radius:6px;font-weight:600;text-decoration:none;font-size:.9rem;border:2px solid rgba(255,255,255,0.3);transition:.3s;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+  .btn-secondary:hover{border-color:var(--gold);color:var(--gold);transform:translateY(-2px)}
+  .btn-outline{background:transparent;color:var(--gold);padding:12px 28px;border-radius:6px;font-weight:600;text-decoration:none;font-size:.9rem;border:2px solid var(--gold);transition:.3s;cursor:pointer}
+  .btn-outline:hover{background:var(--gold);color:var(--navy);transform:translateY(-2px)}
+  .hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .stat-card{background:rgba(255,255,255,0.06);border:1px solid rgba(212,175,55,0.2);border-radius:10px;padding:16px 12px;text-align:center;backdrop-filter:blur(10px);transition:.3s}
+  .stat-card:hover{background:rgba(212,175,55,0.1);border-color:var(--gold)}
+  .stat-num{font-size:1.8rem;font-weight:800;color:var(--gold);display:block}
+  .stat-label{font-size:.7rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:.5px;margin-top:4px}
+  .hero-img-wrap{display:flex;justify-content:center;align-items:center;z-index:1}
+  .hero-img-ring{width:320px;height:320px;border-radius:50%;background:linear-gradient(135deg,var(--gold),transparent);padding:3px;position:relative}
+  .hero-img-inner{width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,#1a3a5c,#0d2035);display:flex;align-items:center;justify-content:center;font-size:5rem;overflow:hidden;position:relative}
+  .hero-img-inner img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+  .floating-badge{position:absolute;background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:8px 16px;border-radius:50px;font-size:.75rem;font-weight:700;white-space:nowrap;box-shadow:0 4px 20px rgba(212,175,55,0.4)}
+  .fb1{bottom:-10px;left:-20px}
+  .fb2{top:10px;right:-30px}
 
-/* SECTION COMMONS */
-.sec-wrap{padding:110px 70px;}
-.sec-head{margin-bottom:64px;}
-.sec-head.center{text-align:center;}
-.sec-tag{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--rose);font-weight:500;display:flex;align-items:center;gap:12px;margin-bottom:16px;}
-.sec-head.center .sec-tag{justify-content:center;}
-.sec-tag::before{content:'';width:30px;height:1px;background:var(--rose);}
-.sec-head.center .sec-tag::before{display:none;}
-.sec-head.center .sec-tag::after{display:none;}
-.sec-tag::after{content:'';width:30px;height:1px;background:var(--rose);}
-.sec-head.center .sec-tag{display:inline-flex;}
-.sec-title{font-family:var(--serif);font-size:clamp(30px,3.5vw,52px);font-weight:400;line-height:1.2;color:var(--dark);}
-.sec-title em{font-style:italic;color:var(--rose);}
-.sec-desc{font-size:13px;line-height:2;color:var(--muted);margin-top:16px;max-width:520px;}
-.sec-head.center .sec-desc{margin:16px auto 0;}
+  /* SECTIONS */
+  section{padding:90px 5%}
+  .section-inner{max-width:1200px;margin:0 auto}
+  .section-tag{display:inline-block;background:rgba(212,175,55,0.12);color:var(--gold);padding:5px 16px;border-radius:50px;font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
+  .section-title{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:800;color:var(--navy);margin-bottom:8px}
+  .section-sub{color:#666;font-size:.95rem;line-height:1.7;max-width:600px;margin-bottom:48px}
+  .gold-line{width:60px;height:3px;background:linear-gradient(90deg,var(--gold),transparent);border-radius:3px;margin:12px 0 16px}
 
-/* TRUST BAR */
-#trust{background:var(--dark);padding:50px 70px;}
-.trust-flex{display:flex;justify-content:space-around;align-items:center;flex-wrap:wrap;gap:30px;max-width:1100px;margin:0 auto;}
-.trust-item{text-align:center;}
-.trust-num{font-family:var(--serif);font-size:44px;font-weight:400;color:var(--rose2);line-height:1;}
-.trust-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:8px;}
-.trust-sep{width:1px;height:50px;background:rgba(201,149,108,.2);}
+  /* ABOUT */
+  #about{background:var(--light)}
+  .about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:60px;align-items:start}
+  .about-left{background:var(--navy);border-radius:16px;padding:40px 32px;color:var(--white);position:relative;overflow:hidden}
+  .about-left::before{content:'';position:absolute;top:-40px;right:-40px;width:150px;height:150px;background:rgba(212,175,55,0.08);border-radius:50%}
+  .about-avatar{width:100px;height:100px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold2));display:flex;align-items:center;justify-content:center;font-size:2.5rem;margin:0 auto 20px;border:3px solid rgba(212,175,55,0.3)}
+  .about-name{text-align:center;font-size:1.3rem;font-weight:700;color:var(--gold);margin-bottom:4px}
+  .about-role{text-align:center;color:rgba(255,255,255,0.6);font-size:.85rem;margin-bottom:24px}
+  .info-row{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.08)}
+  .info-row:last-child{border:none}
+  .info-icon{width:32px;height:32px;background:rgba(212,175,55,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0}
+  .info-label{font-size:.7rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:.5px}
+  .info-val{font-size:.88rem;color:var(--white);font-weight:500}
+  .about-right p{color:#444;line-height:1.9;margin-bottom:16px;font-size:.95rem}
+  .highlight-box{background:var(--navy);border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:20px 24px;margin-top:24px}
+  .highlight-box p{color:rgba(255,255,255,0.85);font-size:.9rem;line-height:1.7;margin:0;font-style:italic}
 
-/* SERVICES */
-#services{background:var(--white);}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--cream2);max-width:1200px;margin:0 auto;}
-.svc-card{background:var(--white);padding:52px 44px;position:relative;overflow:hidden;transition:.4s;cursor:pointer;}
-.svc-card::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--rose);transition:.4s;}
-.svc-card:hover{background:var(--cream);}
-.svc-card:hover::after{width:100%;}
-.svc-icon-wrap{width:52px;height:52px;background:var(--cream2);display:flex;align-items:center;justify-content:center;margin-bottom:28px;font-size:22px;}
-.svc-name{font-family:var(--serif);font-size:22px;font-weight:400;color:var(--dark);margin-bottom:12px;}
-.svc-desc{font-size:12px;line-height:2;color:var(--muted);margin-bottom:28px;}
-.svc-arrow{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--rose);font-weight:500;}
-.svc-num{position:absolute;top:20px;right:28px;font-family:var(--serif);font-size:56px;font-weight:400;color:rgba(201,149,108,.07);line-height:1;}
+  /* CERTIFICATIONS */
+  .cert-card{background:var(--navy);border-radius:16px;padding:36px;color:var(--white);position:relative;overflow:hidden;border:1px solid rgba(212,175,55,0.2)}
+  .cert-card::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:linear-gradient(135deg,rgba(212,175,55,0.1),transparent);border-radius:0 16px 0 100%}
+  .cert-header{display:flex;align-items:center;gap:20px;margin-bottom:28px}
+  .cert-icon{width:64px;height:64px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;flex-shrink:0}
+  .cert-org{font-size:.8rem;color:var(--gold);text-transform:uppercase;letter-spacing:1px;font-weight:600}
+  .cert-name{font-size:1.4rem;font-weight:700;color:var(--white)}
+  .cert-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:24px}
+  .cert-meta-item{background:rgba(255,255,255,0.05);border-radius:10px;padding:14px;text-align:center}
+  .cert-meta-label{font-size:.7rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:.5px;margin-bottom:4px}
+  .cert-meta-val{font-size:.95rem;font-weight:600;color:var(--white)}
+  .status-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.4);color:#4ade80;padding:5px 14px;border-radius:50px;font-size:.78rem;font-weight:600}
+  .status-badge::before{content:'';width:7px;height:7px;background:#4ade80;border-radius:50%;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.4}}
+  .cert-desc{color:rgba(255,255,255,0.7);line-height:1.7;font-size:.9rem;margin-top:16px}
+  .cert-number{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:.82rem;color:rgba(255,255,255,0.4)}
+  .cert-number span{color:var(--gold);font-weight:600}
 
-/* FEATURED SPLIT */
-#featured{background:var(--cream);}
-.featured-grid{display:grid;grid-template-columns:1fr 1fr;gap:0;max-width:1300px;margin:0 auto;}
-.feat-left{padding:80px 70px;display:flex;flex-direction:column;justify-content:center;}
-.feat-right{position:relative;min-height:560px;overflow:hidden;}
-.feat-right-bg{position:absolute;inset:0;background:linear-gradient(160deg,#E8C5A8 0%,#C9956C 60%,#A0704A 100%);}
-.feat-right-pattern{position:absolute;inset:0;opacity:.08;background-image:radial-gradient(circle,var(--white) 1px,transparent 1px);background-size:24px 24px;}
-.feat-right-content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:50px;}
-.feat-right-content .big{font-family:var(--serif);font-size:120px;color:rgba(255,255,255,.12);font-style:italic;line-height:1;}
-.feat-right-content p{font-family:var(--serif);font-size:22px;color:rgba(255,255,255,.85);font-style:italic;margin-top:-20px;}
-.feat-list{margin:30px 0 40px;}
-.feat-item{display:flex;align-items:center;gap:16px;padding:16px 0;border-bottom:1px solid rgba(201,149,108,.15);}
-.feat-item:last-child{border-bottom:none;}
-.feat-dot{width:8px;height:8px;border-radius:50%;background:var(--rose);flex-shrink:0;}
-.feat-item span{font-size:13px;color:var(--mid);font-weight:400;}
+  /* TRANSCRIPT */
+  #transcript{background:var(--light)}
+  .courses-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+  .course-card{background:var(--white);border-radius:12px;padding:24px;border:1px solid #e8e8e8;transition:.3s;position:relative;overflow:hidden}
+  .course-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background:linear-gradient(180deg,var(--gold),var(--gold2))}
+  .course-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(10,37,64,0.12);border-color:var(--gold)}
+  .course-num{font-size:.75rem;color:var(--gold);font-weight:700;letter-spacing:1px;margin-bottom:8px}
+  .course-name{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+  .course-desc{font-size:.83rem;color:#666;line-height:1.6;margin-bottom:16px}
+  .course-footer{display:flex;justify-content:space-between;align-items:center}
+  .credit-badge{background:rgba(10,37,64,0.06);color:var(--navy);padding:4px 12px;border-radius:50px;font-size:.75rem;font-weight:700}
+  .pass-badge{background:rgba(34,197,94,0.1);color:#16a34a;padding:4px 12px;border-radius:50px;font-size:.75rem;font-weight:700}
+  .transcript-summary{background:var(--navy);border-radius:16px;padding:32px;margin-top:32px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+  .ts-item{text-align:center}
+  .ts-num{font-size:2rem;font-weight:800;color:var(--gold)}
+  .ts-label{font-size:.78rem;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:.5px}
 
-/* WHY */
-#why{background:var(--dark);}
-#why .sec-title{color:var(--white);}
-#why .sec-desc{color:rgba(255,255,255,.5);}
-#why .sec-tag{color:var(--rose2);}
-#why .sec-tag::before,#why .sec-tag::after{background:var(--rose2);}
-.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.06);margin-top:20px;}
-.why-card{background:var(--dark);padding:44px 36px;transition:.3s;}
-.why-card:hover{background:rgba(201,149,108,.08);}
-.why-icon{font-size:28px;margin-bottom:22px;}
-.why-title{font-family:var(--serif);font-size:19px;font-weight:400;color:var(--white);margin-bottom:12px;}
-.why-text{font-size:11px;line-height:2;color:rgba(255,255,255,.45);}
+  /* SKILLS */
+  .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+  .skill-item{background:var(--white);border:1px solid #e8e8e8;border-radius:10px;padding:16px 18px;display:flex;align-items:center;gap:12px;transition:.3s;cursor:default}
+  .skill-item:hover{background:var(--navy);color:var(--white);border-color:var(--navy);transform:translateY(-2px);box-shadow:0 6px 20px rgba(10,37,64,0.15)}
+  .skill-item:hover .skill-dot{background:var(--gold)}
+  .skill-dot{width:8px;height:8px;background:var(--navy);border-radius:50%;flex-shrink:0}
+  .skill-text{font-size:.85rem;font-weight:500}
 
-/* BRIDAL */
-#bridal{background:var(--cream2);padding:0;}
-.bridal-outer{display:grid;grid-template-columns:1fr 1fr;}
-.bridal-visual{background:linear-gradient(145deg,#D4A57A,#C9956C,#9A6A42);min-height:600px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
-.bridal-visual::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 30% 70%,rgba(255,255,255,.1),transparent 50%);}
-.bridal-visual-inner{text-align:center;position:relative;z-index:1;}
-.bridal-visual-inner .crown{font-size:100px;opacity:.2;}
-.bridal-visual-inner h2{font-family:var(--serif);font-size:48px;color:rgba(255,255,255,.9);font-style:italic;font-weight:400;margin-top:16px;}
-.bridal-content{padding:80px 70px;display:flex;flex-direction:column;justify-content:center;}
-.bridal-content .sec-tag{margin-bottom:20px;}
-.bridal-packages{margin:30px 0;}
-.pkg-mini{padding:22px 28px;border-left:2px solid var(--rose);margin-bottom:16px;background:var(--white);transition:.3s;}
-.pkg-mini:hover{border-left-color:var(--mid);background:var(--cream);}
-.pkg-mini h4{font-family:var(--serif);font-size:18px;font-weight:400;color:var(--dark);margin-bottom:6px;}
-.pkg-mini p{font-size:11px;color:var(--muted);line-height:1.8;}
-.pkg-mini .price{font-family:var(--serif);font-size:20px;color:var(--rose);margin-top:8px;}
+  /* EDUCATION */
+  #education{background:var(--light)}
+  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .edu-card{background:var(--white);border-radius:14px;padding:32px;border:1px solid #e8e8e8;transition:.3s;position:relative}
+  .edu-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(10,37,64,0.1)}
+  .edu-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));border-radius:0 0 14px 14px}
+  .edu-year{display:inline-block;background:rgba(10,37,64,0.06);color:var(--navy);padding:4px 14px;border-radius:50px;font-size:.78rem;font-weight:700;margin-bottom:14px}
+  .edu-school{font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:4px}
+  .edu-field{font-size:.88rem;color:var(--gold);font-weight:600;margin-bottom:16px}
+  .edu-points{list-style:none}
+  .edu-points li{font-size:.85rem;color:#555;padding:5px 0;padding-left:18px;position:relative}
+  .edu-points li::before{content:'→';position:absolute;left:0;color:var(--gold);font-weight:700}
 
-/* TESTIMONIALS */
-#testimonials{background:var(--white);}
-.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:0 auto;}
-.testi-card{background:var(--cream);padding:44px 40px;position:relative;border-top:3px solid var(--rose3);transition:.3s;}
-.testi-card:hover{border-top-color:var(--rose);}
-.testi-quote{font-family:var(--serif);font-size:60px;color:var(--rose3);line-height:.6;margin-bottom:20px;}
-.testi-text{font-family:var(--serif);font-size:14px;font-style:italic;line-height:1.9;color:var(--mid);margin-bottom:28px;}
-.testi-stars{color:var(--rose);letter-spacing:3px;font-size:12px;margin-bottom:14px;}
-.testi-name{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--dark);font-weight:500;}
-.testi-role{font-size:11px;color:var(--muted);margin-top:4px;}
+  /* WHY HIRE ME */
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+  .why-card{background:var(--white);border-radius:14px;padding:28px;border:1px solid #e8e8e8;transition:.3s;text-align:center}
+  .why-card:hover{background:var(--navy);transform:translateY(-4px);box-shadow:0 16px 50px rgba(10,37,64,0.15)}
+  .why-card:hover .why-title,.why-card:hover .why-desc{color:var(--white)}
+  .why-card:hover .why-icon-wrap{background:rgba(212,175,55,0.2)}
+  .why-icon-wrap{width:60px;height:60px;background:rgba(10,37,64,0.06);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin:0 auto 16px}
+  .why-title{font-size:.98rem;font-weight:700;color:var(--navy);margin-bottom:8px;transition:.3s}
+  .why-desc{font-size:.83rem;color:#666;line-height:1.6;transition:.3s}
 
-/* PRICING */
-#pricing{background:var(--cream2);}
-.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1100px;margin:0 auto;}
-.price-card{background:var(--white);padding:52px 44px;border:1px solid var(--cream2);position:relative;transition:.4s;}
-.price-card.featured{background:var(--rose);border-color:var(--rose);}
-.price-card.featured *{color:var(--white) !important;}
-.price-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px rgba(201,149,108,.15);}
-.price-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--mid);color:var(--white);font-size:8px;letter-spacing:3px;text-transform:uppercase;padding:6px 18px;white-space:nowrap;}
-.price-name{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--rose);margin-bottom:14px;}
-.price-title{font-family:var(--serif);font-size:26px;font-weight:400;color:var(--dark);margin-bottom:28px;}
-.price-amt{font-family:var(--serif);font-size:44px;font-weight:400;color:var(--dark);line-height:1;}
-.price-amt small{font-family:var(--sans);font-size:13px;color:var(--muted);}
-.price-dur{font-size:10px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;margin:8px 0 32px;}
-.price-features{list-style:none;margin-bottom:36px;}
-.price-features li{font-size:12px;color:var(--mid);padding:10px 0;border-bottom:1px solid var(--cream2);display:flex;align-items:center;gap:12px;}
-.price-features li::before{content:'✦';color:var(--rose);font-size:8px;flex-shrink:0;}
+  /* GALLERY */
+  #gallery{background:var(--light)}
+  .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px}
+  .gallery-card{background:var(--white);border-radius:14px;overflow:hidden;border:1px solid #e8e8e8;transition:.3s;cursor:pointer}
+  .gallery-card:hover{transform:translateY(-4px);box-shadow:0 16px 50px rgba(10,37,64,0.15)}
+  .gallery-img{width:100%;height:220px;object-fit:cover;background:#f0f0f0;display:flex;align-items:center;justify-content:center;font-size:3rem;color:#ccc;transition:.3s}
+  .gallery-card:hover .gallery-img{opacity:.9}
+  .gallery-info{padding:20px}
+  .gallery-type{font-size:.72rem;color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+  .gallery-name{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:8px}
+  .gallery-actions{display:flex;gap:10px;margin-top:14px}
+  .ga-btn{flex:1;padding:8px;border:none;border-radius:8px;font-size:.78rem;font-weight:600;cursor:pointer;transition:.3s}
+  .ga-view{background:var(--navy);color:var(--white)}
+  .ga-view:hover{background:var(--gold);color:var(--navy)}
+  .ga-dl{background:rgba(10,37,64,0.06);color:var(--navy)}
+  .ga-dl:hover{background:rgba(10,37,64,0.12)}
 
-/* BOOKING */
-#booking{background:var(--dark);}
-#booking .sec-title{color:var(--white);}
-#booking .sec-desc{color:rgba(255,255,255,.45);}
-#booking .sec-tag{color:var(--rose2);}
-#booking .sec-tag::before,#booking .sec-tag::after{background:var(--rose2);}
-.booking-inner{max-width:720px;margin:0 auto;}
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
-.form-group{display:flex;flex-direction:column;gap:8px;}
-.form-group.full{grid-column:1/-1;}
-.form-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.4);}
-.form-input,.form-select,.form-textarea{background:rgba(255,255,255,.04);border:1px solid rgba(201,149,108,.2);color:var(--white);padding:14px 18px;font-size:12px;font-family:var(--sans);outline:none;transition:.3s;width:100%;}
-.form-input:focus,.form-select:focus,.form-textarea:focus{border-color:var(--rose);background:rgba(201,149,108,.06);}
-.form-input::placeholder{color:rgba(255,255,255,.2);}
-.form-select option{background:#2a1a10;color:var(--white);}
-.form-textarea{resize:none;height:90px;}
-.form-btn{width:100%;padding:18px;background:var(--rose);color:var(--white);font-size:10px;letter-spacing:4px;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;font-family:var(--sans);transition:.3s;margin-top:8px;}
-.form-btn:hover{background:var(--rose2);color:var(--dark);}
+  /* LIGHTBOX */
+  .lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.9);z-index:9999;align-items:center;justify-content:center;padding:20px}
+  .lightbox.active{display:flex}
+  .lb-inner{max-width:800px;width:100%;position:relative}
+  .lb-img{width:100%;border-radius:10px;max-height:80vh;object-fit:contain}
+  .lb-close{position:absolute;top:-40px;right:0;background:var(--gold);color:var(--navy);border:none;border-radius:50%;width:36px;height:36px;font-size:1.1rem;font-weight:700;cursor:pointer}
 
-/* CTA STRIP */
-#cta-strip{background:var(--rose);padding:80px 70px;text-align:center;}
-.cta-strip-title{font-family:var(--serif);font-size:clamp(32px,4vw,58px);font-weight:400;color:var(--white);margin-bottom:16px;}
-.cta-strip-title em{font-style:italic;}
-.cta-strip-sub{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:40px;}
-.btn-white{background:var(--white);color:var(--rose);padding:16px 38px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:600;border:none;cursor:pointer;font-family:var(--sans);text-decoration:none;display:inline-block;transition:.3s;}
-.btn-white:hover{background:var(--dark);color:var(--white);}
-.btn-white-outline{border:2px solid rgba(255,255,255,.6);color:var(--white);padding:15px 38px;font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;cursor:pointer;font-family:var(--sans);text-decoration:none;display:inline-block;transition:.3s;background:transparent;}
-.btn-white-outline:hover{background:rgba(255,255,255,.15);}
+  /* CONTACT */
+  #contact{background:var(--navy);color:var(--white)}
+  #contact .section-title{color:var(--white)}
+  #contact .section-sub{color:rgba(255,255,255,0.6)}
+  .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:60px;align-items:start}
+  .contact-info{display:flex;flex-direction:column;gap:20px}
+  .ci-card{background:rgba(255,255,255,0.05);border:1px solid rgba(212,175,55,0.15);border-radius:12px;padding:20px;display:flex;align-items:center;gap:16px;transition:.3s}
+  .ci-card:hover{background:rgba(212,175,55,0.08);border-color:rgba(212,175,55,0.4)}
+  .ci-icon{width:44px;height:44px;background:linear-gradient(135deg,var(--gold),var(--gold2));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+  .ci-label{font-size:.72rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
+  .ci-val{font-size:.9rem;color:var(--white);font-weight:500}
+  .ci-val a{color:var(--gold);text-decoration:none}
+  .quick-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+  .qb{display:inline-flex;align-items:center;gap:8px;padding:10px 20px;border-radius:8px;font-size:.85rem;font-weight:600;text-decoration:none;transition:.3s;cursor:pointer;border:none}
+  .qb-wa{background:#25D366;color:#fff}
+  .qb-wa:hover{background:#1da851}
+  .qb-email{background:var(--gold);color:var(--navy)}
+  .qb-email:hover{background:var(--gold2)}
+  .qb-call{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2)}
+  .qb-call:hover{background:rgba(255,255,255,0.15)}
+  .contact-form{display:flex;flex-direction:column;gap:16px}
+  .form-group{display:flex;flex-direction:column;gap:6px}
+  .form-group label{font-size:.8rem;color:rgba(255,255,255,0.6);font-weight:500;text-transform:uppercase;letter-spacing:.5px}
+  .form-group input,.form-group textarea,.form-group select{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 16px;color:var(--white);font-size:.9rem;outline:none;transition:.3s;font-family:inherit}
+  .form-group input:focus,.form-group textarea:focus{border-color:var(--gold);background:rgba(212,175,55,0.06)}
+  .form-group textarea{resize:vertical;min-height:120px}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .submit-btn{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);padding:14px;border:none;border-radius:8px;font-size:.95rem;font-weight:700;cursor:pointer;transition:.3s;letter-spacing:.5px}
+  .submit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(212,175,55,0.35)}
+  .form-success{display:none;background:rgba(34,197,94,0.15);border:1px solid rgba(34,197,94,0.3);color:#4ade80;padding:14px;border-radius:8px;text-align:center;font-size:.9rem}
 
-/* FOOTER */
-footer{background:#120D09;padding:80px 70px 36px;}
-.footer-grid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1.2fr;gap:60px;max-width:1200px;margin:0 auto 56px;}
-.footer-logo{font-family:var(--serif);font-size:24px;color:var(--white);margin-bottom:18px;display:block;}
-.footer-logo span{color:var(--rose);}
-.footer-desc{font-size:11px;line-height:2.2;color:rgba(255,255,255,.35);margin-bottom:28px;}
-.footer-social{display:flex;gap:12px;}
-.soc-btn{width:36px;height:36px;border:1px solid rgba(201,149,108,.25);display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(255,255,255,.4);text-decoration:none;transition:.3s;}
-.soc-btn:hover{border-color:var(--rose2);color:var(--rose2);}
-.footer-col h4{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--rose2);margin-bottom:22px;}
-.footer-col ul{list-style:none;}
-.footer-col ul li{margin-bottom:10px;}
-.footer-col ul li a{font-size:11px;color:rgba(255,255,255,.35);text-decoration:none;transition:.3s;cursor:pointer;}
-.footer-col ul li a:hover{color:var(--rose2);}
-.footer-ci{display:flex;gap:12px;margin-bottom:14px;align-items:flex-start;}
-.footer-ci span:first-child{color:var(--rose2);font-size:13px;flex-shrink:0;margin-top:1px;}
-.footer-ci span:last-child{font-size:11px;color:rgba(255,255,255,.35);line-height:1.8;}
-.footer-bottom{border-top:1px solid rgba(201,149,108,.1);padding-top:28px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
-.footer-copy{font-size:10px;color:rgba(255,255,255,.2);letter-spacing:1px;}
+  /* FOOTER */
+  footer{background:#060f1a;padding:48px 5% 24px;text-align:center}
+  .footer-logo{font-size:1.5rem;font-weight:800;color:var(--gold);letter-spacing:2px;margin-bottom:8px}
+  .footer-role{color:rgba(255,255,255,0.5);font-size:.85rem;margin-bottom:24px}
+  .footer-links{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;margin-bottom:24px}
+  .footer-links a{color:rgba(255,255,255,0.5);text-decoration:none;font-size:.85rem;transition:.3s}
+  .footer-links a:hover{color:var(--gold)}
+  .footer-quote{color:var(--gold);font-style:italic;font-size:.9rem;margin-bottom:16px;border-top:1px solid rgba(255,255,255,0.06);padding-top:24px}
+  .footer-copy{color:rgba(255,255,255,0.3);font-size:.78rem}
 
-/* WHATSAPP */
-.wa-float{position:fixed;bottom:32px;right:32px;z-index:999;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(37,211,102,.35);text-decoration:none;font-size:26px;transition:.3s;animation:waPulse 2.5s ease infinite;}
-.wa-float:hover{transform:scale(1.08);box-shadow:0 12px 40px rgba(37,211,102,.5);}
+  /* ANIMATIONS */
+  .fade-in{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+  .fade-in.visible{opacity:1;transform:translateY(0)}
 
-/* PAGES */
-.page{display:none;}
-.page.active{display:block;}
-
-/* ABOUT */
-.about-hero{padding:160px 70px 100px;background:var(--cream);position:relative;overflow:hidden;}
-.about-hero::after{content:'Beauty';position:absolute;right:-20px;top:50%;transform:translateY(-50%);font-family:var(--serif);font-size:200px;color:rgba(201,149,108,.05);font-style:italic;white-space:nowrap;pointer-events:none;}
-.about-content{padding:80px 70px;max-width:1200px;margin:0 auto;}
-.about-split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;margin-bottom:80px;}
-.about-text h2{font-family:var(--serif);font-size:40px;font-weight:400;margin-bottom:20px;color:var(--dark);}
-.about-text p{font-size:12px;line-height:2.2;color:var(--muted);margin-bottom:14px;}
-.about-visual{background:linear-gradient(145deg,#E8C5A8,#C9956C);min-height:480px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
-.about-visual::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.12) 1px,transparent 1px);background-size:22px 22px;}
-.about-visual-inner{text-align:center;position:relative;z-index:1;}
-.about-visual-inner .symbol{font-family:var(--serif);font-size:100px;color:rgba(255,255,255,.25);font-style:italic;}
-.about-visual-inner p{font-family:var(--serif);font-size:20px;color:rgba(255,255,255,.8);font-style:italic;margin-top:10px;}
-.mvp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--cream2);margin-bottom:60px;}
-.mvp-card{background:var(--white);padding:44px 36px;text-align:center;}
-.mvp-tag{font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--rose);margin-bottom:16px;}
-.mvp-text{font-family:var(--serif);font-size:16px;font-style:italic;color:var(--mid);line-height:1.8;}
-.timeline-sec{background:var(--dark);padding:80px 70px;}
-.timeline-sec .sec-title{color:var(--white);}
-.timeline-sec .sec-tag{color:var(--rose2);}
-.timeline-sec .sec-tag::before,.timeline-sec .sec-tag::after{background:var(--rose2);}
-.tl-row{display:flex;align-items:flex-start;gap:40px;margin-bottom:48px;max-width:900px;margin-left:auto;margin-right:auto;}
-.tl-year{font-family:var(--serif);font-size:34px;color:var(--rose);font-weight:400;min-width:90px;}
-.tl-line{display:flex;flex-direction:column;align-items:center;padding-top:10px;}
-.tl-dot{width:10px;height:10px;border:2px solid var(--rose);border-radius:50%;background:var(--dark);flex-shrink:0;}
-.tl-bar{width:1px;flex:1;background:rgba(201,149,108,.2);min-height:40px;margin-top:6px;}
-.tl-body h4{font-family:var(--serif);font-size:20px;color:var(--white);font-weight:400;margin-bottom:8px;}
-.tl-body p{font-size:11px;color:rgba(255,255,255,.4);line-height:2;}
-
-/* SERVICES PAGE */
-.svc-page{padding:160px 70px 80px;background:var(--cream);}
-.svc-page-cat{max-width:1200px;margin:0 auto 80px;}
-.svc-cat-title{display:flex;align-items:center;gap:20px;margin-bottom:40px;padding-bottom:20px;border-bottom:1px solid var(--cream2);}
-.svc-cat-title h2{font-family:var(--serif);font-size:32px;color:var(--dark);font-weight:400;}
-.svc-cat-tag{background:var(--rose);color:var(--white);font-size:8px;letter-spacing:3px;text-transform:uppercase;padding:4px 14px;}
-.svc-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px;}
-.svc-mini{background:var(--white);padding:32px 28px;border-bottom:2px solid var(--cream2);transition:.3s;}
-.svc-mini:hover{border-bottom-color:var(--rose);transform:translateY(-3px);}
-.svc-mini h4{font-family:var(--serif);font-size:18px;color:var(--dark);margin-bottom:8px;font-weight:400;}
-.svc-mini p{font-size:11px;color:var(--muted);line-height:1.9;margin-bottom:14px;}
-.svc-mini .p{font-family:var(--serif);font-size:20px;color:var(--rose);}
-.svc-mini .d{font-size:9px;letter-spacing:2px;color:var(--muted);text-transform:uppercase;}
-
-/* GALLERY */
-.gallery-page{padding:160px 70px 80px;background:var(--cream);}
-.gal-filters{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:48px;}
-.gal-btn{background:transparent;border:1px solid var(--cream2);color:var(--muted);padding:9px 22px;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;cursor:pointer;transition:.3s;font-family:var(--sans);}
-.gal-btn.active,.gal-btn:hover{border-color:var(--rose);color:var(--rose);}
-.masonry{columns:3;gap:14px;max-width:1200px;}
-.m-item{background:linear-gradient(145deg,var(--cream2),var(--cream));border-bottom:2px solid var(--rose3);break-inside:avoid;margin-bottom:14px;overflow:hidden;transition:.4s;}
-.m-item:hover{border-bottom-color:var(--rose);}
-.m-inner{display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;gap:8px;}
-.m-inner p{font-family:var(--serif);font-size:16px;color:var(--muted);font-style:italic;}
-.m-inner span{font-size:28px;}
-.mi-s{min-height:180px;}
-.mi-m{min-height:260px;}
-.mi-l{min-height:360px;}
-
-/* CONTACT */
-.contact-page{padding:160px 70px 80px;background:var(--cream);}
-.contact-split{display:grid;grid-template-columns:1fr 1fr;gap:80px;max-width:1200px;margin:0 auto;}
-.contact-info h2{font-family:var(--serif);font-size:40px;color:var(--dark);font-weight:400;margin-bottom:40px;}
-.c-item{display:flex;gap:18px;margin-bottom:32px;align-items:flex-start;}
-.c-icon{width:44px;height:44px;background:var(--rose);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;color:var(--white);}
-.c-detail h4{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--rose);margin-bottom:8px;}
-.c-detail p,.c-detail a{font-size:12px;color:var(--muted);text-decoration:none;line-height:1.9;}
-.c-detail a:hover{color:var(--rose);}
-.hours-grid{display:grid;grid-template-columns:auto 1fr;gap:6px 20px;margin-top:8px;}
-.h-day{font-size:11px;color:var(--muted);}
-.h-time{font-size:11px;color:var(--rose);font-weight:500;}
-.map-box{background:var(--cream2);border:1px solid var(--cream2);height:200px;display:flex;align-items:center;justify-content:center;text-align:center;margin-top:28px;border-left:3px solid var(--rose);}
-.contact-form-wrap{background:var(--white);padding:52px 44px;}
-.contact-form-wrap h3{font-family:var(--serif);font-size:30px;font-weight:400;color:var(--dark);margin-bottom:32px;}
-.cf-group{display:flex;flex-direction:column;gap:8px;margin-bottom:18px;}
-.cf-label{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);}
-.cf-input,.cf-textarea{background:var(--cream);border:1px solid var(--cream2);color:var(--dark);padding:13px 16px;font-size:12px;font-family:var(--sans);outline:none;transition:.3s;width:100%;}
-.cf-input:focus,.cf-textarea:focus{border-color:var(--rose);}
-.cf-textarea{resize:none;height:90px;}
-.cf-btn{width:100%;padding:16px;background:var(--rose);color:var(--white);font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:500;border:none;cursor:pointer;font-family:var(--sans);transition:.3s;margin-top:8px;}
-.cf-btn:hover{background:var(--mid);}
-
-/* TEAM */
-.team-page{padding:160px 70px 80px;background:var(--cream);}
-.team-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:24px;max-width:1200px;margin:0 auto;}
-.team-card{background:var(--white);overflow:hidden;transition:.3s;}
-.team-card:hover{transform:translateY(-4px);}
-.team-avatar{height:260px;background:linear-gradient(145deg,#E8C5A8,#C9956C);display:flex;align-items:center;justify-content:center;font-size:70px;position:relative;}
-.team-avatar::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:var(--rose);}
-.team-info{padding:28px;}
-.team-name{font-family:var(--serif);font-size:22px;color:var(--dark);font-weight:400;margin-bottom:6px;}
-.team-role{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--rose);margin-bottom:12px;}
-.team-bio{font-size:11px;color:var(--muted);line-height:2;}
-.team-soc{display:flex;gap:8px;margin-top:18px;}
-.team-soc a{width:30px;height:30px;border:1px solid var(--cream2);display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--muted);text-decoration:none;transition:.3s;}
-.team-soc a:hover{border-color:var(--rose);color:var(--rose);}
-
-/* BLOG */
-.blog-page{padding:160px 70px 80px;background:var(--cream);}
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px;max-width:1200px;margin:0 auto;}
-.blog-card{background:var(--white);overflow:hidden;transition:.3s;}
-.blog-card:hover{transform:translateY(-4px);}
-.blog-img{height:190px;background:linear-gradient(145deg,var(--cream2),var(--rose3));display:flex;align-items:center;justify-content:center;font-size:48px;position:relative;}
-.blog-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--rose);}
-.blog-body{padding:30px;}
-.blog-cat{font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--rose);margin-bottom:10px;}
-.blog-title{font-family:var(--serif);font-size:21px;color:var(--dark);margin-bottom:10px;font-weight:400;line-height:1.4;}
-.blog-excerpt{font-size:11px;color:var(--muted);line-height:2;margin-bottom:18px;}
-.blog-meta{font-size:10px;color:rgba(139,110,90,.5);letter-spacing:1px;}
-
-/* MOBILE NAV */
-.mob-menu{display:none;position:fixed;inset:0;background:var(--white);z-index:2000;flex-direction:column;align-items:center;justify-content:center;gap:28px;}
-.mob-menu.open{display:flex;}
-.mob-menu a{font-family:var(--serif);font-size:30px;font-weight:400;color:var(--dark);text-decoration:none;cursor:pointer;transition:.3s;}
-.mob-menu a:hover{color:var(--rose);}
-.mob-close{position:absolute;top:28px;right:28px;font-size:22px;cursor:pointer;background:none;border:none;color:var(--dark);}
-
-/* ANIMATIONS */
-.reveal{opacity:0;transform:translateY(36px);transition:opacity .75s ease,transform .75s ease;}
-.reveal.visible{opacity:1;transform:none;}
-@keyframes pulse2{0%,100%{opacity:1;}50%{opacity:.3;}}
-@keyframes waPulse{0%,100%{box-shadow:0 8px 32px rgba(37,211,102,.35);}50%{box-shadow:0 8px 48px rgba(37,211,102,.6);}}
-
-/* RESPONSIVE */
-@media(max-width:1024px){
-  nav{padding:18px 30px;}
-  nav.scrolled{padding:14px 30px;}
-  .nav-links,.nav-cta{display:none;}
-  .hamburger{display:flex;}
-  #hero{flex-direction:column;}
-  .hero-left{padding:130px 30px 60px;}
-  .hero-right{width:100%;height:320px;}
-  .hero-right-bg,.hero-right-overlay,.hero-pattern{clip-path:none;}
-  .hero-stats{gap:24px;}
-  .sec-wrap{padding:80px 30px;}
-  .svc-grid{grid-template-columns:1fr 1fr;}
-  .why-grid{grid-template-columns:1fr 1fr;}
-  .featured-grid,.bridal-outer,.about-split,.contact-split{grid-template-columns:1fr;}
-  .testi-grid,.price-grid,.mvp-grid{grid-template-columns:1fr;}
-  .footer-grid{grid-template-columns:1fr 1fr;gap:40px;}
-  .masonry{columns:2;}
-  #trust,.timeline-sec,.about-hero,.svc-page,.gallery-page,.contact-page,.team-page,.blog-page,.about-content{padding-left:30px;padding-right:30px;}
-  #cta-strip{padding:60px 30px;}
-  footer{padding:60px 30px 30px;}
-}
-@media(max-width:600px){
-  .hero-stats{flex-wrap:wrap;gap:16px;}
-  .svc-grid{grid-template-columns:1fr;}
-  .why-grid{grid-template-columns:1fr;}
-  .masonry{columns:1;}
-  .form-grid{grid-template-columns:1fr;}
-}
+  /* RESPONSIVE */
+  @media(max-width:900px){
+    .hero-container{grid-template-columns:1fr;text-align:center;gap:40px}
+    .hero-img-wrap{order:-1}
+    .hero-stats{grid-template-columns:repeat(2,1fr)}
+    .hero-btns{justify-content:center}
+    .about-grid{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+    .edu-grid{grid-template-columns:1fr}
+    .cert-meta{grid-template-columns:1fr 1fr}
+    .nav-links{display:none;position:absolute;top:65px;left:0;right:0;background:rgba(10,37,64,.98);flex-direction:column;padding:20px 5%;gap:16px}
+    .nav-links.open{display:flex}
+    .hamburger{display:flex}
+    .form-row{grid-template-columns:1fr}
+    .hero-img-ring{width:240px;height:240px}
+  }
+  @media(max-width:500px){
+    .hero-stats{grid-template-columns:1fr 1fr}
+    section{padding:64px 5%}
+    .cert-meta{grid-template-columns:1fr}
+  }
 </style>
-</head>
+<link rel="icon" type="image/png" href="logo.png"></head>
 <body>
 
 <!-- NAV -->
-<nav id="mainNav">
-  <div class="logo">Kashi <span>✦</span> Beauty</div>
-  <ul class="nav-links">
-    <li><a href="#" onclick="showPage('home')">Home</a></li>
-    <li><a href="#" onclick="showPage('about')">About</a></li>
-    <li><a href="#" onclick="showPage('services')">Services</a></li>
-    <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
-    <li><a href="#" onclick="showPage('team')">Team</a></li>
-    <li><a href="#" onclick="showPage('blog')">Blog</a></li>
-    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
-  </ul>
-  <a class="nav-cta" href="#" onclick="showPage('home');setTimeout(()=>scrollToSec('booking'),200)">Book Now</a>
-  <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+<nav>
+  <div class="nav-inner">
+    <div <div class="logo">ALI <span>HASSAN</span></div></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#certifications">Certificates</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
 </nav>
 
-<!-- MOBILE MENU -->
-<div class="mob-menu" id="mobMenu">
-  <button class="mob-close" onclick="toggleMenu()">✕</button>
-  <a onclick="showPage('home');toggleMenu()">Home</a>
-  <a onclick="showPage('about');toggleMenu()">About</a>
-  <a onclick="showPage('services');toggleMenu()">Services</a>
-  <a onclick="showPage('gallery');toggleMenu()">Gallery</a>
-  <a onclick="showPage('team');toggleMenu()">Team</a>
-  <a onclick="showPage('blog');toggleMenu()">Blog</a>
-  <a onclick="showPage('contact');toggleMenu()">Contact</a>
-  <a onclick="showPage('home');setTimeout(()=>scrollToSec('booking'),200);toggleMenu()" style="color:var(--rose);">Book Appointment</a>
-</div>
-
-<!-- WHATSAPP -->
-<a class="wa-float" href="https://wa.me/923134747538" target="_blank" title="Chat on WhatsApp">💬</a>
-
-<!-- ======= HOME ======= -->
-<div class="page active" id="page-home">
-
 <!-- HERO -->
-<section id="hero">
-  <div class="hero-left">
-    <div class="hero-eyebrow"><span>Johar Town, Lahore · Pakistan</span></div>
-    <h1 class="hero-title">Where Beauty<br>Meets <em>Perfection</em></h1>
-    <p class="hero-sub">Premium Bridal Makeup, Hair Styling, Skin Care & Beauty Services — crafted for the modern woman in Lahore.</p>
-    <div class="hero-btns">
-      <a class="btn-primary" href="#" onclick="scrollToSec('booking')">Book Appointment</a>
-      <a class="btn-ghost" href="https://wa.me/923134747538" target="_blank">✦ WhatsApp Us</a>
-    </div>
-    <div class="hero-stats">
-      <div><div class="hero-stat-num">500+</div><div class="hero-stat-label">Bridal Clients</div></div>
-      <div><div class="hero-stat-num">10+</div><div class="hero-stat-label">Years Experience</div></div>
-      <div><div class="hero-stat-num">★ 5.0</div><div class="hero-stat-label">Client Rating</div></div>
-    </div>
-  </div>
-  <div class="hero-right">
-    <div class="hero-right-bg"></div>
-    <div class="hero-right-overlay"></div>
-    <div class="hero-pattern"></div>
-    <div class="hero-img-text">
-      <span>Beauty</span>
-    </div>
-  </div>
-  <div class="scroll-hint">
-    <div class="scroll-dot"></div>
-    <span>Scroll to explore</span>
-  </div>
-</section>
-
-<!-- TRUST -->
-<section id="trust">
-  <div class="trust-flex">
-    <div class="trust-item reveal"><div class="trust-num">500+</div><div class="trust-label">Bridal Clients</div></div>
-    <div class="trust-sep"></div>
-    <div class="trust-item reveal"><div class="trust-num">10+</div><div class="trust-label">Years of Excellence</div></div>
-    <div class="trust-sep"></div>
-    <div class="trust-item reveal"><div class="trust-num">98%</div><div class="trust-label">Satisfaction Rate</div></div>
-    <div class="trust-sep"></div>
-    <div class="trust-item reveal"><div class="trust-num">20+</div><div class="trust-label">Expert Services</div></div>
-    <div class="trust-sep"></div>
-    <div class="trust-item reveal"><div class="trust-num">★ 5.0</div><div class="trust-label">Star Rated</div></div>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section id="services" class="sec-wrap">
-  <div class="sec-head center reveal">
-    <div class="sec-tag">Our Expertise</div>
-    <h2 class="sec-title">Luxury Beauty <em>Services</em></h2>
-    <p class="sec-desc">From transformative bridal packages to everyday beauty rituals — we offer the full spectrum of premium beauty care.</p>
-  </div>
-  <div class="svc-grid">
-    <div class="svc-card reveal">
-      <div class="svc-num">01</div>
-      <div class="svc-icon-wrap">👰</div>
-      <h3 class="svc-name">Bridal Makeup</h3>
-      <p class="svc-desc">Flawless, long-lasting bridal looks crafted for your most important day. Traditional to contemporary aesthetics.</p>
-      <span class="svc-arrow">Enquire Now →</span>
-    </div>
-    <div class="svc-card reveal">
-      <div class="svc-num">02</div>
-      <div class="svc-icon-wrap">💄</div>
-      <h3 class="svc-name">Party Makeup</h3>
-      <p class="svc-desc">Radiant, glamorous looks for every occasion — from intimate gatherings to grand celebrations.</p>
-      <span class="svc-arrow">Enquire Now →</span>
-    </div>
-    <div class="svc-card reveal">
-      <div class="svc-num">03</div>
-      <div class="svc-icon-wrap">✂️</div>
-      <h3 class="svc-name">Hair Styling</h3>
-      <p class="svc-desc">Expert styling, cuts and transformations using premium professional products and global techniques.</p>
-      <span class="svc-arrow">Enquire Now →</span>
-    </div>
-    <div class="svc-card reveal">
-      <div class="svc-num">04</div>
-      <div class="svc-icon-wrap">🎨</div>
-      <h3 class="svc-name">Hair Coloring</h3>
-      <p class="svc-desc">Vibrant dimensional color — highlights, balayage, ombre and global color with premium results.</p>
-      <span class="svc-arrow">Enquire Now →</span>
-    </div>
-    <div class="svc-card reveal">
-      <div class="svc-num">05</div>
-      <div class="svc-icon-wrap">✨</div>
-      <h3 class="svc-name">Facials & Skin</h3>
-      <p class="svc-desc">Hydra Facial, Gold Facial, whitening treatments and advanced skin care therapies for luminous skin.</p>
-      <span class="svc-arrow">Enquire Now →</span>
-    </div>
-    <div class="svc-card reveal">
-      <div class="svc-num">06</div>
-      <div class="svc-icon-wrap">💅</div>
-      <h3 class="svc-name">Nail & Beauty</h3>
-      <p class="svc-desc">Complete nail care, manicure, pedicure and beauty treatments in our serene, luxurious setting.</p>
-      <span class="svc-arrow">Enquire Now →</span>
-    </div>
-  </div>
-  <div style="text-align:center;margin-top:52px;">
-    <a class="btn-primary" href="#" onclick="showPage('services')">Explore All Services</a>
-  </div>
-</section>
-
-<!-- FEATURED SPLIT -->
-<section id="featured">
-  <div class="featured-grid">
-    <div class="feat-left reveal">
-      <div class="sec-tag">Why Kashi Beauty</div>
-      <h2 class="sec-title" style="margin-bottom:0;">Lahore's Most <em>Trusted</em> Beauty Studio</h2>
-      <div class="feat-list">
-        <div class="feat-item"><div class="feat-dot"></div><span>Expert beauticians with 10+ years of professional experience</span></div>
-        <div class="feat-item"><div class="feat-dot"></div><span>Internationally certified, dermatologist-approved premium products</span></div>
-        <div class="feat-item"><div class="feat-dot"></div><span>500+ brides beautifully transformed since our founding</span></div>
-        <div class="feat-item"><div class="feat-dot"></div><span>Personalized service tailored to each client's unique beauty</span></div>
-        <div class="feat-item"><div class="feat-dot"></div><span>Hygienic, luxurious salon environment in Johar Town</span></div>
-        <div class="feat-item"><div class="feat-dot"></div><span>Modern global techniques meeting traditional Pakistani elegance</span></div>
+<section id="home">
+  <div class="hero-container">
+    <div class="hero-text fade-in">
+      <div class="hero-badge">Certified Safety Officer</div>
+      <h1 class="name">ALI <span>HASSAN</span></h1>
+      <div class="hero-title">HSE Professional | Safety Officer</div>
+      <p class="hero-desc">Dedicated to creating safer workplaces through hazard identification, risk assessment, incident prevention, safety compliance, and occupational health management. Committed to protecting workers and maintaining the highest standards.</p>
+      <div class="hero-btns">
+        <a href="mailto:alihassan0786u@gmail.com" class="btn-primary">📄 Download CV</a>
+        <a href="#contact" class="btn-secondary">📞 Contact Me</a>
+        <a href="#gallery" class="btn-outline">🏆 View Certificates</a>
       </div>
-      <a class="btn-primary" href="https://wa.me/923134747538" target="_blank">Book a Consultation</a>
-    </div>
-    <div class="feat-right">
-      <div class="feat-right-bg"></div>
-      <div class="feat-right-pattern"></div>
-      <div class="feat-right-content">
-        <div class="big">✦</div>
-        <p>Premium Beauty Since 2012</p>
+      <div class="hero-stats">
+        <div class="stat-card"><span class="stat-num">8+</span><div class="stat-label">Safety Courses</div></div>
+        <div class="stat-card"><span class="stat-num">160</span><div class="stat-label">Credits Earned</div></div>
+        <div class="stat-card"><span class="stat-num">1+</span><div class="stat-label">Certifications</div></div>
+        <div class="stat-card"><span class="stat-num">Multi</span><div class="stat-label">Disciplines</div></div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- WHY -->
-<section id="why" class="sec-wrap">
-  <div class="sec-head reveal">
-    <div class="sec-tag">Our Promise</div>
-    <h2 class="sec-title">The Kashi <em>Difference</em></h2>
-  </div>
-  <div class="why-grid">
-    <div class="why-card reveal"><div class="why-icon">👑</div><h3 class="why-title">Expert Beauticians</h3><p class="why-text">Highly trained professionals with years of experience in premium beauty services and bridal artistry.</p></div>
-    <div class="why-card reveal"><div class="why-icon">💎</div><h3 class="why-title">Premium Products</h3><p class="why-text">We exclusively use internationally certified, dermatologist-approved products for the best results.</p></div>
-    <div class="why-card reveal"><div class="why-icon">🌸</div><h3 class="why-title">Luxury Environment</h3><p class="why-text">A serene, hygienic and elegantly designed space tailored entirely for your comfort and relaxation.</p></div>
-    <div class="why-card reveal"><div class="why-icon">💍</div><h3 class="why-title">Bridal Specialists</h3><p class="why-text">Over 500 brides transformed with bespoke bridal beauty packages and dedicated artist care.</p></div>
-  </div>
-</section>
-
-<!-- BRIDAL -->
-<section id="bridal">
-  <div class="bridal-outer">
-    <div class="bridal-visual">
-      <div class="bridal-visual-inner">
-        <div class="crown">♔</div>
-        <h2>Bridal<br>Studio</h2>
-      </div>
-    </div>
-    <div class="bridal-content reveal">
-      <div class="sec-tag">Bridal Collection</div>
-      <h2 class="sec-title">The Art of<br>Bridal <em>Beauty</em></h2>
-      <p style="font-size:12px;color:var(--muted);line-height:2;margin:16px 0 28px;">Every bride deserves to feel extraordinary. Our dedicated bridal studio combines artistry, premium products and personalized care to craft the look of your dreams.</p>
-      <div class="bridal-packages">
-        <div class="pkg-mini">
-          <h4>Classic Bridal Package</h4>
-          <p>Full bridal makeup, hair styling & skin prep</p>
-          <div class="price">From PKR 15,000</div>
+    <div class="hero-img-wrap fade-in">
+      <div style="position:relative">
+        <div class="hero-img-ring">
+          <div class="hero-img-inner">
+   <img src="ali.jpg" alt="Ali Hassan"></div>
         </div>
-        <div class="pkg-mini">
-          <h4>Premium Bridal Package</h4>
-          <p>HD makeup, bridal hair, facial & nail care</p>
-          <div class="price">From PKR 25,000</div>
+        <div class="floating-badge fb1">✅ Certified Safety Officer</div>
+        <div class="floating-badge fb2">🏅 Qanmos Certified</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-tag">About Me</div>
+    <h2 class="section-title">Professional Profile</h2>
+    <div class="gold-line"></div>
+    <div class="about-grid">
+      <div class="about-left fade-in">
+        <div class="hero-img-inner">
+   <img src="ali.jpg" alt="Ali Hassan"></div>
+        <div class="about-name">Ali Hassan</div>
+        <div class="about-role">Certified Safety Officer | HSE Professional</div>
+        <div class="info-row"><div class="info-icon">📍</div><div><div class="info-label">Location</div><div class="info-val">Bhalwal, Sargodha, Punjab, Pakistan</div></div></div>
+        <div class="info-row"><div class="info-icon">🎓</div><div><div class="info-label">Certification</div><div class="info-val">Safety Officer – Qanmos</div></div></div>
+        <div class="info-row"><div class="info-icon">📅</div><div><div class="info-label">Issued</div><div class="info-val">11 February 2026</div></div></div>
+        <div class="info-row"><div class="info-icon">⏳</div><div><div class="info-label">Valid Until</div><div class="info-val">February 2028</div></div></div>
+        <div class="info-row"><div class="info-icon">📞</div><div><div class="info-label">Phone</div><div class="info-val">03261238395</div></div></div>
+        <div class="info-row"><div class="info-icon">✉️</div><div><div class="info-label">Email</div><div class="info-val" style="font-size:.8rem">alihassan0786u@gmail.com</div></div></div>
+        <div style="margin-top:20px"><div class="status-badge">🟢 Available for Work</div></div>
+      </div>
+      <div class="about-right fade-in">
+        <p>I am a <strong>Certified Safety Officer</strong> with professional training in workplace safety management, occupational health standards, risk control procedures, and hazard prevention from <strong>Qanmos Center of Excellence</strong>.</p>
+        <p>My training has equipped me with practical knowledge of <strong>Permit to Work Systems, Fire Safety, H2S Safety, Work at Height, Confined Space Entry, First Aid,</strong> and <strong>Emergency Response Procedures</strong> — completing all 8 courses with a total of <strong>160 credits</strong>.</p>
+        <p>I am passionate about building safe work environments where employees can perform their duties efficiently while minimizing risks and maintaining compliance with industry regulations.</p>
+        <p>I continuously strive to improve workplace safety culture, reduce incidents, and contribute to organizational success through effective safety management practices.</p>
+        <div class="highlight-box">
+          <p>"I am actively seeking employment opportunities in construction, oil & gas, manufacturing, industrial, and engineering sectors where I can contribute my HSE expertise and continue growing as a safety professional."</p>
         </div>
-        <div class="pkg-mini">
-          <h4>Luxury Bridal Package</h4>
-          <p>Full-day experience with dedicated artist</p>
-          <div class="price">From PKR 40,000</div>
+        <div style="margin-top:24px;display:flex;flex-wrap:wrap;gap:12px">
+          <a href="tel:03261238395" class="btn-primary">📞 Call Now</a>
+          <a href="https://wa.me/923261238395" target="_blank" class="btn-secondary" style="background:#25D366;border-color:#25D366;color:#fff">💬 WhatsApp</a>
         </div>
       </div>
-      <a class="btn-primary" href="https://wa.me/923134747538" target="_blank">Book Bridal Consultation</a>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section id="testimonials" class="sec-wrap">
-  <div class="sec-head center reveal">
-    <div class="sec-tag">Client Love</div>
-    <h2 class="sec-title">Words of <em>Praise</em></h2>
-    <p class="sec-desc">Hear what our cherished clients say about their Kashi Beauty experience.</p>
-  </div>
-  <div class="testi-grid">
-    <div class="testi-card reveal">
-      <div class="testi-quote">"</div>
-      <p class="testi-text">Kashi Beauty Salon made my wedding day absolutely magical. The bridal makeup was flawless — exactly what I had dreamed of. The team is incredibly professional and warm.</p>
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-name">Ayesha Malik</div>
-      <div class="testi-role">Bridal Client · DHA Lahore</div>
-    </div>
-    <div class="testi-card reveal">
-      <div class="testi-quote">"</div>
-      <p class="testi-text">I have been coming to Kashi for over three years. The facials are transformative, the hair services are world-class, and every visit feels like a true luxury retreat.</p>
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-name">Sana Riaz</div>
-      <div class="testi-role">Regular Client · Gulberg</div>
-    </div>
-    <div class="testi-card reveal">
-      <div class="testi-quote">"</div>
-      <p class="testi-text">The best salon experience in Lahore. My engagement makeup was stunning — I received countless compliments. Kashi is truly Lahore's finest beauty destination.</p>
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-name">Fatima Tariq</div>
-      <div class="testi-role">Bridal Client · Johar Town</div>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section id="pricing" class="sec-wrap">
-  <div class="sec-head center reveal">
-    <div class="sec-tag">Investment in You</div>
-    <h2 class="sec-title">Our <em>Packages</em></h2>
-    <p class="sec-desc">Transparent, honest pricing with no hidden charges. Every package is crafted to deliver exceptional value.</p>
-  </div>
-  <div class="price-grid">
-    <div class="price-card reveal">
-      <div class="price-name">Signature</div>
-      <h3 class="price-title">Glow Package</h3>
-      <div class="price-amt">PKR 3,500<small>/session</small></div>
-      <div class="price-dur">Approx. 1.5 Hours</div>
-      <ul class="price-features">
-        <li>Deep Cleansing Facial</li>
-        <li>Eyebrow Threading & Shaping</li>
-        <li>Basic Hair Styling</li>
-        <li>Complimentary Consultation</li>
-      </ul>
-      <a class="btn-ghost" href="https://wa.me/923134747538" target="_blank" style="display:block;text-align:center;">Book Now</a>
-    </div>
-    <div class="price-card featured reveal">
-      <div class="price-badge">Most Popular</div>
-      <div class="price-name">Premium</div>
-      <h3 class="price-title">Radiance Package</h3>
-      <div class="price-amt">PKR 8,500<small>/session</small></div>
-      <div class="price-dur">Approx. 3 Hours</div>
-      <ul class="price-features">
-        <li>Hydra or Gold Facial</li>
-        <li>Full Makeup Application</li>
-        <li>Professional Hair Styling</li>
-        <li>Manicure & Pedicure</li>
-        <li>Eyebrow Design</li>
-      </ul>
-      <a class="btn-white" href="https://wa.me/923134747538" target="_blank" style="display:block;text-align:center;">Book Now</a>
-    </div>
-    <div class="price-card reveal">
-      <div class="price-name">Ultimate</div>
-      <h3 class="price-title">Bridal Package</h3>
-      <div class="price-amt">PKR 25,000<small>+</small></div>
-      <div class="price-dur">Full Day Experience</div>
-      <ul class="price-features">
-        <li>Complete Bridal Makeup</li>
-        <li>Bridal Hair Styling</li>
-        <li>Skin Prep & Treatments</li>
-        <li>Nail Art & Pedicure</li>
-        <li>Touch-up Kit Included</li>
-      </ul>
-      <a class="btn-ghost" href="https://wa.me/923134747538" target="_blank" style="display:block;text-align:center;">Enquire Now</a>
-    </div>
-  </div>
-</section>
-
-<!-- BOOKING -->
-<section id="booking" class="sec-wrap">
-  <div class="booking-inner">
-    <div class="sec-head center reveal">
-      <div class="sec-tag">Reserve Your Session</div>
-      <h2 class="sec-title">Book Your <em>Appointment</em></h2>
-      <p class="sec-desc" style="color:rgba(255,255,255,.45);">Fill in your details below and we'll confirm your appointment via WhatsApp.</p>
-    </div>
-    <div class="form-grid">
-      <div class="form-group reveal"><label class="form-label">Your Name</label><input class="form-input" type="text" id="bName" placeholder="Full Name"/></div>
-      <div class="form-group reveal"><label class="form-label">Phone Number</label><input class="form-input" type="tel" id="bPhone" placeholder="+92 XXX XXXXXXX"/></div>
-      <div class="form-group reveal"><label class="form-label">Service Required</label>
-        <select class="form-select" id="bService">
-          <option value="">Select a Service</option>
-          <option>Bridal Makeup</option>
-          <option>Engagement Makeup</option>
-          <option>Party Makeup</option>
-          <option>HD Makeup</option>
-          <option>Hair Styling</option>
-          <option>Hair Color / Highlights</option>
-          <option>Keratin Treatment</option>
-          <option>Hydra Facial</option>
-          <option>Gold Facial</option>
-          <option>Manicure & Pedicure</option>
-          <option>Skin Polishing</option>
-          <option>Waxing & Threading</option>
-          <option>Other</option>
-        </select>
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="section-tag">Credentials</div>
+    <h2 class="section-title">Professional Certification</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">Issued by an internationally recognized training institution with accreditation from AOSH, Exemplar Global, NASP, and OSH Academy.</p>
+    <div class="cert-card fade-in">
+      <div class="cert-header">
+        <div class="cert-icon">🏆</div>
+        <div>
+          <div class="cert-org">Qanmos Center of Excellence</div>
+          <div class="cert-name">Safety Officer – Certificate of Achievement</div>
+          <div style="margin-top:8px"><div class="status-badge">Active & Valid</div></div>
+        </div>
       </div>
-      <div class="form-group reveal"><label class="form-label">Preferred Date</label><input class="form-input" type="date" id="bDate"/></div>
-      <div class="form-group reveal"><label class="form-label">Preferred Time</label><input class="form-input" type="time" id="bTime"/></div>
-      <div class="form-group reveal"><label class="form-label">Special Requests</label><input class="form-input" type="text" id="bNotes" placeholder="Any special requirements..."/></div>
-      <div class="form-group full reveal"><button class="form-btn" onclick="submitBooking()">✦ Confirm Appointment via WhatsApp</button></div>
+      <div class="cert-meta">
+        <div class="cert-meta-item"><div class="cert-meta-label">Issue Date</div><div class="cert-meta-val">11 Feb 2026</div></div>
+        <div class="cert-meta-item"><div class="cert-meta-label">Valid Until</div><div class="cert-meta-val">Feb 2028</div></div>
+        <div class="cert-meta-item"><div class="cert-meta-label">Validity</div><div class="cert-meta-val">2 Years</div></div>
+        <div class="cert-meta-item"><div class="cert-meta-label">Training Session</div><div class="cert-meta-val">Jan 12, 2026</div></div>
+        <div class="cert-meta-item"><div class="cert-meta-label">Cert. Number</div><div class="cert-meta-val" style="color:var(--gold)">cb8ad09</div></div>
+        <div class="cert-meta-item"><div class="cert-meta-label">Verify At</div><div class="cert-meta-val" style="font-size:.78rem"><a href="https://www.qanmos.com/certificate-verification" target="_blank" style="color:var(--gold);text-decoration:none">qanmos.com</a></div></div>
+      </div>
+      <div class="cert-desc">Successfully completed professional Safety Officer training covering occupational health, workplace safety management, hazard prevention, emergency response, and industrial safety standards. This program is approved and organized by Qanmos Training and accredited by <strong style="color:var(--gold)">AOSH · Exemplar Global · NASP · OSH Academy</strong>.</div>
     </div>
   </div>
 </section>
 
-<!-- CTA STRIP -->
-<section id="cta-strip">
-  <h2 class="cta-strip-title reveal">Ready for Your <em>Transformation?</em></h2>
-  <p class="cta-strip-sub reveal">Step into Lahore's most prestigious beauty experience</p>
-  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;" class="reveal">
-    <a class="btn-white" href="#" onclick="scrollToSec('booking')">Book Appointment</a>
-    <a class="btn-white-outline" href="https://wa.me/923134747538" target="_blank">Chat on WhatsApp</a>
+<!-- TRANSCRIPT -->
+<section id="transcript">
+  <div class="section-inner">
+    <div class="section-tag">Academic Transcript</div>
+    <h2 class="section-title">Completed Safety Courses</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">Official transcript issued by Qanmos Trainings – The Career Makers. All 8 courses completed with PASS grade in English.</p>
+    <div class="courses-grid">
+      <div class="course-card fade-in"><div class="course-num">Course 105</div><div class="course-name">🔐 Permit To Work System</div><div class="course-desc">Understanding work authorization procedures and safe work practices in industrial environments.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 109</div><div class="course-name">🔥 Fire Watcher</div><div class="course-desc">Fire prevention, monitoring, and emergency response strategies for workplace environments.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 114</div><div class="course-name">👁️ Standby Man / Hole Watcher</div><div class="course-desc">Confined space monitoring and worker protection during hazardous operations.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 115</div><div class="course-name">🧗 Work At Height</div><div class="course-desc">Fall protection systems and height safety procedures for elevated work environments.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 118</div><div class="course-name">🕳️ Confined Space Entry</div><div class="course-desc">Safe entry procedures, atmospheric testing, and hazard control in confined spaces.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 120</div><div class="course-name">🩺 First Aider</div><div class="course-desc">Emergency first aid response, CPR, and incident management in the workplace.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 124</div><div class="course-name">☠️ H2S Safety</div><div class="course-desc">Hydrogen Sulfide hazard awareness, detection, and worker protection procedures.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+      <div class="course-card fade-in"><div class="course-num">Course 126</div><div class="course-name">🚦 Flagman</div><div class="course-desc">Traffic control, workplace movement safety, and coordination of vehicle/pedestrian flow.</div><div class="course-footer"><span class="credit-badge">20 Credits</span><span class="pass-badge">✓ PASS</span></div></div>
+    </div>
+    <div class="transcript-summary">
+      <div class="ts-item"><div class="ts-num">160</div><div class="ts-label">Total Credits</div></div>
+      <div class="ts-item"><div class="ts-num">8</div><div class="ts-label">Courses Completed</div></div>
+      <div class="ts-item"><div class="ts-num">PASS</div><div class="ts-label">Final Result</div></div>
+      <div class="ts-item"><div class="ts-num">English</div><div class="ts-label">Assessment Language</div></div>
+      <div class="ts-item"><div class="ts-num">11/02/2026</div><div class="ts-label">Issue Date</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-tag">Expertise</div>
+    <h2 class="section-title">Core HSE Competencies</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">Comprehensive knowledge spanning workplace safety management, occupational health, and industrial safety disciplines.</p>
+    <div class="skills-grid">
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Workplace Safety Management</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Occupational Health & Safety</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Hazard Identification</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Risk Assessment</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Permit To Work System</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Fire Prevention & Protection</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Emergency Response Planning</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Incident Prevention</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">H2S Safety Awareness</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Confined Space Safety</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Work At Height Safety</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">First Aid Response</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Safety Documentation</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Toolbox Talks</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Site Safety Inspection</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Accident Investigation</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Corrective Action Planning</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Safety Compliance Monitoring</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Safety Reporting</span></div>
+      <div class="skill-item fade-in"><span class="skill-dot"></span><span class="skill-text">Worker Safety Awareness</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-inner">
+    <div class="section-tag">Education</div>
+    <h2 class="section-title">Academic Background</h2>
+    <div class="gold-line"></div>
+    <div class="edu-grid">
+      <div class="edu-card fade-in">
+        <div class="edu-year">2020 – 2022</div>
+        <div class="edu-school">🏫 Government High School</div>
+        <div class="edu-field">Matriculation – Computer Science</div>
+        <ul class="edu-points">
+          <li>Computer Fundamentals & Applications</li>
+          <li>Communication Skills Development</li>
+          <li>Technical Learning & Problem Solving</li>
+        </ul>
+      </div>
+      <div class="edu-card fade-in">
+        <div class="edu-year">2022 – 2024</div>
+        <div class="edu-school">🎓 Government College Bhalwal</div>
+        <div class="edu-field">FA – Faculty of Arts</div>
+        <ul class="edu-points">
+          <li>Professional Communication</li>
+          <li>Documentation & Record Keeping</li>
+          <li>Professional Development Skills</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY HIRE ME -->
+<section id="why">
+  <div class="section-inner">
+    <div class="section-tag">Value Proposition</div>
+    <h2 class="section-title">Why Hire Me?</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">I bring a combination of certified expertise, strong work ethic, and genuine commitment to workplace safety.</p>
+    <div class="why-grid">
+      <div class="why-card fade-in"><div class="why-icon-wrap">🏆</div><div class="why-title">Certified Safety Officer</div><div class="why-desc">Professionally trained and certified in workplace safety by an internationally accredited institution.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">📚</div><div class="why-title">Multiple Safety Disciplines</div><div class="why-desc">Knowledge across 8 industrial safety domains covering PTW, fire, confined space, height, H2S, and more.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">🛡️</div><div class="why-title">Safety-First Mindset</div><div class="why-desc">Strong commitment to worker protection and building a positive safety culture in the workplace.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">⚠️</div><div class="why-title">Risk Management Awareness</div><div class="why-desc">Ability to proactively identify, assess, and control workplace hazards before incidents occur.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">📋</div><div class="why-title">Professional Documentation</div><div class="why-desc">Capable of maintaining accurate safety records, incident reports, and compliance documentation.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">⚡</div><div class="why-title">Fast Learner</div><div class="why-desc">Highly adaptable to new environments, regulations, and emerging safety standards and practices.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">🤝</div><div class="why-title">Team Collaboration</div><div class="why-desc">Strong communication and teamwork abilities for effective coordination on industrial sites.</div></div>
+      <div class="why-card fade-in"><div class="why-icon-wrap">📈</div><div class="why-title">Continuous Improvement</div><div class="why-desc">Committed to ongoing professional development and staying current with HSE best practices.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-inner">
+    <div class="section-tag">Credentials Gallery</div>
+    <h2 class="section-title">Certificates & Documents</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">Official certificates and academic records from Qanmos Center of Excellence. Click to view full size.</p>
+    <div class="gallery-grid">
+      <div class="gallery-card fade-in" onclick="openLightbox('cert')">
+        <div class="gallery-img" style="background:linear-gradient(135deg,#0A2540,#1a3a5c);color:var(--gold);font-size:1rem;flex-direction:column;gap:10px;display:flex">
+          <div style="font-size:3rem">🏆</div>
+          <div style="font-weight:700;letter-spacing:1px">CERTIFICATE OF ACHIEVEMENT</div>
+          <div style="font-size:.8rem;opacity:.7">Qanmos Center of Excellence</div>
+        </div>
+        <div class="gallery-info">
+          <div class="gallery-type">Safety Certification</div>
+          <div class="gallery-name">Safety Officer Certificate</div>
+          <div style="font-size:.8rem;color:#666">Issued: 11 Feb 2026 · Valid 2 Years · Cert# cb8ad09</div>
+          <div class="gallery-actions">
+            <button class="ga-btn ga-view" onclick="event.stopPropagation();openLightbox('cert')">👁 View</button>
+            <button class="ga-btn ga-dl">⬇ Download</button>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-card fade-in" onclick="openLightbox('transcript')">
+        <div class="gallery-img" style="background:linear-gradient(135deg,#f8f9fa,#e8e8e8);color:#0A2540;font-size:1rem;flex-direction:column;gap:8px;display:flex;padding:20px">
+          <div style="font-size:2rem">📋</div>
+          <div style="font-weight:800;font-size:.95rem;letter-spacing:.5px">TRANSCRIPT OF ACADEMIC RECORD</div>
+          <div style="font-size:.75rem;color:#666">Qanmos Trainings – The Career Makers</div>
+          <div style="font-size:.75rem;margin-top:6px;color:#0A2540;line-height:1.6">8 Courses · 160 Credits · All PASS</div>
+        </div>
+        <div class="gallery-info">
+          <div class="gallery-type">Academic Transcript</div>
+          <div class="gallery-name">Training Completion Transcript</div>
+          <div style="font-size:.8rem;color:#666">Issued: 11 Feb 2026 · 8 Courses · 160 Total Credits</div>
+          <div class="gallery-actions">
+            <button class="ga-btn ga-view" onclick="event.stopPropagation();openLightbox('transcript')">👁 View</button>
+            <button class="ga-btn ga-dl">⬇ Download</button>
+          </div>
+        </div>
+      </div>
+      <div class="gallery-card fade-in">
+        <div class="gallery-img" style="background:linear-gradient(135deg,#1a3a5c,#0d2035);color:rgba(255,255,255,.8);font-size:.85rem;flex-direction:column;gap:8px;display:flex;padding:20px">
+          <div style="font-size:2.5rem">🎯</div>
+          <div style="font-weight:700;color:var(--gold)">8 PROFESSIONAL COURSES</div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:.72rem;text-align:left;margin-top:6px">
+            <span>✅ PTW System</span><span>✅ Fire Watcher</span>
+            <span>✅ Hole Watcher</span><span>✅ Work at Height</span>
+            <span>✅ Confined Space</span><span>✅ First Aider</span>
+            <span>✅ H2S Safety</span><span>✅ Flagman</span>
+          </div>
+        </div>
+        <div class="gallery-info">
+          <div class="gallery-type">Training Record</div>
+          <div class="gallery-name">Professional Safety Training Courses</div>
+          <div style="font-size:.8rem;color:#666">All 8 Courses · 20 Credits Each · Result: PASS</div>
+          <div class="gallery-actions">
+            <button class="ga-btn ga-view">👁 View</button>
+            <button class="ga-btn ga-dl">⬇ Download</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:28px;background:rgba(10,37,64,0.05);border:1px solid rgba(10,37,64,0.1);border-radius:12px;padding:20px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+      <div style="font-size:1.5rem">🔍</div>
+      <div>
+        <div style="font-weight:700;color:var(--navy);margin-bottom:4px">Certificate Verification</div>
+        <div style="font-size:.85rem;color:#666">Verify authenticity of Ali Hassan's Safety Officer certificate at: <a href="https://www.qanmos.com/certificate-verification" target="_blank" style="color:var(--gold);font-weight:600">www.qanmos.com/certificate-verification</a> — Certificate Number: <strong>cb8ad09</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-tag" style="background:rgba(212,175,55,0.15);color:var(--gold)">Get In Touch</div>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="gold-line"></div>
+    <p class="section-sub">Available for employment opportunities in construction, oil & gas, manufacturing, industrial, and engineering sectors.</p>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-info">
+          <div class="ci-card"><div class="ci-icon">📞</div><div><div class="ci-label">Phone / WhatsApp</div><div class="ci-val"><a href="tel:03261238395">0326-1238395</a></div></div></div>
+          <div class="ci-card"><div class="ci-icon">✉️</div><div><div class="ci-label">Email Address</div><div class="ci-val"><a href="mailto:alihassan0786u@gmail.com">alihassan0786u@gmail.com</a></div></div></div>
+          <div class="ci-card"><div class="ci-icon">📍</div><div><div class="ci-label">Location</div><div class="ci-val">Bhalwal, Sargodha, Punjab, Pakistan</div></div></div>
+          <div class="ci-card"><div class="ci-icon">💼</div><div><div class="ci-label">Open To</div><div class="ci-val">Full-time · Contract · Site Roles</div></div></div>
+        </div>
+        <div class="quick-btns" style="margin-top:24px">
+          <a href="https://wa.me/923261238395?text=Hello%20Ali%20Hassan%2C%20I%20came%20across%20your%20HSE%20portfolio%20and%20would%20like%20to%20discuss%20a%20safety%20officer%20opportunity." target="_blank" class="qb qb-wa">💬 WhatsApp</a>
+          <a href="mailto:alihassan0786u@gmail.com" class="qb qb-email">✉️ Email Me</a>
+          <a href="tel:03261238395" class="qb qb-call">📞 Call Now</a>
+        </div>
+      </div>
+      <div>
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full Name" id="fname"></div>
+            <div class="form-group"><label>Your Email</label><input type="email" placeholder="email@example.com" id="femail"></div>
+          </div>
+          <div class="form-group"><label>Company / Organization</label><input type="text" placeholder="Company Name" id="fcompany"></div>
+          <div class="form-group"><label>Subject</label>
+            <select id="fsubject" style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:12px 16px;color:var(--white);font-size:.9rem;outline:none">
+              <option value="" style="background:#0A2540">Select Subject</option>
+              <option value="job" style="background:#0A2540">Job / Employment Opportunity</option>
+              <option value="contract" style="background:#0A2540">Contract / Project Work</option>
+              <option value="verify" style="background:#0A2540">Certificate Verification</option>
+              <option value="other" style="background:#0A2540">Other Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Your message here..." id="fmessage"></textarea></div>
+          <button class="submit-btn" onclick="submitForm()">🚀 Send Message</button>
+          <div class="form-success" id="formSuccess">✅ Message sent! Ali Hassan will respond within 24 hours.</div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-grid">
-    <div>
-      <span class="footer-logo">Kashi <span>✦</span> Beauty</span>
-      <p class="footer-desc">Lahore's premier luxury beauty destination. Delivering world-class bridal makeup, hair styling, skin care and beauty services with unmatched elegance from Johar Town, Lahore.</p>
-      <div class="footer-social">
-        <a class="soc-btn" href="https://www.facebook.com/kashibeautician/" target="_blank">f</a>
-        <a class="soc-btn" href="https://www.instagram.com/kashibeautician" target="_blank">◎</a>
-        <a class="soc-btn" href="https://www.youtube.com/@kashibeautysalon" target="_blank">▶</a>
-        <a class="soc-btn" href="https://wa.me/923134747538" target="_blank">✆</a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a onclick="showPage('home')">Home</a></li>
-        <li><a onclick="showPage('about')">About Us</a></li>
-        <li><a onclick="showPage('services')">Services</a></li>
-        <li><a onclick="showPage('gallery')">Gallery</a></li>
-        <li><a onclick="showPage('team')">Our Team</a></li>
-        <li><a onclick="showPage('blog')">Beauty Blog</a></li>
-        <li><a onclick="showPage('contact')">Contact</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
-        <li><a>Bridal Makeup</a></li>
-        <li><a>Hair Styling</a></li>
-        <li><a>Hydra Facial</a></li>
-        <li><a>Hair Color</a></li>
-        <li><a>Skin Treatments</a></li>
-        <li><a>Manicure & Pedicure</a></li>
-        <li><a>Keratin Treatment</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <div class="footer-ci"><span>📍</span><span>Shop #50, Block H-2, Phase 2 Johar Town, Lahore 54782, Pakistan</span></div>
-      <div class="footer-ci"><span>📞</span><span>+92 313 4747538</span></div>
-      <div class="footer-ci"><span>🕐</span><span>Mon–Sat: 10am–8pm<br>Sunday: 11am–6pm</span></div>
-    </div>
+  <div class="footer-logo">ALI HASSAN</div>
+  <div class="footer-role">Certified Safety Officer | HSE Professional | Pakistan</div>
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#certifications">Certificates</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
   </div>
-  <div class="footer-bottom">
-    <p class="footer-copy">© 2024 Kashi Beauty Salon. All Rights Reserved. Johar Town, Lahore, Pakistan.</p>
-    <p class="footer-copy" style="color:rgba(201,149,108,.3);">✦ Premium Beauty · Est. 2012</p>
+  <div class="footer-links">
+    <a href="https://wa.me/923261238395" target="_blank">💬 WhatsApp</a>
+    <a href="mailto:alihassan0786u@gmail.com">✉️ Email</a>
+    <a href="tel:03261238395">📞 Call</a>
   </div>
+  <div class="footer-quote">"Safety Is Not A Choice, It Is A Responsibility."</div>
+  <div class="footer-copy">© 2026 Ali Hassan. All rights reserved. | Safety Officer Pakistan | HSE Professional</div>
 </footer>
-</div><!-- /page-home -->
 
-<!-- ======= ABOUT ======= -->
-<div class="page" id="page-about">
-<div class="about-hero">
-  <div class="sec-tag" style="margin-bottom:20px;">Our Story</div>
-  <h1 style="font-family:var(--serif);font-size:clamp(40px,5vw,72px);font-weight:400;line-height:1.1;color:var(--dark);">The Art of <em style="font-style:italic;color:var(--rose);">Kashi Beauty</em></h1>
-  <div style="width:50px;height:2px;background:var(--rose);margin:28px 0;"></div>
-  <p style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);">Redefining Beauty Excellence in Lahore Since 2012</p>
-</div>
-<div class="about-content">
-  <div class="about-split reveal">
-    <div class="about-text">
-      <h2>A Legacy of <em style="font-style:italic;color:var(--rose);">Elegance</em></h2>
-      <p>Kashi Beauty Salon was born from a singular passion — to give every woman the beauty experience she truly deserves. Located in the heart of Johar Town, Lahore, we have spent over a decade perfecting the art of beauty.</p>
-      <p>Our philosophy is simple: every client who walks through our doors deserves to feel like the most beautiful version of themselves. We combine international techniques with a deeply personal touch that sets us apart.</p>
-      <p>From intimate facials to grand bridal transformations, Kashi Beauty is where luxury meets authenticity — where every detail matters, and every client is treasured like family.</p>
-      <a class="btn-primary" href="https://wa.me/923134747538" target="_blank" style="margin-top:16px;display:inline-block;">Book a Consultation</a>
-    </div>
-    <div class="about-visual">
-      <div class="about-visual-inner">
-        <div class="symbol">✦</div>
-        <p>Beauty · Elegance · Excellence</p>
-      </div>
-    </div>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <div class="lb-inner" onclick="event.stopPropagation()">
+    <button class="lb-close" onclick="closeLightbox()">✕</button>
+    <div id="lbContent"></div>
   </div>
-  <div class="mvp-grid reveal">
-    <div class="mvp-card"><div class="mvp-tag">Our Mission</div><p class="mvp-text">"To empower every woman with beauty that radiates confidence, grace and timeless elegance."</p></div>
-    <div class="mvp-card"><div class="mvp-tag">Our Vision</div><p class="mvp-text">"To be Pakistan's most trusted and celebrated luxury beauty destination for every woman."</p></div>
-    <div class="mvp-card"><div class="mvp-tag">Our Promise</div><p class="mvp-text">"Exceptional service, premium products, and results that consistently exceed your expectations."</p></div>
-  </div>
-</div>
-<div class="timeline-sec">
-  <div class="sec-head reveal" style="max-width:900px;margin:0 auto 56px;">
-    <div class="sec-tag" style="color:var(--rose2);">Our Journey</div>
-    <h2 class="sec-title" style="color:var(--white);">A Decade of <em>Beauty</em></h2>
-  </div>
-  <div class="tl-row reveal"><div class="tl-year">2012</div><div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div><div class="tl-body"><h4>The Beginning</h4><p>Kashi Beauty Salon opened its doors in Johar Town with a dream to bring luxury beauty to Lahore's discerning clients.</p></div></div>
-  <div class="tl-row reveal"><div class="tl-year">2015</div><div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div><div class="tl-body"><h4>Bridal Studio Launch</h4><p>Launched our dedicated bridal studio, serving over 100 brides in the very first year with stunning results.</p></div></div>
-  <div class="tl-row reveal"><div class="tl-year">2018</div><div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div><div class="tl-body"><h4>Premium Expansion</h4><p>Introduced advanced skin care treatments, keratin services, HD makeup artistry and luxury product lines.</p></div></div>
-  <div class="tl-row reveal"><div class="tl-year">2022</div><div class="tl-line"><div class="tl-dot"></div><div class="tl-bar"></div></div><div class="tl-body"><h4>500+ Brides Milestone</h4><p>Celebrated transforming over 500 brides, cementing our reputation as Lahore's premier bridal beauty studio.</p></div></div>
-  <div class="tl-row reveal"><div class="tl-year">Today</div><div class="tl-line"><div class="tl-dot"></div></div><div class="tl-body"><h4>The Kashi Legacy</h4><p>Continuing to redefine luxury beauty with new services, innovative techniques and a growing family of loyal clients.</p></div></div>
-</div>
-<footer>
-  <div class="footer-grid">
-    <div><span class="footer-logo">Kashi <span>✦</span> Beauty</span><p class="footer-desc">Lahore's premier luxury beauty destination. Johar Town, Lahore.</p><div class="footer-social"><a class="soc-btn" href="https://www.facebook.com/kashibeautician/" target="_blank">f</a><a class="soc-btn" href="https://www.instagram.com/kashibeautician" target="_blank">◎</a><a class="soc-btn" href="https://www.youtube.com/@kashibeautysalon" target="_blank">▶</a></div></div>
-    <div class="footer-col"><h4>Navigate</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('services')">Services</a></li><li><a onclick="showPage('gallery')">Gallery</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-    <div class="footer-col"><h4>Contact</h4><div class="footer-ci"><span>📍</span><span>Shop #50, Block H-2, Johar Town, Lahore</span></div><div class="footer-ci"><span>📞</span><span>+92 313 4747538</span></div></div>
-    <div class="footer-col"><h4>Book Now</h4><a class="btn-primary" href="https://wa.me/923134747538" target="_blank" style="font-size:9px;padding:12px 24px;">WhatsApp Booking</a></div>
-  </div>
-  <div class="footer-bottom"><p class="footer-copy">© 2024 Kashi Beauty Salon. All Rights Reserved.</p></div>
-</footer>
-</div>
-
-<!-- ======= SERVICES ======= -->
-<div class="page" id="page-services">
-<div class="svc-page">
-  <div class="sec-head center reveal"><div class="sec-tag">Complete Menu</div><h2 class="sec-title">All <em>Services</em></h2><p class="sec-desc">Every service crafted with precision, premium products and genuine care for your beauty.</p></div>
-  <div class="svc-page-cat reveal">
-    <div class="svc-cat-title"><h2>Hair Services</h2><span class="svc-cat-tag">Premium</span></div>
-    <div class="svc-cards">
-      <div class="svc-mini"><h4>Haircut & Trim</h4><p>Precision cuts for your face shape and style goals.</p><div class="p">PKR 800+</div><div class="d">30–60 Min</div></div>
-      <div class="svc-mini"><h4>Hair Styling</h4><p>Blow dry, curls, straight or updos for any occasion.</p><div class="p">PKR 1,200+</div><div class="d">45–90 Min</div></div>
-      <div class="svc-mini"><h4>Hair Color</h4><p>Global color, highlights, balayage and ombre.</p><div class="p">PKR 3,500+</div><div class="d">2–4 Hours</div></div>
-      <div class="svc-mini"><h4>Keratin Treatment</h4><p>Salon-grade keratin for frizz-free, silky hair.</p><div class="p">PKR 5,000+</div><div class="d">3–4 Hours</div></div>
-      <div class="svc-mini"><h4>Hair Spa</h4><p>Deep nourishment and repair for damaged hair.</p><div class="p">PKR 2,500+</div><div class="d">60–90 Min</div></div>
-      <div class="svc-mini"><h4>Rebonding</h4><p>Permanent straightening for pin-straight hair.</p><div class="p">PKR 6,000+</div><div class="d">4–5 Hours</div></div>
-    </div>
-  </div>
-  <div class="svc-page-cat reveal">
-    <div class="svc-cat-title"><h2>Makeup Services</h2><span class="svc-cat-tag">Signature</span></div>
-    <div class="svc-cards">
-      <div class="svc-mini"><h4>Bridal Makeup</h4><p>Complete bridal transformation with premium products.</p><div class="p">PKR 15,000+</div><div class="d">3–4 Hours</div></div>
-      <div class="svc-mini"><h4>Engagement Makeup</h4><p>Radiant, camera-perfect engagement looks.</p><div class="p">PKR 8,000+</div><div class="d">2–3 Hours</div></div>
-      <div class="svc-mini"><h4>Party Makeup</h4><p>Glamorous looks for every celebration.</p><div class="p">PKR 3,500+</div><div class="d">60–90 Min</div></div>
-      <div class="svc-mini"><h4>HD Makeup</h4><p>High-definition flawless looks for events and photos.</p><div class="p">PKR 5,000+</div><div class="d">90 Min</div></div>
-      <div class="svc-mini"><h4>Soft Glam</h4><p>Natural, elegant looks for day events and functions.</p><div class="p">PKR 4,000+</div><div class="d">60 Min</div></div>
-      <div class="svc-mini"><h4>Bold Glam</h4><p>Dramatic statement looks for night events.</p><div class="p">PKR 4,500+</div><div class="d">90 Min</div></div>
-    </div>
-  </div>
-  <div class="svc-page-cat reveal">
-    <div class="svc-cat-title"><h2>Skin & Facial Treatments</h2><span class="svc-cat-tag">Luxury</span></div>
-    <div class="svc-cards">
-      <div class="svc-mini"><h4>Hydra Facial</h4><p>Deep cleanse, exfoliation and hydration in one session.</p><div class="p">PKR 4,500+</div><div class="d">60–75 Min</div></div>
-      <div class="svc-mini"><h4>Gold Facial</h4><p>24K gold-infused treatment for radiant, youthful skin.</p><div class="p">PKR 3,500+</div><div class="d">60 Min</div></div>
-      <div class="svc-mini"><h4>Whitening Facial</h4><p>Advanced brightening for luminous, even skin tone.</p><div class="p">PKR 3,000+</div><div class="d">60 Min</div></div>
-      <div class="svc-mini"><h4>Anti-Aging Facial</h4><p>Firming and lifting treatment for youthful vitality.</p><div class="p">PKR 4,000+</div><div class="d">75 Min</div></div>
-      <div class="svc-mini"><h4>Skin Polishing</h4><p>Microdermabrasion treatment for smooth, glowing skin.</p><div class="p">PKR 2,500+</div><div class="d">45 Min</div></div>
-      <div class="svc-mini"><h4>Acne Treatment</h4><p>Targeted treatment for clearer, healthier skin.</p><div class="p">PKR 3,500+</div><div class="d">60 Min</div></div>
-    </div>
-  </div>
-  <div class="svc-page-cat reveal">
-    <div class="svc-cat-title"><h2>Beauty & Nail Services</h2><span class="svc-cat-tag">Essential</span></div>
-    <div class="svc-cards">
-      <div class="svc-mini"><h4>Manicure</h4><p>Complete nail care and treatment for beautiful hands.</p><div class="p">PKR 1,200+</div><div class="d">45 Min</div></div>
-      <div class="svc-mini"><h4>Pedicure</h4><p>Relaxing foot treatment with nail care and massage.</p><div class="p">PKR 1,500+</div><div class="d">60 Min</div></div>
-      <div class="svc-mini"><h4>Waxing</h4><p>Full body or targeted waxing with premium wax.</p><div class="p">PKR 800+</div><div class="d">30–60 Min</div></div>
-      <div class="svc-mini"><h4>Threading</h4><p>Precision eyebrow and facial threading by expert hands.</p><div class="p">PKR 200+</div><div class="d">15 Min</div></div>
-    </div>
-  </div>
-  <div style="text-align:center;padding-bottom:60px;"><a class="btn-primary" href="https://wa.me/923134747538" target="_blank">Enquire About Any Service</a></div>
-</div>
-<footer>
-  <div class="footer-grid">
-    <div><span class="footer-logo">Kashi <span>✦</span> Beauty</span><p class="footer-desc">Lahore's premier luxury beauty destination.</p></div>
-    <div class="footer-col"><h4>Navigate</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('about')">About</a></li><li><a onclick="showPage('gallery')">Gallery</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-    <div class="footer-col"><h4>Contact</h4><div class="footer-ci"><span>📍</span><span>Shop #50, Block H-2, Johar Town, Lahore</span></div><div class="footer-ci"><span>📞</span><span>+92 313 4747538</span></div></div>
-    <div class="footer-col"><h4>Book</h4><a class="btn-primary" href="https://wa.me/923134747538" target="_blank" style="font-size:9px;padding:12px 24px;">WhatsApp Now</a></div>
-  </div>
-  <div class="footer-bottom"><p class="footer-copy">© 2024 Kashi Beauty Salon. All Rights Reserved.</p></div>
-</footer>
-</div>
-
-<!-- ======= GALLERY ======= -->
-<div class="page" id="page-gallery">
-<div class="gallery-page">
-  <div class="sec-head center reveal"><div class="sec-tag">Our Portfolio</div><h2 class="sec-title">Beauty <em>Gallery</em></h2></div>
-  <div class="gal-filters reveal">
-    <button class="gal-btn active" onclick="setFilter(this)">All Work</button>
-    <button class="gal-btn" onclick="setFilter(this)">Bridal Looks</button>
-    <button class="gal-btn" onclick="setFilter(this)">Hair Transformations</button>
-    <button class="gal-btn" onclick="setFilter(this)">Makeup Portfolio</button>
-    <button class="gal-btn" onclick="setFilter(this)">Skin Treatments</button>
-    <button class="gal-btn" onclick="setFilter(this)">Before & After</button>
-  </div>
-  <div class="masonry reveal">
-    <div class="m-item mi-l"><div class="m-inner" style="padding:40px;"><span>👰</span><p>Luxury Bridal Look</p></div></div>
-    <div class="m-item mi-m"><div class="m-inner" style="padding:30px;"><span>💄</span><p>Party Glam</p></div></div>
-    <div class="m-item mi-s"><div class="m-inner" style="padding:24px;"><span>✨</span><p>Skin Glow Treatment</p></div></div>
-    <div class="m-item mi-m"><div class="m-inner" style="padding:30px;"><span>💍</span><p>Engagement Look</p></div></div>
-    <div class="m-item mi-l"><div class="m-inner" style="padding:40px;"><span>🎨</span><p>Hair Color Art</p></div></div>
-    <div class="m-item mi-s"><div class="m-inner" style="padding:24px;"><span>💅</span><p>Nail Design</p></div></div>
-    <div class="m-item mi-m"><div class="m-inner" style="padding:30px;"><span>✂️</span><p>Hair Styling</p></div></div>
-    <div class="m-item mi-l"><div class="m-inner" style="padding:40px;"><span>👑</span><p>HD Bridal</p></div></div>
-    <div class="m-item mi-s"><div class="m-inner" style="padding:24px;"><span>🌸</span><p>Facial Glow</p></div></div>
-    <div class="m-item mi-m"><div class="m-inner" style="padding:30px;"><span>🔄</span><p>Before & After</p></div></div>
-    <div class="m-item mi-m"><div class="m-inner" style="padding:30px;"><span>🏛️</span><p>Salon Interior</p></div></div>
-    <div class="m-item mi-l"><div class="m-inner" style="padding:40px;"><span>💍</span><p>Reception Bridal</p></div></div>
-  </div>
-  <div style="text-align:center;padding:52px 0;"><a class="btn-ghost" href="https://www.instagram.com/kashibeautician" target="_blank">View More on Instagram →</a></div>
-</div>
-<footer>
-  <div class="footer-grid">
-    <div><span class="footer-logo">Kashi <span>✦</span> Beauty</span><p class="footer-desc">Lahore's premier luxury beauty destination.</p></div>
-    <div class="footer-col"><h4>Navigate</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('services')">Services</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-    <div class="footer-col"><h4>Follow Us</h4><div class="footer-social" style="flex-direction:column;gap:10px;"><a class="soc-btn" href="https://www.instagram.com/kashibeautician" target="_blank" style="width:auto;padding:0 14px;justify-content:flex-start;gap:10px;">◎ Instagram</a><a class="soc-btn" href="https://www.facebook.com/kashibeautician/" target="_blank" style="width:auto;padding:0 14px;justify-content:flex-start;gap:10px;">f Facebook</a></div></div>
-    <div class="footer-col"><h4>Book</h4><a class="btn-primary" href="https://wa.me/923134747538" target="_blank" style="font-size:9px;padding:12px 24px;">WhatsApp Now</a></div>
-  </div>
-  <div class="footer-bottom"><p class="footer-copy">© 2024 Kashi Beauty Salon. All Rights Reserved.</p></div>
-</footer>
-</div>
-
-<!-- ======= TEAM ======= -->
-<div class="page" id="page-team">
-<div class="team-page">
-  <div class="sec-head center reveal"><div class="sec-tag">Beauty Experts</div><h2 class="sec-title">Meet Our <em>Team</em></h2><p class="sec-desc">Passionate professionals dedicated to making you feel your absolute best.</p></div>
-  <div class="team-grid">
-    <div class="team-card reveal"><div class="team-avatar">👸</div><div class="team-info"><h3 class="team-name">Lead Bridal Artist</h3><div class="team-role">Founder & Head Makeup Artist</div><p class="team-bio">10+ years of experience in bridal and editorial makeup. Specialized in HD bridal looks and luxury transformations.</p><div class="team-soc"><a href="https://www.instagram.com/kashibeautician" target="_blank">◎</a><a href="https://www.facebook.com/kashibeautician/" target="_blank">f</a></div></div></div>
-    <div class="team-card reveal"><div class="team-avatar">💇</div><div class="team-info"><h3 class="team-name">Senior Hair Stylist</h3><div class="team-role">Hair & Color Specialist</div><p class="team-bio">Expert in keratin treatments, global coloring, balayage and luxury hair styling with international certification.</p><div class="team-soc"><a href="#">◎</a></div></div></div>
-    <div class="team-card reveal"><div class="team-avatar">✨</div><div class="team-info"><h3 class="team-name">Skin Care Therapist</h3><div class="team-role">Facial & Skin Expert</div><p class="team-bio">Certified in advanced facial treatments including Hydra Facial, anti-aging therapies and skin polishing techniques.</p><div class="team-soc"><a href="#">◎</a></div></div></div>
-    <div class="team-card reveal"><div class="team-avatar">💅</div><div class="team-info"><h3 class="team-name">Beauty Therapist</h3><div class="team-role">Nail & Beauty Specialist</div><p class="team-bio">Expert in manicure, pedicure, nail art and complete beauty treatments for a perfectly polished finish.</p><div class="team-soc"><a href="#">◎</a></div></div></div>
-  </div>
-  <div style="text-align:center;padding:52px 0;"><a class="btn-primary" href="https://wa.me/923134747538" target="_blank">Book with Our Experts</a></div>
-</div>
-<footer>
-  <div class="footer-grid">
-    <div><span class="footer-logo">Kashi <span>✦</span> Beauty</span><p class="footer-desc">Lahore's premier luxury beauty destination.</p></div>
-    <div class="footer-col"><h4>Navigate</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('services')">Services</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-    <div class="footer-col"><h4>Contact</h4><div class="footer-ci"><span>📞</span><span>+92 313 4747538</span></div></div>
-    <div class="footer-col"><h4>Book</h4><a class="btn-primary" href="https://wa.me/923134747538" target="_blank" style="font-size:9px;padding:12px 24px;">WhatsApp Now</a></div>
-  </div>
-  <div class="footer-bottom"><p class="footer-copy">© 2024 Kashi Beauty Salon. All Rights Reserved.</p></div>
-</footer>
-</div>
-
-<!-- ======= BLOG ======= -->
-<div class="page" id="page-blog">
-<div class="blog-page">
-  <div class="sec-head center reveal"><div class="sec-tag">Beauty Knowledge</div><h2 class="sec-title">Beauty <em>Blog</em></h2><p class="sec-desc">Expert tips, trends and guides from our team of beauty professionals.</p></div>
-  <div class="blog-grid">
-    <div class="blog-card reveal"><div class="blog-img">👰</div><div class="blog-body"><div class="blog-cat">Bridal Beauty</div><h3 class="blog-title">The Ultimate Bridal Beauty Timeline for Your Wedding Day</h3><p class="blog-excerpt">From 6 months before to the morning of your wedding — your complete beauty preparation guide.</p><div class="blog-meta">June 2024 · 5 min read</div></div></div>
-    <div class="blog-card reveal"><div class="blog-img">✨</div><div class="blog-body"><div class="blog-cat">Skin Care</div><h3 class="blog-title">Hydra Facial vs Gold Facial: Which is Right for You?</h3><p class="blog-excerpt">Our skin care experts break down the benefits of both premium facial treatments to help you choose.</p><div class="blog-meta">May 2024 · 4 min read</div></div></div>
-    <div class="blog-card reveal"><div class="blog-img">🎨</div><div class="blog-body"><div class="blog-cat">Hair Care</div><h3 class="blog-title">2024 Hair Color Trends: From Balayage to Copper Reds</h3><p class="blog-excerpt">The most coveted hair color trends dominating salons in Pakistan and around the world this season.</p><div class="blog-meta">April 2024 · 6 min read</div></div></div>
-    <div class="blog-card reveal"><div class="blog-img">💄</div><div class="blog-body"><div class="blog-cat">Makeup Guide</div><h3 class="blog-title">Soft Glam vs Bold Glam: Choosing Your Perfect Look</h3><p class="blog-excerpt">Our lead artist shares tips for selecting the perfect makeup style for every type of occasion.</p><div class="blog-meta">March 2024 · 5 min read</div></div></div>
-    <div class="blog-card reveal"><div class="blog-img">💍</div><div class="blog-body"><div class="blog-cat">Wedding Prep</div><h3 class="blog-title">How to Prepare Your Skin for Your Wedding in 30 Days</h3><p class="blog-excerpt">A step-by-step 30-day skin prep guide from our aestheticians to ensure you glow on your big day.</p><div class="blog-meta">February 2024 · 7 min read</div></div></div>
-    <div class="blog-card reveal"><div class="blog-img">🌸</div><div class="blog-body"><div class="blog-cat">Beauty Tips</div><h3 class="blog-title">10 Premium Beauty Secrets from Kashi's Expert Beauticians</h3><p class="blog-excerpt">Our team shares exclusive professional tips to elevate your everyday beauty routine to luxury level.</p><div class="blog-meta">January 2024 · 8 min read</div></div></div>
-  </div>
-  <div style="text-align:center;padding:52px 0;"><a class="btn-ghost" href="#">Load More Articles →</a></div>
-</div>
-<footer>
-  <div class="footer-grid">
-    <div><span class="footer-logo">Kashi <span>✦</span> Beauty</span><p class="footer-desc">Lahore's premier luxury beauty destination.</p></div>
-    <div class="footer-col"><h4>Navigate</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('services')">Services</a></li><li><a onclick="showPage('contact')">Contact</a></li></ul></div>
-    <div class="footer-col"><h4>Contact</h4><div class="footer-ci"><span>📞</span><span>+92 313 4747538</span></div></div>
-    <div class="footer-col"><h4>Book</h4><a class="btn-primary" href="https://wa.me/923134747538" target="_blank" style="font-size:9px;padding:12px 24px;">WhatsApp Now</a></div>
-  </div>
-  <div class="footer-bottom"><p class="footer-copy">© 2024 Kashi Beauty Salon. All Rights Reserved.</p></div>
-</footer>
-</div>
-
-<!-- ======= CONTACT ======= -->
-<div class="page" id="page-contact">
-<div class="contact-page">
-  <div class="sec-head center reveal"><div class="sec-tag">Get In Touch</div><h2 class="sec-title">Contact <em>Us</em></h2></div>
-  <div class="contact-split">
-    <div class="reveal">
-      <h2>We'd love to<br><em style="font-style:italic;color:var(--rose);">hear from you</em></h2>
-      <div class="c-item" style="margin-top:32px;"><div class="c-icon">📍</div><div class="c-detail"><h4>Our Location</h4><p>Shop #50, Block H-2, Phase 2<br>Johar Town, Lahore, 54782<br>Pakistan</p></div></div>
-      <div class="c-item"><div class="c-icon">📞</div><div class="c-detail"><h4>WhatsApp & Phone</h4><a href="https://wa.me/923134747538">+92 313 4747538</a></div></div>
-      <div class="c-item"><div class="c-icon">🕐</div><div class="c-detail"><h4>Business Hours</h4>
-        <div class="hours-grid">
-          <span class="h-day">Monday – Saturday</span><span class="h-time">10:00 AM – 8:00 PM</span>
-          <span class="h-day">Sunday</span><span class="h-time">11:00 AM – 6:00 PM</span>
-        </div>
-      </div></div>
-      <div class="c-item"><div class="c-icon">🌐</div><div class="c-detail"><h4>Follow Us</h4><div style="display:flex;gap:10px;margin-top:8px;"><a class="soc-btn" href="https://www.facebook.com/kashibeautician/" target="_blank">f</a><a class="soc-btn" href="https://www.instagram.com/kashibeautician" target="_blank">◎</a><a class="soc-btn" href="https://www.youtube.com/@kashibeautysalon" target="_blank">▶</a></div></div></div>
-      <div class="map-box"><div style="text-align:center;"><p style="font-size:20px;margin-bottom:8px;">📍</p><p style="font-size:12px;color:var(--muted);">Shop #50, Block H-2, Phase 2<br>Johar Town, Lahore, Pakistan</p><a href="https://maps.google.com/?q=Johar+Town+Lahore+Pakistan" target="_blank" style="color:var(--rose);font-size:10px;letter-spacing:2px;text-transform:uppercase;margin-top:14px;display:inline-block;font-weight:500;">Open in Google Maps →</a></div></div>
-    </div>
-    <div class="contact-form-wrap reveal">
-      <h3>Send us a <em style="font-style:italic;color:var(--rose);">Message</em></h3>
-      <div class="cf-group"><label class="cf-label">Your Name</label><input class="cf-input" type="text" id="cName" placeholder="Full Name"/></div>
-      <div class="cf-group"><label class="cf-label">Phone Number</label><input class="cf-input" type="tel" id="cPhone" placeholder="+92 XXX XXXXXXX"/></div>
-      <div class="cf-group"><label class="cf-label">Subject</label><input class="cf-input" type="text" id="cSubject" placeholder="How can we help?"/></div>
-      <div class="cf-group"><label class="cf-label">Message</label><textarea class="cf-textarea" id="cMsg" placeholder="Tell us more..."></textarea></div>
-      <button class="cf-btn" onclick="sendContactWA()">✦ Send via WhatsApp</button>
-    </div>
-  </div>
-</div>
-<footer>
-  <div class="footer-grid">
-    <div><span class="footer-logo">Kashi <span>✦</span> Beauty</span><p class="footer-desc">Lahore's premier luxury beauty destination.</p><div class="footer-social"><a class="soc-btn" href="https://www.facebook.com/kashibeautician/" target="_blank">f</a><a class="soc-btn" href="https://www.instagram.com/kashibeautician" target="_blank">◎</a><a class="soc-btn" href="https://www.youtube.com/@kashibeautysalon" target="_blank">▶</a></div></div>
-    <div class="footer-col"><h4>Navigate</h4><ul><li><a onclick="showPage('home')">Home</a></li><li><a onclick="showPage('about')">About</a></li><li><a onclick="showPage('services')">Services</a></li><li><a onclick="showPage('gallery')">Gallery</a></li></ul></div>
-    <div class="footer-col"><h4>Contact</h4><div class="footer-ci"><span>📍</span><span>Shop #50, Block H-2, Johar Town, Lahore</span></div><div class="footer-ci"><span>📞</span><span>+92 313 4747538</span></div></div>
-    <div class="footer-col"><h4>Book Now</h4><a class="btn-primary" href="https://wa.me/923134747538" target="_blank" style="font-size:9px;padding:12px 24px;">WhatsApp Booking</a></div>
-  </div>
-  <div class="footer-bottom"><p class="footer-copy">© 2024 Kashi Beauty Salon. All Rights Reserved.</p></div>
-</footer>
 </div>
 
 <script>
-function showPage(p){
-  document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
-  document.getElementById('page-'+p).classList.add('active');
-  window.scrollTo({top:0,behavior:'smooth'});
-  setTimeout(initReveal,120);
-}
-function scrollToSec(id){
-  const el=document.getElementById(id);
-  if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
-}
-window.addEventListener('scroll',()=>{
-  document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>60);
-});
-function toggleMenu(){
-  document.getElementById('mobMenu').classList.toggle('open');
-}
-function setFilter(btn){
-  document.querySelectorAll('.gal-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-}
-function initReveal(){
-  const obs=new IntersectionObserver(entries=>{
-    entries.forEach(e=>{
-      if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}
-    });
-  },{threshold:.08});
-  document.querySelectorAll('.reveal:not(.visible)').forEach(r=>obs.observe(r));
-}
-initReveal();
-function submitBooking(){
-  const n=document.getElementById('bName').value.trim();
-  const ph=document.getElementById('bPhone').value.trim();
-  const sv=document.getElementById('bService').value;
-  const dt=document.getElementById('bDate').value;
-  const tm=document.getElementById('bTime').value;
-  const nt=document.getElementById('bNotes').value.trim();
-  if(!n||!ph||!sv){alert('Please fill in your name, phone and service.');return;}
-  const msg=`✦ *New Appointment – Kashi Beauty Salon*\n\n👤 *Name:* ${n}\n📞 *Phone:* ${ph}\n💄 *Service:* ${sv}\n📅 *Date:* ${dt||'To be confirmed'}\n🕐 *Time:* ${tm||'To be confirmed'}\n📝 *Notes:* ${nt||'None'}\n\n_Booked via kashibeautysalon.com_`;
-  window.open(`https://wa.me/923134747538?text=${encodeURIComponent(msg)}`,'_blank');
-}
-function sendContactWA(){
-  const n=document.getElementById('cName').value.trim();
-  const ph=document.getElementById('cPhone').value.trim();
-  const sb=document.getElementById('cSubject').value.trim();
-  const mg=document.getElementById('cMsg').value.trim();
-  const msg=`✦ *Website Inquiry – Kashi Beauty Salon*\n\n👤 *Name:* ${n}\n📞 *Phone:* ${ph}\n📌 *Subject:* ${sb}\n💬 *Message:* ${mg}`;
-  window.open(`https://wa.me/923134747538?text=${encodeURIComponent(msg)}`,'_blank');
-}
+  // NAV TOGGLE
+  function toggleNav(){
+    document.getElementById('navLinks').classList.toggle('open');
+  }
+
+  // SMOOTH NAV CLOSE
+  document.querySelectorAll('.nav-links a').forEach(a=>{
+    a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open'));
+  });
+
+  // FADE IN OBSERVER
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible')}});
+  },{threshold:.12});
+  document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+
+  // LIGHTBOX
+  function openLightbox(type){
+    const lb = document.getElementById('lightbox');
+    const content = document.getElementById('lbContent');
+    if(type==='cert'){
+      content.innerHTML=`<div style="background:linear-gradient(135deg,#0A2540,#1a3a5c);border-radius:12px;padding:48px;text-align:center;color:#fff;border:2px solid #D4AF37">
+        <div style="font-size:1rem;color:#D4AF37;letter-spacing:3px;margin-bottom:8px">QANMOS CENTER OF EXCELLENCE</div>
+        <div style="font-size:2rem;font-weight:800;color:#D4AF37;margin-bottom:4px">CERTIFICATE</div>
+        <div style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:24px">OF ACHIEVEMENT</div>
+        <div style="font-size:.9rem;color:rgba(255,255,255,.7);margin-bottom:8px">In recognition of the successful completion of</div>
+        <div style="font-size:2.2rem;font-weight:800;color:#fff;margin-bottom:4px">ALI HASSAN</div>
+        <div style="font-size:.9rem;color:rgba(255,255,255,.6);margin-bottom:8px">has successfully completed training in</div>
+        <div style="font-size:1.5rem;font-weight:700;color:#D4AF37;margin-bottom:24px">Safety Officer</div>
+        <div style="display:flex;justify-content:center;gap:32px;flex-wrap:wrap;font-size:.82rem;color:rgba(255,255,255,.6)">
+          <span>Date: 11/02/2026</span>
+          <span>Cert# cb8ad09</span>
+          <span>Valid: 2 Years</span>
+        </div>
+        <div style="margin-top:20px;font-size:.75rem;color:rgba(255,255,255,.4)">Accredited by: AOSH · Exemplar Global · NASP · OSH Academy</div>
+      </div>`;
+    } else {
+      content.innerHTML=`<div style="background:#fff;border-radius:12px;padding:36px;color:#0A2540">
+        <div style="text-align:right;margin-bottom:16px;font-weight:800;color:#0A2540;letter-spacing:1px">QANMOS TRAININGS<br><small style="font-weight:400;color:#666">THE CAREER MAKERS</small></div>
+        <div style="font-size:1.3rem;font-weight:800;margin-bottom:20px;text-align:center">TRANSCRIPT OF ACADEMIC RECORD</div>
+        <div style="font-weight:700;margin-bottom:8px">ALI HASSAN</div>
+        <div style="font-size:.83rem;color:#555;margin-bottom:20px;line-height:1.6">Ali Hassan has successfully completed the required professional development certificate programs and courses listed below.</div>
+        <table style="width:100%;border-collapse:collapse;font-size:.85rem">
+          <tr style="background:#0A2540;color:#D4AF37"><th style="padding:8px 12px;text-align:left">TITLE</th><th style="padding:8px 12px">CREDIT</th><th style="padding:8px 12px">GRADE</th></tr>
+          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">105 Permit To Work System</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">109 Fire Watcher</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">114 Stand By Man/Hole Watcher</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">115 Work At Height</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">118 Confined Space Entry</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">120 First Aider</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee"><td style="padding:8px 12px">124 H2S Safety</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+          <tr style="border-bottom:1px solid #eee;background:#f9f9f9"><td style="padding:8px 12px">126 Flagman</td><td style="padding:8px;text-align:center">20</td><td style="padding:8px;text-align:center;color:#16a34a;font-weight:700">PASS</td></tr>
+        </table>
+        <div style="margin-top:16px;font-size:.82rem;color:#555">TOTAL CREDITS: <strong>160</strong> | GRADING: PASS/FAIL | Language: English | Issued: 11 February 2026</div>
+      </div>`;
+    }
+    lb.classList.add('active');
+  }
+  function closeLightbox(){document.getElementById('lightbox').classList.remove('active')}
+
+  // CONTACT FORM
+  function submitForm(){
+    const n=document.getElementById('fname').value;
+    const e=document.getElementById('femail').value;
+    const m=document.getElementById('fmessage').value;
+    if(!n||!e||!m){alert('Please fill in your name, email, and message.');return;}
+    const s=document.getElementById('formSuccess');
+    s.style.display='block';
+    document.getElementById('fname').value='';
+    document.getElementById('femail').value='';
+    document.getElementById('fcompany').value='';
+    document.getElementById('fmessage').value='';
+    setTimeout(()=>s.style.display='none',5000);
+  }
 </script>
 </body>
 </html>
